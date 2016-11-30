@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>购物车</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="lib/weui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-weui.min.css" type="text/css">
+
+    <style>
+        html,body{
+            height:100%;
+        }
+        .weui_tab .weui_tab_bd .content img{
+            width:100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="weui_tab">
+    <!--导航栏开始-->
+    <div class="weui_tab">
+        <div class="weui_navbar">
+            <a class="weui_navbar_item weui_bar_item_on">
+                购物车
+            </a>
+
+        </div>
+        <div class="weui_tab_bd">
+            <div class="content">
+                <!--第一个选项卡-->
+                    <div class="weui_panel">
+<div class="weui_panel weui_panel_access">
+  <div class="weui_panel_hd"><a href="index.html">新旧书店</a></div>
+  <div class="weui_panel_bd">
+    <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+    <input type="checkbox" name="checkAll" id="checkAll" onclick="setSelectAll();" /><br />
+      <div class="weui_media_hd">
+        <img class="weui_media_appmsg_thumb" src="images/jieda.jpg" alt="">
+      </div>
+      <div class="weui_media_bd">
+        <h4 class="weui_media_title">解答之书</h4>
+        <p class="weui_media_desc">￥59.00</p>
+        <p class="weui_media_desc">×1</p>
+      </div>
+    </a>
+
+<a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+<input type="checkbox" name="checkAll" id="checkAll" onclick="setSelectAll();" /><br />
+      <div class="weui_media_hd">
+        <img class="weui_media_appmsg_thumb" src="images/shujia.jpg" alt="">
+      </div>
+      <div class="weui_media_bd">
+        <h4 class="weui_media_title">黄铜笔夹</h4>
+        <p class="weui_media_desc">￥21.00</p>
+        <p class="weui_media_desc">×1</p>
+      </div>
+    </a>
+  </div>
+
+
+                <!--第一个选项卡结束-->
+            </div>
+            <div class="content" style="display: none">主题内容2</div>
+            <div class="content" style="display: none">
+                <!--第三个选项卡开始-->
+                
+                <!--第三个选项卡结束-->
+            </div>
+        </div>
+    </div>
+    <!--导航栏结束-->
+    <div class="weui_tabbar">
+<!--         <a href="index.html" class="weui_tabbar_item weui_bar_item_on" > -->
+        <div class="weui_tabbar_item weui_bar_item_on" >
+        <input type="checkbox" id="selAll" onclick="selectAll();" />全选 
+        <div class="weui_cell_ft">合计：￥0.00</div>
+  <!--           <div class="weui_tabbar_icon">
+
+                <img src="__PUBLIC__/software/images/home.jpg" alt="">
+            </div>
+            <p class="weui_tabbar_label">结算</p> -->
+            <a href="javascript:;" class="weui_btn weui_btn_warn">结算</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='js/swiper.js' charset='utf-8'></script>
+<script>
+    $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+    });
+    $(".weui_navbar .weui_navbar_item").click(function () {
+        $(".weui_navbar.weui_navbar_item").removeClass("weui_bar_item_on");//谁都没有weui_bar_item_on
+        $(this).addClass("weui_bar_item_on");//点谁谁有weui_bar_item_on
+//        判断点击的是第几个选项卡
+        var which = $(this).index();
+        console.log(which);
+//        让所有内容区域都隐藏
+        $(".weui_tab_bd .content").hide();
+//        按索引显示所有内容
+        $(".weui_tab_bd .content:eq("+which+")").show();
+    })
+window.onload=function(){
+ 3     var CheckAll=document.getElementById('All');
+ 6     var div=document.getElementById('div');
+ 7     var    CheckBox=div.getElementsByTagName(input');
+ 8     CheckAll.onclick=function(){
+ 9             for(i=0;i<CheckBox.length;i++){
+10                     CheckBox[i].checked=true;
+11                 };
+12         };
+13     UnCheck.onclick=function(){
+14             for(i=0;i<CheckBox.length;i++){
+15                     CheckBox[i].checked=false;
+16                 };
+17         };
+18     othercheck.onclick=function(){
+19             for(i=0;i<CheckBox.length;i++){
+20                     if(CheckBox[i].checked==true){
+21                             CheckBox[i].checked=false;
+22                         }
+23                     else{
+24                         CheckBox[i].checked=true
+25                         }
+26                     
+27                 };
+28         };
+29 };
+</script>
+<script language="javascript"> 
+
+//选中全选按钮，下面的checkbox全部选中 
+var selAll = document.getElementById("selAll"); 
+function selectAll() 
+{ 
+  var obj = document.getElementsByName("checkAll"); 
+  if(document.getElementById("selAll").checked == false) 
+  { 
+  for(var i=0; i<obj.length; i++) 
+  { 
+    obj[i].checked=false; 
+  } 
+  }else 
+  { 
+  for(var i=0; i<obj.length; i++) 
+  {   
+    obj[i].checked=true; 
+  } 
+  } 
+  
+} 
+
+//当选中所有的时候，全选按钮会勾上 
+function setSelectAll() 
+{ 
+var obj=document.getElementsByName("checkAll"); 
+var count = obj.length; 
+var selectCount = 0; 
+
+for(var i = 0; i < count; i++) 
+{ 
+if(obj[i].checked == true) 
+{ 
+selectCount++;  
+} 
+} 
+if(count == selectCount) 
+{   
+document.all.selAll.checked = true; 
+} 
+else 
+{ 
+document.all.selAll.checked = false; 
+} 
+} 
+
+//反选按钮 
+function inverse() { 
+var checkboxs=document.getElementsByName("checkAll"); 
+for (var i=0;i<checkboxs.length;i++) { 
+  var e=checkboxs[i]; 
+  e.checked=!e.checked; 
+  setSelectAll(); 
+} 
+} 
+
+</script> 
+
+</html>
