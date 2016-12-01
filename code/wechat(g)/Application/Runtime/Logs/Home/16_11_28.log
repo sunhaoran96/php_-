@@ -1,0 +1,93 @@
+[ 2016-11-28T17:05:21+08:00 ] 127.0.0.1 /wechat(g)/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013935s ]
+NOTIC: [8] Trying to get property of non-object E:\phpStudy\WWW\wechat(g)\Application\Home\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Trying to get property of non-object E:\phpStudy\WWW\wechat(g)\Application\Home\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Trying to get property of non-object E:\phpStudy\WWW\wechat(g)\Application\Home\Controller\IndexController.class.php 第 20 行.
+NOTIC: [8] Trying to get property of non-object E:\phpStudy\WWW\wechat(g)\Application\Home\Controller\IndexController.class.php 第 21 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009130s ]
+
+[ 2016-11-28T17:05:34+08:00 ] 127.0.0.1 /wechat(g)/home/weui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\phpStudy\WWW\wechat(g)\Application\Home\Controller\WeuiController.class.php 第 22 行.
+NOTIC: [8] Undefined property: stdClass::$access_token E:\phpStudy\WWW\wechat(g)\Application\Home\Controller\WeuiController.class.php 第 26 行.
+NOTIC: [8] Undefined property: stdClass::$openid E:\phpStudy\WWW\wechat(g)\Application\Home\Controller\WeuiController.class.php 第 27 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\phpStudy\WWW\wechat(g)\Application\Home\Controller\WeuiController.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined property: stdClass::$nickname E:\phpStudy\WWW\wechat(g)\Application\Runtime\Cache\Home\29e77ddb992f9fddd55aae48778b3c16.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.407692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.407798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001315s ]
+
+[ 2016-11-28T17:05:49+08:00 ] 127.0.0.1 /wechat(g)/home/menu/view
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\phpStudy\WWW\wechat(g)\Application\Home\Controller\MenuController.class.php 第 65 行.
+NOTIC: [2] file_get_contents(access_token.php): failed to open stream: No such file or directory E:\phpStudy\WWW\wechat(g)\Application\Common\Library\Wechat.class.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object E:\phpStudy\WWW\wechat(g)\Application\Common\Library\Wechat.class.php 第 225 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\phpStudy\WWW\wechat(g)\Application\Home\Controller\MenuController.class.php 第 68 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\phpStudy\WWW\wechat(g)\Application\Common\Library\Wechat.class.php 第 314 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.393135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.393269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001880s ]
+
+[ 2016-11-28T17:05:58+08:00 ] 127.0.0.1 /wechat(g)/home/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\phpStudy\WWW\wechat(g)\Application\Home\Controller\MenuController.class.php 第 12 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::createMenu() should not be called statically, assuming $this from incompatible context E:\phpStudy\WWW\wechat(g)\Application\Home\Controller\MenuController.class.php 第 57 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\phpStudy\WWW\wechat(g)\Application\Common\Library\Wechat.class.php 第 212 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002916s ]
+
+[ 2016-11-28T17:06:55+08:00 ] 127.0.0.1 /wechat(g)/home/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\phpStudy\WWW\wechat(g)\Application\Home\Controller\MenuController.class.php 第 12 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::createMenu() should not be called statically, assuming $this from incompatible context E:\phpStudy\WWW\wechat(g)\Application\Home\Controller\MenuController.class.php 第 57 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\phpStudy\WWW\wechat(g)\Application\Common\Library\Wechat.class.php 第 212 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002326s ]
+
