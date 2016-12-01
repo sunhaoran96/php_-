@@ -19,7 +19,7 @@
 
     <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../dist/css/common.css"/>
+     <link rel="stylesheet" type="text/css" href="../dist/css/common.css"/>
     <link rel="stylesheet" type="text/css" href="../dist/css/main.css"/>
     <script type="text/javascript" src="../dist/js/modernizr.min.js"></script>
     <script type="text/javascript" src="../dist/js/jquery-2.2.3.min.js"></script>
@@ -34,8 +34,10 @@
     <![endif]-->
 <style>
 .row p{
-    font-size: 15px;
-
+    font-size: 17px; 
+}
+.page-header {
+	font-size: 16px;
 }
 </style>
 </head>
@@ -100,22 +102,22 @@
                             <a href="#"><i class="fa fa-table fa-fw"></i> 管理员<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="adminInfo.html">查看管理员信息</a>
+                                    <a href="menu.html">查看管理员信息</a>
                                 </li>
                                 <li>
-                                    <a href="register.html">添加管理员</a>
+                                    <a href="morris.html">添加管理员</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="menu.html">查看菜单</a>
                                 </li>
                                 <li>
-                                    <a href="manageMenu.html">管理菜单</a>
+                                    <a href="manage_menu.html">管理菜单</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -124,37 +126,34 @@
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i>店铺活动<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="addPictureText.html">上传活动图文</a>
+                                    <a href="menu.html">上传活动图文</a>
                                 </li>
                                 <li>
-                                    <a href="managePictureText.html">管理活动图文</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li class="active">
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i>图书管理<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="manageBooks.html">管理图书</a>
-                                </li>
-                                <li>
-                                    <a href="manageBookType.html">管理图书分类</a>
-                                </li>
-                                <li>
-                                    <a href="addBook.html">添加图书</a>
+                                    <a href="morris.html">管理活动图文</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-dashboard fa-fw"></i>订单管理<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i>图书管理<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="order1.html">查看订单信息</a>
+                                    <a class="active" href="blank.html">查看图书</a>
                                 </li>
                                 <li>
-                                    <a href="order2.html">管理订单</a>
+                                    <a href="login.html">管理图书</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-table fa-fw"></i>订单管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="menu.html">查看订单信息</a>
+                                </li>
+                                <li>
+                                    <a href="morris.html">管理订单</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -171,16 +170,17 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h5 class="page-header"><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;菜单查看</h5>  </div>
+                        <h1 class="page-header">菜单查看</h1>                        
+                    </div>
                     <!-- /.col-lg-12 -->
                     <div class="result-content">
-                        <ul class="sys-info-list">
-                        <li>
+                		<ul class="sys-info-list">
+                    	<li>
                         <span class="res-info">书店介绍</span>
                         <ul style="margin-left:2em;">                           
                             <li>店铺首页</li>
-                            <li>门牌号</li>
-                            <li>咨询客服</li>
+                         	<li>门牌号</li>
+                         	<li>咨询客服</li>
                         </ul>
 
                     </li>
@@ -188,7 +188,7 @@
                         <span class="res-info">新旧精选</span>
                         <ul style="margin-left:2em;">                           
                             <li>新书上架</li>
-                            <li>店铺活动</li>
+                         	<li>店铺活动</li>
                         </ul>
                     </li>
                     <li>
