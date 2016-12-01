@@ -1,0 +1,197 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+    <title>新旧分类</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="/wechat(g)/Public/bookstore/lib/weui.min.css" type="text/css" rel="stylesheet">
+    <link href="/wechat(g)/Public/bookstore/css/jquery-weui.min.css" type="text/css" rel="stylesheet">
+    <style>
+        html,body{
+            height:100%;
+        }
+        .swiper-container {
+            width: 100%;
+        }
+
+        .swiper-container img {
+            display: block;
+            width: 100%;
+        }
+        .weui_tab_bd .content img{
+            width:100%;
+            display:block;
+        }
+    </style>
+</head>
+<body>
+<div class="weui_tab">
+    <div class="weui_tab_bd">
+        <!--导航栏开始-->
+        <div class="weui_tab">
+            <div class="weui_navbar">
+                <a class="weui_navbar_item weui_bar_item_on">
+                    商品分类
+                </a>
+                <a class="weui_navbar_item">
+                    找一找
+                </a>
+            </div>
+            <div class="weui_tab_bd">
+                <!--第一个选项卡-->
+                <div class="content">
+                    <a href="address.html" class="weui_btn weui_btn_plain_primary">请选择收货地址</a>
+                    <div class="weui_panel">
+                        <div class="weui_panel weui_panel_access">
+                            <div class="weui_panel_hd">新旧书店</div>
+                            <div class="weui_panel_bd">
+                                <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                                    <div class="weui_media_hd">
+                                        <img class="weui_media_appmsg_thumb" src="/wechat(g)/Public/bookstore/images/001.jpg" alt="">
+                                    </div>
+                                    <div class="weui_media_bd">
+                                        <h4 class="weui_media_title">解答之书</h4>
+                                        <p class="weui_media_desc">$59.00&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;×1</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--列表开始-->
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">买家留言</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input" type="tel" placeholder="点击给商家留言">
+                            </div>
+                        </div>
+                        <div class="weui_cells">
+                            <div class="weui_cell">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>合计</p>
+                                </div>
+                                <div class="weui_cell_ft1">$59.00</div>
+                            </div>
+                        </div>
+                        <!--列表结束-->
+
+                        <!--taber开始-->
+                        <div class="weui_tab">
+                            <div class="weui_tab_bd">
+
+                            </div>
+                            <div class="weui_tabbar">
+
+
+                                <a href="javascript:;" class="weui_tabbar_item" style="margin-right: 0px;">
+
+                                    <span style="font-size: 20px;color: #9b9b9b ">合计：</span>
+                                    <span style="font-size: 20px;color: #ff6600 ">$59.00</span>
+
+                                </a>
+
+
+
+                                <a href="javascript:;" class="weui_tabbar_item">
+
+                                    <p class=" weui_btn weui_btn_warn">去支付</p>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                <!--第一个选项卡-->
+                <!--第二个选项卡-->
+                <div class="content" style="display: none">
+                <div class="weui_panel">
+                    <div class="weui_panel weui_panel_access">
+                        <div class="weui_panel_hd">新旧书店</div>
+                        <div class="weui_panel_bd">
+                            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                                <div class="weui_media_hd">
+                                    <img class="weui_media_appmsg_thumb" src="/wechat(g)/Public/bookstore/images/001.jpg" alt="">
+                                </div>
+                                <div class="weui_media_bd">
+                                    <h4 class="weui_media_title">解答之书</h4>
+                                    <p class="weui_media_desc">$59.00&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;×1</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--列表开始-->
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">买家留言</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="tel" placeholder="点击给商家留言">
+                        </div>
+                    </div>
+                    <div class="weui_cells">
+                        <div class="weui_cell">
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>合计</p>
+                            </div>
+                            <div class="weui_cell_ft1">$59.00</div>
+                        </div>
+                    </div>
+                    <!--列表结束-->
+
+                    <!--taber开始-->
+                    <div class="weui_tab">
+                        <div class="weui_tab_bd">
+
+                        </div>
+                        <div class="weui_tabbar">
+
+
+                            <a href="javascript:;" class="weui_tabbar_item" style="margin-right: 0px;">
+
+                                <span style="font-size: 20px;color: #9b9b9b ">合计：</span>
+                                <span style="font-size: 20px;color: #ff6600 ">$59.00</span>
+
+                            </a>
+
+
+
+                            <a href="javascript:;" class="weui_tabbar_item">
+
+                                <p class=" weui_btn weui_btn_warn">去支付</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--第二个选项卡-->
+
+            </div>
+        </div>
+        <!--导航栏结束-->
+    </div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="/wechat(g)/Public/bookstore/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/wechat(g)/Public/bookstore/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='/wechat(g)/Public/bookstore/js/swiper.js' charset='utf-8'></script>
+<script>
+    $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+    });
+    $(".weui_navbar .weui_navbar_item").click(function () {
+        $(".weui_navbar .weui_navbar_item").removeClass(
+                "weui_bar_item_on"
+        );//谁都没有weui_bar_item_on
+        $(this).addClass("weui_bar_item_on");//点谁谁有
+        //判断点击的是第几个选项卡
+        var which=$(this).index();
+
+        //让所有的内容区域隐藏
+        $(".weui_tab_bd .content").hide();
+
+        //按索引显示对应的内容
+        $(".weui_tab_bd .content:eq("+which+")").show();
+        console.log(which);
+
+
+    })
+</script>
+</html>

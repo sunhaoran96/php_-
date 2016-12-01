@@ -1,0 +1,2102 @@
+[ 2016-10-25T00:00:26+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001946s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001772s ]
+
+[ 2016-10-25T00:00:38+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001853s ]
+
+[ 2016-10-25T00:00:53+08:00 ] ::1 /wechat1025/index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001156s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\wechat1025\ThinkPHP\Common\functions.php:935) E:\wamp\www\wechat1025\ThinkPHP\Library\Think\View.class.php 第 103 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\wechat1025\ThinkPHP\Common\functions.php:935) E:\wamp\www\wechat1025\ThinkPHP\Library\Think\View.class.php 第 104 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\wechat1025\ThinkPHP\Common\functions.php:935) E:\wamp\www\wechat1025\ThinkPHP\Library\Think\View.class.php 第 105 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002067s ]
+
+[ 2016-10-25T00:01:18+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001133s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001249s ]
+
+[ 2016-10-25T00:08:17+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001383s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001304s ]
+
+[ 2016-10-25T00:08:35+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+NOTIC: [8] Undefined variable: I E:\wamp\www\wechat1025\Application\Home\Controller\MediaController.class.php 第 140 行.
+
+[ 2016-10-25T00:08:50+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001612s ]
+
+[ 2016-10-25T00:09:05+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+
+[ 2016-10-25T00:10:00+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+
+[ 2016-10-25T00:10:05+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+
+[ 2016-10-25T00:10:10+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002099s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002356s ]
+
+[ 2016-10-25T00:10:20+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+
+[ 2016-10-25T00:11:43+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002995s ]
+
+[ 2016-10-25T00:12:07+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+
+[ 2016-10-25T00:13:02+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+
+[ 2016-10-25T00:13:32+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+
+[ 2016-10-25T00:16:42+08:00 ] ::1 /wechat1025/index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001232s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\wechat1025\ThinkPHP\Common\functions.php:935) E:\wamp\www\wechat1025\ThinkPHP\Library\Think\View.class.php 第 103 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\wechat1025\ThinkPHP\Common\functions.php:935) E:\wamp\www\wechat1025\ThinkPHP\Library\Think\View.class.php 第 104 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\wechat1025\ThinkPHP\Common\functions.php:935) E:\wamp\www\wechat1025\ThinkPHP\Library\Think\View.class.php 第 105 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002230s ]
+
+[ 2016-10-25T00:18:10+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001420s ]
+NOTIC: [8] Undefined variable: timeout E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 275 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 281 行.
+
+[ 2016-10-25T00:24:35+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+
+[ 2016-10-25T00:25:06+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+
+[ 2016-10-25T00:25:48+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001770s ]
+
+[ 2016-10-25T00:26:22+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001575s ]
+NOTIC: [8] Undefined variable: timeout E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 275 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 281 行.
+
+[ 2016-10-25T00:31:39+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001933s ]
+SQL: SHOW COLUMNS FROM `imagetext` [ RunTime:0.0113s ]
+NOTIC: [2] Illegal string offset 'mediaid' E:\wamp\www\wechat1025\Application\Home\Controller\MediaController.class.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\wechat1025\ThinkPHP\Library\Think\Model.class.php 第 286 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\wechat1025\ThinkPHP\Library\Think\Db\Driver.class.php 第 883 行.
+SQL: INSERT INTO `imagetext` () VALUES () [ RunTime:0.0777s ]
+NOTIC: [2] Illegal string offset 'id' E:\wamp\www\wechat1025\ThinkPHP\Library\Think\Model.class.php 第 352 行.
+SQL: SELECT * FROM `imagetext`  [ RunTime:0.0005s ]
+ERR: 模板不存在:./Application/Home/View/Media/manageImageText.html
+
+[ 2016-10-25T00:32:04+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `imagetext` [ RunTime:0.0086s ]
+NOTIC: [2] Illegal string offset 'mediaid' E:\wamp\www\wechat1025\Application\Home\Controller\MediaController.class.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\wechat1025\ThinkPHP\Library\Think\Model.class.php 第 286 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\wechat1025\ThinkPHP\Library\Think\Db\Driver.class.php 第 883 行.
+SQL: INSERT INTO `imagetext` () VALUES () [ RunTime:0.0526s ]
+NOTIC: [2] Illegal string offset 'id' E:\wamp\www\wechat1025\ThinkPHP\Library\Think\Model.class.php 第 352 行.
+SQL: SELECT * FROM `imagetext`  [ RunTime:0.0005s ]
+ERR: 模板不存在:./Application/Home/View/Media/manageImageText.html
+
+[ 2016-10-25T00:32:43+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+SQL: SHOW COLUMNS FROM `imagetext` [ RunTime:0.0103s ]
+NOTIC: [2] Illegal string offset 'mediaid' E:\wamp\www\wechat1025\Application\Home\Controller\MediaController.class.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\wechat1025\ThinkPHP\Library\Think\Model.class.php 第 286 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\wechat1025\ThinkPHP\Library\Think\Db\Driver.class.php 第 883 行.
+SQL: INSERT INTO `imagetext` () VALUES () [ RunTime:0.0871s ]
+NOTIC: [2] Illegal string offset 'id' E:\wamp\www\wechat1025\ThinkPHP\Library\Think\Model.class.php 第 352 行.
+SQL: SELECT * FROM `imagetext`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined variable: images E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\1834fa937ce76259b4a51fc0459ecfd8.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001426s ]
+
+[ 2016-10-25T00:33:43+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `imagetext` [ RunTime:0.0113s ]
+
+[ 2016-10-25T00:34:27+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001623s ]
+SQL: SHOW COLUMNS FROM `imagetext` [ RunTime:0.0102s ]
+NOTIC: [2] Illegal string offset 'mediaid' E:\wamp\www\wechat1025\Application\Home\Controller\MediaController.class.php 第 153 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\wechat1025\ThinkPHP\Library\Think\Model.class.php 第 286 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\wechat1025\ThinkPHP\Library\Think\Db\Driver.class.php 第 883 行.
+SQL: INSERT INTO `imagetext` () VALUES () [ RunTime:0.0826s ]
+NOTIC: [2] Illegal string offset 'id' E:\wamp\www\wechat1025\ThinkPHP\Library\Think\Model.class.php 第 352 行.
+SQL: SELECT * FROM `imagetext`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8] Undefined variable: images E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\1834fa937ce76259b4a51fc0459ecfd8.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001638s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001884s ]
+
+[ 2016-10-25T00:35:18+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001464s ]
+SQL: SHOW COLUMNS FROM `imagetext` [ RunTime:0.0069s ]
+SQL: INSERT INTO `imagetext` (`mediaid`) VALUES ('fC0abZITq-f9iez41UqQhshvfwBom9GaL3Oaqma-5CI') [ RunTime:0.0421s ]
+SQL: SELECT * FROM `imagetext`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] Undefined variable: images E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\1834fa937ce76259b4a51fc0459ecfd8.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001146s ]
+
+[ 2016-10-25T00:36:30+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002521s ]
+SQL: SHOW COLUMNS FROM `imagetext` [ RunTime:0.0080s ]
+SQL: INSERT INTO `imagetext` (`mediaid`) VALUES ('fC0abZITq-f9iez41UqQhshvfwBom9GaL3Oaqma-5CI') [ RunTime:0.0516s ]
+SQL: SELECT * FROM `imagetext`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000672s ]
+NOTIC: [8] Undefined variable: images E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\1834fa937ce76259b4a51fc0459ecfd8.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002750s ]
+
+[ 2016-10-25T00:41:03+08:00 ] ::1 /wechat1025/index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+SQL: SHOW COLUMNS FROM `imagetext` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `imagetext`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001294s ]
+
+[ 2016-10-25T00:41:21+08:00 ] ::1 /wechat1025/index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+SQL: SHOW COLUMNS FROM `imagetext` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `imagetext`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001478s ]
+
+[ 2016-10-25T00:41:26+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001649s ]
+
+[ 2016-10-25T00:41:38+08:00 ] ::1 /wechat1025/index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002010s ]
+
+[ 2016-10-25T00:43:43+08:00 ] ::1 /wechat1025/index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001635s ]
+NOTIC: [8] Undefined index: picture E:\wamp\www\wechat1025\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001432s ]
+
+[ 2016-10-25T00:44:02+08:00 ] ::1 /wechat1025/index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+NOTIC: [8192] curl_setopt(): The usage of the @filename API for file uploading is deprecated. Please use the CURLFile class instead E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 247 行.
+NOTIC: [8] Array to string conversion E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 247 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 250 行.
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0186s ]
+SQL: INSERT INTO `images` (`mediaId`,`picUrl`,`filepath`) VALUES ('fC0abZITq-f9iez41UqQhuYyYC2e3co-8REDPVVf1nY','http://mmbiz.qpic.cn/mmbiz_png/hXiafuUSKDhX7BFLRUBcnyc4mVib3V3ic4PXytJeBiaIfM0OZLibyJCDTF3QoIwiagevibfricE2Riaicwh4tIoeokNJqSJg/0?wx_fmt=gif','lszc_1.gif') [ RunTime:0.1044s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000685s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001636s ]
+
+[ 2016-10-25T00:44:14+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013882s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001965s ]
+
+[ 2016-10-25T00:45:17+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001472s ]
+NOTIC: [8] Undefined variable: timeout E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 275 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 281 行.
+SQL: SHOW COLUMNS FROM `imagetext` [ RunTime:0.0110s ]
+SQL: INSERT INTO `imagetext` (`mediaid`) VALUES ('fC0abZITq-f9iez41UqQhlMhAsNtVbKNVmCA9Oq21Zw') [ RunTime:0.0533s ]
+SQL: SELECT * FROM `imagetext`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001609s ]
+
+[ 2016-10-25T00:45:41+08:00 ] ::1 /wechat1025/index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001556s ]
+SQL: SHOW COLUMNS FROM `imagetext` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `imagetext`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2016-10-25T00:45:43+08:00 ] ::1 /wechat1025/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001884s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001552s ]
+
+[ 2016-10-25T00:45:44+08:00 ] ::1 /wechat1025/index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+SQL: SHOW COLUMNS FROM `imagetext` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `imagetext`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001365s ]
+
+[ 2016-10-25T00:46:29+08:00 ] ::1 /wechat1025/index.php/home/menu/view
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 54 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 57 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000704s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002385s ]
+
+[ 2016-10-25T01:11:52+08:00 ] ::1 /wechat1025/index.php/home/api/wether
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+
+[ 2016-10-25T01:12:08+08:00 ] ::1 /wechat1025/index.php/home/api/wether
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001405s ]
+
+[ 2016-10-25T01:12:09+08:00 ] ::1 /wechat1025/index.php/home/api/wether
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002055s ]
+
+[ 2016-10-25T01:12:32+08:00 ] ::1 /wechat1025/index.php/home/api/wether
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+ERR: 非法操作:wether
+
+[ 2016-10-25T01:12:42+08:00 ] ::1 /wechat1025/index.php/home/api/weather
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001563s ]
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 25 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 26 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004939s ]
+
+[ 2016-10-25T01:14:34+08:00 ] ::1 /wechat1025/index.php/home/api/weather
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+
+[ 2016-10-25T01:14:53+08:00 ] ::1 /wechat1025/index.php/home/api/weather
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001556s ]
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 25 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 26 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005191s ]
+
+[ 2016-10-25T01:15:14+08:00 ] ::1 /wechat1025/index.php/home/api/weather
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001840s ]
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 25 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 26 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 26 行.
+
+[ 2016-10-25T01:15:54+08:00 ] ::1 /wechat1025/index.php/home/api/weather
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+
+[ 2016-10-25T01:16:07+08:00 ] ::1 /wechat1025/index.php/home/api/weather
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002672s ]
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 25 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 26 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002592s ]
+
+[ 2016-10-25T01:22:49+08:00 ] ::1 /wechat1025/index.php/home/api/robot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001509s ]
+
+[ 2016-10-25T01:23:16+08:00 ] ::1 /wechat1025/index.php/home/api/robot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001585s ]
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 44 行.
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002881s ]
+
+[ 2016-10-25T01:24:49+08:00 ] ::1 /wechat1025/index.php/home/api/robot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002033s ]
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 44 行.
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004754s ]
+
+[ 2016-10-25T01:25:03+08:00 ] ::1 /wechat1025/index.php/home/api/robot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 44 行.
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005060s ]
+
+[ 2016-10-25T01:25:51+08:00 ] ::1 /wechat1025/index.php/home/api/robot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003042s ]
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 44 行.
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005949s ]
+
+[ 2016-10-25T01:25:52+08:00 ] ::1 /wechat1025/index.php/home/api/robot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 44 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 44 行.
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004929s ]
+
+[ 2016-10-25T01:27:25+08:00 ] ::1 /wechat1025/index.php/home/api/robot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001861s ]
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 46 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 46 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006333s ]
+
+[ 2016-10-25T01:27:54+08:00 ] ::1 /wechat1025/index.php/home/api/robot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 46 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 46 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005971s ]
+
+[ 2016-10-25T01:28:24+08:00 ] ::1 /wechat1025/index.php/home/api/robot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001685s ]
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 46 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 46 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004701s ]
+
+[ 2016-10-25T01:28:40+08:00 ] ::1 /wechat1025/index.php/home/api/robot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: curl E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 46 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given E:\wamp\www\wechat1025\Application\Home\Controller\ApiController.class.php 第 46 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004630s ]
+
+[ 2016-10-25T08:23:41+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001580s ]
+
+[ 2016-10-25T08:23:45+08:00 ] 127.0.0.1 /index.php/home/menu/view
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 54 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 57 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000822s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001552s ]
+
+[ 2016-10-25T08:27:10+08:00 ] 127.0.0.1 /index.php/home/menu/view
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 54 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 57 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000403s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002357s ]
+
+[ 2016-10-25T08:48:34+08:00 ] 127.0.0.1 /index.php/home/menu/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 67 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 70 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+NOTIC: [8] Undefined property: stdClass::$menu E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 72 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001665s ]
+
+[ 2016-10-25T08:48:59+08:00 ] 127.0.0.1 /index.php/home/menu/view
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 54 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 57 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+NOTIC: [8] Undefined property: stdClass::$menu E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 59 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 59 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000406s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001017s ]
+
+[ 2016-10-25T08:49:32+08:00 ] 127.0.0.1 /index.php/home/menu/view
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 54 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 57 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+NOTIC: [8] Undefined property: stdClass::$menu E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 59 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 59 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001146s ]
+
+[ 2016-10-25T08:49:35+08:00 ] 127.0.0.1 /index.php/home/menu/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 67 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 70 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+NOTIC: [8] Undefined property: stdClass::$menu E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 72 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000441s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001813s ]
+
+[ 2016-10-25T09:20:40+08:00 ] 127.0.0.1 /index.php/home/menu/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 67 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 70 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+NOTIC: [8] Undefined property: stdClass::$menu E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 72 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001349s ]
+
+[ 2016-10-25T09:49:37+08:00 ] 127.0.0.1 /index.php/home/menu/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 67 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 70 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+NOTIC: [8] Undefined property: stdClass::$menu E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 72 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001144s ]
+
+[ 2016-10-25T09:50:18+08:00 ] 127.0.0.1 /index.php/home/menu/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 67 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 70 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+NOTIC: [8] Undefined property: stdClass::$menu E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 72 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000979s ]
+
+[ 2016-10-25T09:50:27+08:00 ] 127.0.0.1 /index.php/home/menu/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 67 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 70 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+NOTIC: [8] Undefined property: stdClass::$menu E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 72 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000873s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001527s ]
+
+[ 2016-10-25T09:52:09+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001220s ]
+
+[ 2016-10-25T09:52:13+08:00 ] 127.0.0.1 /index.php/home/menu/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000157s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 67 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 70 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+NOTIC: [8] Undefined property: stdClass::$menu E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 72 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001401s ]
+
+[ 2016-10-25T09:55:34+08:00 ] 127.0.0.1 /index.php/home/menu/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 67 行.
+NOTIC: [2] file_get_contents(access_token.php): failed to open stream: No such file or directory E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 225 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 70 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] Undefined property: stdClass::$url E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\61aaa62297252d85ed66208e4e207c1c.php 第 91 行.
+NOTIC: [8] Undefined property: stdClass::$type E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\61aaa62297252d85ed66208e4e207c1c.php 第 84 行.
+NOTIC: [8] Undefined property: stdClass::$key E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\61aaa62297252d85ed66208e4e207c1c.php 第 91 行.
+NOTIC: [8] Undefined property: stdClass::$url E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\61aaa62297252d85ed66208e4e207c1c.php 第 91 行.
+NOTIC: [8] Undefined property: stdClass::$url E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\61aaa62297252d85ed66208e4e207c1c.php 第 104 行.
+NOTIC: [8] Undefined property: stdClass::$url E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\61aaa62297252d85ed66208e4e207c1c.php 第 104 行.
+NOTIC: [8] Undefined property: stdClass::$url E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\61aaa62297252d85ed66208e4e207c1c.php 第 104 行.
+NOTIC: [8] Undefined property: stdClass::$url E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\61aaa62297252d85ed66208e4e207c1c.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001141s ]
+
+[ 2016-10-25T09:59:20+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+ERR: SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2016-10-25T09:59:48+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001918s ]
+ERR: SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2016-10-25T10:01:47+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000179s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+ERR: SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2016-10-25T10:01:57+08:00 ] 127.0.0.1 /index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+NOTIC: [8] Undefined index: picture E:\wamp\www\wechat1025\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.061105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.061297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.072265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.072500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.043078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.043289s ]
+
+[ 2016-10-25T10:03:06+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+ERR: SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2016-10-25T10:10:35+08:00 ] 127.0.0.1 /index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001581s ]
+
+[ 2016-10-25T10:10:57+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+ERR: SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2016-10-25T10:11:27+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+ERR: SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2016-10-25T10:13:55+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+ERR: SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2016-10-25T10:28:12+08:00 ] 127.0.0.1 /index.php/home/media/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+ERR: 非法操作:add
+
+[ 2016-10-25T10:28:23+08:00 ] 127.0.0.1 /index.php/home/media/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+ERR: 非法操作:manage
+
+[ 2016-10-25T10:28:28+08:00 ] 127.0.0.1 /index.php/home/media/addmanage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+ERR: 非法操作:addmanage
+
+[ 2016-10-25T10:29:07+08:00 ] 127.0.0.1 /index.php/home/menu/view
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 54 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 57 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+NOTIC: [8] Undefined property: stdClass::$menu E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 59 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 59 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001579s ]
+
+[ 2016-10-25T10:29:21+08:00 ] 127.0.0.1 /index.php/home/menu/view
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 54 行.
+NOTIC: [2] file_get_contents(access_token.php): failed to open stream: No such file or directory E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 225 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context E:\wamp\www\wechat1025\Application\Home\Controller\MenuController.class.php 第 57 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 314 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000338s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000749s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001824s ]
+
+[ 2016-10-25T10:29:55+08:00 ] 127.0.0.1 /index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+NOTIC: [8] Undefined index: picture E:\wamp\www\wechat1025\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000494s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001408s ]
+
+[ 2016-10-25T10:29:58+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2016-10-25T10:30:37+08:00 ] 127.0.0.1 /index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+NOTIC: [8] Undefined index: picture E:\wamp\www\wechat1025\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2016-10-25T10:30:40+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0203s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2016-10-25T10:31:04+08:00 ] 127.0.0.1 /index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+NOTIC: [8] Undefined index: picture E:\wamp\www\wechat1025\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002435s ]
+
+[ 2016-10-25T10:31:28+08:00 ] 127.0.0.1 /index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+NOTIC: [8192] curl_setopt(): The usage of the @filename API for file uploading is deprecated. Please use the CURLFile class instead E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 247 行.
+NOTIC: [8] Array to string conversion E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 247 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 250 行.
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0148s ]
+SQL: INSERT INTO `images` (`mediaId`,`picUrl`) VALUES ('lsXm_bp5QbGXqv53PEUQbkAUkwIq1twi-hrqSI1_vEw','http://mmbiz.qpic.cn/mmbiz_jpg/08zu1XAoLEaT1vMdUpd4mmibBV7W4z3fHtXeldMw31oyFI8HnPLhRVtovoIEUVrfib2huibHegyWdCj9kFiaUY6ibpw/0?wx_fmt=jpeg') [ RunTime:0.1147s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000629s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001176s ]
+
+[ 2016-10-25T10:35:45+08:00 ] 127.0.0.1 /index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+ERR: 1146:La table 'wechat.imagetext' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `imagetext`
+ERR: 1146:La table 'wechat.imagetext' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `imagetext`
+
+[ 2016-10-25T10:36:05+08:00 ] 127.0.0.1 /index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001768s ]
+ERR: 1146:La table 'wechat.imagetext' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `imagetext`
+ERR: 1146:La table 'wechat.imagetext' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `imagetext`
+
+[ 2016-10-25T10:37:27+08:00 ] 127.0.0.1 /index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\1834fa937ce76259b4a51fc0459ecfd8.php 第 88 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\1834fa937ce76259b4a51fc0459ecfd8.php 第 88 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\1834fa937ce76259b4a51fc0459ecfd8.php 第 88 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\1834fa937ce76259b4a51fc0459ecfd8.php 第 88 行.
+NOTIC: [8] Undefined index: mediaid E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\1834fa937ce76259b4a51fc0459ecfd8.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002232s ]
+
+[ 2016-10-25T10:41:23+08:00 ] 127.0.0.1 /index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001186s ]
+
+[ 2016-10-25T10:42:38+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2016-10-25T10:42:40+08:00 ] 127.0.0.1 /index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2016-10-25T10:49:05+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001977s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2016-10-25T10:49:46+08:00 ] 127.0.0.1 /index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+NOTIC: [8] Undefined index: picture E:\wamp\www\wechat1025\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000987s ]
+
+[ 2016-10-25T10:50:08+08:00 ] 127.0.0.1 /index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+NOTIC: [8192] curl_setopt(): The usage of the @filename API for file uploading is deprecated. Please use the CURLFile class instead E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 247 行.
+NOTIC: [8] Array to string conversion E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 247 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 250 行.
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0162s ]
+SQL: INSERT INTO `images` (`mediaId`,`picUrl`) VALUES ('lsXm_bp5QbGXqv53PEUQbi-7NsdpMlPg_XqT1jfvCUc','http://mmbiz.qpic.cn/mmbiz_jpg/08zu1XAoLEaT1vMdUpd4mmibBV7W4z3fHtXeldMw31oyFI8HnPLhRVtovoIEUVrfib2huibHegyWdCj9kFiaUY6ibpw/0?wx_fmt=jpeg') [ RunTime:0.1120s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000281s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000759s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2016-10-25T11:03:59+08:00 ] 127.0.0.1 /index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000490s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001073s ]
+
+[ 2016-10-25T11:04:02+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001045s ]
+
+[ 2016-10-25T11:08:08+08:00 ] 127.0.0.1 /index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001538s ]
+
+[ 2016-10-25T11:08:11+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001509s ]
+
+[ 2016-10-25T11:13:02+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001174s ]
+
+[ 2016-10-25T11:13:04+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001034s ]
+
+[ 2016-10-25T11:13:25+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2016-10-25T11:13:26+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001102s ]
+
+[ 2016-10-25T11:13:27+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001406s ]
+
+[ 2016-10-25T11:13:27+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2016-10-25T11:14:13+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2016-10-25T11:14:14+08:00 ] 127.0.0.1 /index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001392s ]
+
+[ 2016-10-25T11:15:05+08:00 ] 127.0.0.1 /index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+NOTIC: [8] Undefined index: picture E:\wamp\www\wechat1025\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2016-10-25T11:15:49+08:00 ] 127.0.0.1 /index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+NOTIC: [8192] curl_setopt(): The usage of the @filename API for file uploading is deprecated. Please use the CURLFile class instead E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 247 行.
+NOTIC: [8] Array to string conversion E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 247 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given E:\wamp\www\wechat1025\Application\Common\Library\Wechat.class.php 第 250 行.
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0085s ]
+SQL: INSERT INTO `images` (`mediaId`,`picUrl`) VALUES ('lsXm_bp5QbGXqv53PEUQbhzK2cl7jZyTfFPTM2A1QL4','http://mmbiz.qpic.cn/mmbiz_jpg/08zu1XAoLEaT1vMdUpd4mmibBV7W4z3fHtXeldMw31oyFI8HnPLhRVtovoIEUVrfib2huibHegyWdCj9kFiaUY6ibpw/0?wx_fmt=jpeg') [ RunTime:0.0429s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+NOTIC: [8] Undefined index: filepath E:\wamp\www\wechat1025\Application\Runtime\Cache\Home\699809e0badbab0ee5bcf92767957df6.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001158s ]
+
