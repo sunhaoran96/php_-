@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>图书详情</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="__PUBLIC__/bookstore/lib/weui.min.css" type="text/css" rel="stylesheet"/>
+    <link href="__PUBLIC__/bookstore/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
+    <style>
+        html,body{
+            height:100%;
+        }
+        .swiper-container {
+            width: 100%;
+        }
+        .swiper-container img {
+            display: block;
+            width: 100%;
+        }
+        .weui_tab .weui_tab_bd .content img{
+            width:100%;
+            display: block;
+        }
+        .content p{
+             font-size: 17px;
+             display: block;
+        }
+        .weui p{
+            font-size: 17px;
+             display: block;
+        }
+        .weizi p{
+             font-size: 17px;
+             display: block;
+             float: right;
+        }
+        .che a{
+            font-size: 17px;
+             display: block;
+             float: right;
+        }
+    </style>
+
+</head>
+<body>
+<div class="weui_tab">
+    <div class="weui_tab_bd">
+    <!--导航栏开始-->
+        <div class="weui_tab">
+            
+            <div class="weui_tab_bd">
+                <!--第一个选项卡-->
+                <div class="content">
+                    <div style="height: 20px">
+                        <a class="weui_cell" href="xjfl.html">
+                            <div class="weui_cell_hd">
+                                <img src="__PUBLIC__/bookstore/images/c1.jpg" alt="icon" style="width:15px;height:15px;margin-right:5px;display:block">
+                            </div>
+                            <div class="weui_cell_ft">
+                                图书详情
+                            </div>
+                        </a>
+                    </div>
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="#">
+                            <div class="weui_cell_bd weui_cell_primary">
+
+                                <div class="weui">
+                                <p>
+                                    如果你无法简洁的表达你的想法，那只能说明你还不够了解它。<br/> - 阿尔伯特.爱因斯坦
+                                </p>
+                                    <p>图书所在位置</p>
+                                <img src="__PUBLIC__/bookstore/images/w1.jpg" style="height: 200px;width: 150px; margin: auto">
+                                <img src="__PUBLIC__/bookstore/images/w2.png" style="height: 200px;width: 150px; margin: auto">
+
+
+                             </div>
+
+                            </div> 
+                            <div class="che" style="float: right;">
+                                <a href="cart.html" class="weui_btn weui_btn_mini weui_btn_default">加入购物车</a>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <!--导航栏结束-->
+    </div>
+    </div>
+
+  
+</div>
+</body>
+<script type="text/javascript" src="__PUBLIC__/bookstore/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="__PUBLIC__/bookstore/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='__PUBLIC__/bookstore/js/swiper.js'></script>
+<script>
+    $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+    });
+    $(".weui_navbar .weui_navbar_item").click(function () {
+        $(".weui_navbar .weui_navbar_item").removeClass(
+                "weui_bar_item_on"
+        );//谁都没有weui_bar_item_on
+        $(this).addClass("weui_bar_item_on");//点谁谁有
+        //判断点击的是第几个选项卡
+        var which=$(this).index();
+        //让所有的内容区域隐藏
+        $(".weui_tab_bd .content").hide();
+        //按索引显示对应内容,选谁谁显示
+        $(".weui_tab_bd .content:eq("+which+")").show();
+
+    })
+
+</script>
+</html>
