@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,16 +12,16 @@
     <title>新旧书店后台</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="__PUBLIC__/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/wechat(g)/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="__PUBLIC__/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="__PUBLIC__/admin/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="/wechat(g)/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="__PUBLIC__/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/wechat(g)/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -31,6 +31,10 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 
     <![endif]-->
+    <style type="text/css">
+    #div{margin-bottom: 10px;}
+
+    </style>
 
 </head>
 
@@ -59,7 +63,7 @@
                 <!-- /.dropdown-messages -->
             </li>
             <!-- /.dropdown -->
-      <li class="dropdown">
+            <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
@@ -67,7 +71,7 @@
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i>设置</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="{:U('home/admin/login')}"><i class="fa fa-sign-out fa-fw"></i>退出</a>
+                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>退出</a>
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
@@ -94,10 +98,10 @@
                         <a href="#"><i class="fa fa-table fa-fw"></i> 管理员<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/admin/adminInfo')}">查看管理员信息</a>
+                                <a href="adminInfo.html">查看管理员信息</a>
                             </li>
                             <li>
-                                <a href="{:U('home/admin/register')}">添加管理员</a>
+                                <a href="register.html">添加管理员</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -106,26 +110,25 @@
                         <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/menu/view')}">查看菜单</a>
+                                <a href="menu.html">查看菜单</a>
                             </li>
                             <li>
-                                <a href="{:U('home/menu/manage')}">管理菜单</a>
+                                <a href="manageMenu.html">管理菜单</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                    
-                        <li class="active">
+                    <li class="active">
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li class="active">
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/media/addPicture')}">上传图片素材</a>
+                                <a href="addPicture.html">上传图片素材</a>
                             </li>
                             <li>
-                                <a href="{:U('home/media/managePicture')}">管理图片素材</a>
+                                <a href="managePicture.html">管理图片素材</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -135,10 +138,10 @@
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/media/addPictureText')}">上传图文素材</a>
+                                <a href="addPictureText.html">上传图文素材</a>
                             </li>
                             <li>
-                                <a href="{:U('home/media/managePictureText')}">管理图文素材</a>
+                                <a href="managePictureText.html">管理图文素材</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -151,13 +154,13 @@
                         <a href="#"><i class="fa fa-files-o fa-fw"></i>图书管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/admin/manageBooks')}">管理图书</a>
+                                <a href="manageBooks.html">管理图书</a>
                             </li>
                             <li>
-                                <a href="{:U('home/admin/manageBookType')}">管理图书分类</a>
+                                <a href="manageBookType.html">管理图书分类</a>
                             </li>
                             <li>
-                                <a href="{:U('home/admin/addBook')}">添加图书</a>
+                                <a href="addBook.html">添加图书</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -166,10 +169,10 @@
                         <a href="#"><i class="fa fa-dashboard fa-fw"></i>订单管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/admin/order1')}">查看订单信息</a>
+                                <a href="order1.html">查看订单信息</a>
                             </li>
                             <li>
-                                <a href="{:U('home/admin/order2')}">管理订单</a>
+                                <a href="order2.html">管理订单</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -180,10 +183,11 @@
         </div>
         <!-- /.navbar-static-side -->
     </nav>
+
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;上传图文素材</h5>
+                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;上传图片素材</h5>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -192,54 +196,27 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                           添加图文素材
+                           上传图片素材
                         </div>
                         <div class="panel-body">
                             <div class="row" style="margin: auto" />
                                 <div class="col-lg-6">
                                     <form role="form">
-                                    <div class="form-group">
-                                            <label>标题</label>
-                                            <input class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>缩略图media_id</label>
-                                            <input class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>作者</label>
-                                            <input class="form-control">
-                                        </div>
-                                        <div class="from-group">
-                                            <tr>
-                             <label>是否显示封面</label>
-                            <td>
-                                <input name="show_cover_pic"  type="radio" value="1" checked="checked" />是&nbsp; &nbsp;&nbsp;&nbsp;
-                                <input name="show_cover_pic"  type="radio" value="0" >否
-                            </td>
-
-                        </tr>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>摘要</label>
-                                            <td><textarea name="digest" class="common-textarea"  cols="30" style="width: 98%;" rows="3"></textarea></td>
-                                            
-                                        </div>
-                                         <div class="form-group">
-                                            <label>内容</label>
-                                            <td><textarea name="content" class="common-textarea"  cols="30" style="width: 98%;" rows=""></textarea></td>
-                                            
-                                        </div>
-                                        <div class="form-group">
-                                        <label>原文地址</label>
-                                        <input class="form-control">
-                                        </div>
-                                       <div>
-                <form action="{:U('home/Admin/addPicture')}" method="post" enctype= "multipart/form-data">
+                                    
+                                       
+            <div class="result-content" id="div" >
+               <form action="<?php echo U('home/Admin/addPicture');?>" method="post" enctype= "multipart/form-data">
+                <input type="file" name="picture" />
+                
+               </form>
+            </div> 
+            <div>
+                <form action="<?php echo U('home/Admin/addPicture');?>" method="post" enctype= "multipart/form-data">
                    <button type="submit" class="btn btn-info">添加</button>
                    <button type="submit" class="btn btn-default">返回</butto> 
                 </form>
             </div>
+
                                 <!-- /.col-lg-6 (nested) -->
 
                                 <!-- /.col-lg-6 (nested) -->
@@ -261,16 +238,16 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="__PUBLIC__/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="/wechat(g)/Public/admin/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="__PUBLIC__/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/wechat(g)/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="__PUBLIC__/admin/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="__PUBLIC__/admin/dist/js/sb-admin-2.js"></script>
+    <script src="/wechat(g)/Public/admin/dist/js/sb-admin-2.js"></script>
 
 </body>
 

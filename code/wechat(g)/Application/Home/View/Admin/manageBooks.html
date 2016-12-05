@@ -113,15 +113,34 @@
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>店铺活动<span class="fa arrow"></span></a>
+                    </li><li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="addPictureText.html">上传活动图文</a>
+                                <a href="{:U('home/media/addPicture')}">上传图片素材</a>
                             </li>
                             <li>
-                                <a href="managePictureText.html">管理活动图文</a>
+                                <a href="{:U('home/media/managePicture')}">管理图片素材</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                            <li>
+                                <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{:U('home/media/addPictureText')}">上传图文素材</a>
+                            </li>
+                            <li>
+                                <a href="{:U('home/media/managePictureText')}">管理图文素材</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
