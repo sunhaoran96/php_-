@@ -1,0 +1,647 @@
+[ 2016-12-05T14:18:26+08:00 ] ::1 /wechat(g)/index.php/home/media/addPicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033892s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031523s ]
+NOTIC: [8] Undefined index: picture C:\wamp\www\wechat(g)\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.052423s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.052974s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.161538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021359s ]
+
+[ 2016-12-05T14:18:40+08:00 ] ::1 /wechat(g)/index.php/home/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003055s ]
+
+[ 2016-12-05T14:18:40+08:00 ] ::1 /wechat(g)/index.php/home/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-12-05T14:19:02+08:00 ] ::1 /wechat(g)/index.php/home/admin/addBook
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000615s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001511s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003827s ]
+
+[ 2016-12-05T14:19:22+08:00 ] ::1 /wechat(g)/index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014821s ]
+NOTIC: [8] Undefined index: picture C:\wamp\www\wechat(g)\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000591s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003084s ]
+
+[ 2016-12-05T14:19:27+08:00 ] ::1 /wechat(g)/index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000224s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003619s ]
+NOTIC: [8] Undefined index: picture C:\wamp\www\wechat(g)\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000334s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000786s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004510s ]
+
+[ 2016-12-05T14:19:31+08:00 ] ::1 /wechat(g)/index.php/home/media/managePicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002990s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0995s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000389s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000870s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005737s ]
+
+[ 2016-12-05T14:25:44+08:00 ] ::1 /wechat(g)/index.php/home/media/manageBooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004172s ]
+ERR: 非法操作:manageBooks
+
+[ 2016-12-05T14:36:45+08:00 ] ::1 /wechat(g)/index.php/home/media/manageBooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003183s ]
+ERR: 非法操作:manageBooks
+
+[ 2016-12-05T14:36:47+08:00 ] ::1 /wechat(g)/index.php/home/media/manageBooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003777s ]
+ERR: 非法操作:manageBooks
+
+[ 2016-12-05T14:36:49+08:00 ] ::1 /wechat(g)/index.php/home/media/manageBooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003929s ]
+ERR: 非法操作:manageBooks
+
+[ 2016-12-05T14:36:55+08:00 ] ::1 /wechat(g)/index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005239s ]
+NOTIC: [8] Undefined index: picture C:\wamp\www\wechat(g)\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000338s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000788s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003417s ]
+
+[ 2016-12-05T14:37:04+08:00 ] ::1 /wechat(g)/index.php/home/admin/adminInfomanageBooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002560s ]
+ERR: 非法操作:adminInfomanageBooks
+
+[ 2016-12-05T14:40:17+08:00 ] ::1 /wechat(g)/index.php/home/admin/adminInfomanageBooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001972s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005141s ]
+ERR: 非法操作:adminInfomanageBooks
+
+[ 2016-12-05T14:40:22+08:00 ] ::1 /wechat(g)/index.php/home/admin/adminInfomanageBooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004221s ]
+ERR: 非法操作:adminInfomanageBooks
+
+[ 2016-12-05T14:40:24+08:00 ] ::1 /wechat(g)/index.php/home/admin/adminInfomanageBooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003587s ]
+ERR: 非法操作:adminInfomanageBooks
+
+[ 2016-12-05T14:40:31+08:00 ] ::1 /wechat(g)/index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000479s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005362s ]
+NOTIC: [8] Undefined index: picture C:\wamp\www\wechat(g)\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000615s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001417s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005190s ]
+
+[ 2016-12-05T14:40:35+08:00 ] ::1 /wechat(g)/index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003702s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.1118s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000463s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001074s ]
+
+[ 2016-12-05T14:41:13+08:00 ] ::1 /wechat(g)/index.php/home/admin/adminInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004111s ]
+NOTIC: [2048] Non-static method Common\Library\Wechat::getAccessToken() should not be called statically, assuming $this from incompatible context C:\wamp\www\wechat(g)\Application\Home\Controller\AdminController.class.php 第 15 行.
+NOTIC: [2] file_get_contents(access_token.php): failed to open stream: No such file or directory C:\wamp\www\wechat(g)\Application\Common\Library\Wechat.class.php 第 223 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\wechat(g)\Application\Common\Library\Wechat.class.php 第 225 行.
+NOTIC: [2048] Non-static method Common\Library\Wechat::menuView() should not be called statically, assuming $this from incompatible context C:\wamp\www\wechat(g)\Application\Home\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] curl_errno() expects exactly 1 parameter, 0 given C:\wamp\www\wechat(g)\Application\Common\Library\Wechat.class.php 第 314 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000441s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000923s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002884s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003576s ]
+
+[ 2016-12-05T14:41:20+08:00 ] ::1 /wechat(g)/index.php/home/admin/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000439s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001680s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003019s ]
+
+[ 2016-12-05T14:41:28+08:00 ] ::1 /wechat(g)/index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002575s ]
+NOTIC: [8] Undefined index: picture C:\wamp\www\wechat(g)\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000354s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000806s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003390s ]
+
+[ 2016-12-05T14:41:31+08:00 ] ::1 /wechat(g)/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002503s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000385s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000862s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001915s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003712s ]
+
+[ 2016-12-05T14:41:34+08:00 ] ::1 /wechat(g)/index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002688s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0316s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000477s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000926s ]
+
+[ 2016-12-05T14:41:49+08:00 ] ::1 /wechat(g)/index.php/home/admin/manageBooks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003652s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000916s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001757s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003941s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003370s ]
+
+[ 2016-12-05T14:42:17+08:00 ] ::1 /wechat(g)/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000154s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000477s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003223s ]
+
+[ 2016-12-05T14:42:25+08:00 ] ::1 /wechat(g)/index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002568s ]
+NOTIC: [8] Undefined index: picture C:\wamp\www\wechat(g)\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000336s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000786s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002817s ]
+
+[ 2016-12-05T14:42:28+08:00 ] ::1 /wechat(g)/index.php/home/media/managePicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003034s ]
+SQL: SHOW COLUMNS FROM `images` [ RunTime:0.0331s ]
+SQL: SELECT * FROM `images`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000398s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000849s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003962s ]
+
+[ 2016-12-05T14:42:31+08:00 ] ::1 /wechat(g)/index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002449s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0306s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000432s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000898s ]
+
+[ 2016-12-05T14:42:51+08:00 ] ::1 /wechat(g)/index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004440s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0331s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000439s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000936s ]
+
+[ 2016-12-05T14:42:54+08:00 ] ::1 /wechat(g)/index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004040s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000426s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000887s ]
+
+[ 2016-12-05T14:42:57+08:00 ] ::1 /wechat(g)/index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002526s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0312s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000478s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000919s ]
+
+[ 2016-12-05T14:43:45+08:00 ] ::1 /wechat(g)/index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003172s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0370s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000444s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000921s ]
+
+[ 2016-12-05T14:43:50+08:00 ] ::1 /wechat(g)/index.php/home/media/addPicture
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002539s ]
+NOTIC: [8] Undefined index: picture C:\wamp\www\wechat(g)\Application\Home\Controller\MediaController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000370s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000988s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004303s ]
+
+[ 2016-12-05T14:43:53+08:00 ] ::1 /wechat(g)/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002491s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000369s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000882s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002714s ]
+
+[ 2016-12-05T14:43:55+08:00 ] ::1 /wechat(g)/index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000157s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002537s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0333s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000473s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000923s ]
+
+[ 2016-12-05T15:02:36+08:00 ] ::1 /wechat(g)/index.php/home/admin/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003698s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000440s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000927s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003080s ]
+
+[ 2016-12-05T15:03:21+08:00 ] ::1 /wechat(g)/index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004713s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0395s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000557s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003994s ]
+
+[ 2016-12-05T15:03:28+08:00 ] ::1 /wechat(g)/index.php/home/media/addPictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002756s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000377s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000856s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002981s ]
+
+[ 2016-12-05T15:03:29+08:00 ] ::1 /wechat(g)/index.php/home/media/managePictureText
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003914s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0372s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000476s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003965s ]
+

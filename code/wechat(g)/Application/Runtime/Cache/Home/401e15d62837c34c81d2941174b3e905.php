@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,16 +12,16 @@
     <title>新旧书店后台</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="__PUBLIC__/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/wechat(g)/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="__PUBLIC__/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="__PUBLIC__/admin/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="/wechat(g)/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="__PUBLIC__/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/wechat(g)/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -31,6 +31,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 
     <![endif]-->
+    
 
 </head>
 
@@ -114,14 +115,46 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                    <li  class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>店铺活动<span class="fa arrow"></span></a>
+                    <li class="active">
+                            <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="menu.html">查看菜单</a>
+                                </li>
+                                <li>
+                                    <a href="manageMenu.html">管理菜单</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="addPictureText.html">上传活动图文</a>
+                                <a href="addPicture.html">上传图片素材</a>
                             </li>
                             <li>
-                                <a href="managePictureText.html">管理活动图文</a>
+                                <a href="managePicture.html">管理图片素材</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                            <li>
+                                <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="addPictureText.html">上传图文素材</a>
+                            </li>
+                            <li>
+                                <a href="managePictureText.html">管理图文素材</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -163,77 +196,67 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;修改活动图文</h5>
+                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;管理图片素材</h5>
             </div>
             <!-- /.col-lg-12 -->
         </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                           添加图文消息
-                        </div>
-                        <div class="panel-body">
-                            <div class="row" style="margin: auto" />
-                                <div class="col-lg-6">
-                                    <form role="form">
-                                    <div class="form-group">
-                                            <label>标题</label>
-                                            <input class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>缩略图media_id</label>
-                                            <input class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>创建时间</label>
-                                            <input class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>描述</label>
-                                            <td><textarea name="digest" class="common-textarea"  cols="30" style="width: 98%;" rows="3"></textarea></td>
-                                            
-                                        </div>
-                                        <div class="form-group">
-                                        <label>原文地址</label>
-                                        <input class="form-control">
-                                        </div>
-                                        
-                                        <button type="submit" class="btn btn-info">添加</button>
-                                        <button type="submit" class="btn btn-default">返回</button>
-                                    </form>
-                                </div>
-                                <!-- /.col-lg-6 (nested) -->
-
-                                <!-- /.col-lg-6 (nested) -->
-                            </div>
-                            <!-- /.row (nested) -->
-                        </div>
-                        <!-- /.panel-body -->
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        管理图片素材
                     </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /#page-wrapper -->
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                            <thead>
+                            <tr>
+                                <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th>
+                                
+                                <th>缩略图</th>
+                                <th>media_id</th>
+                                <th>url</th>
+                                <th>操作</th>
 
+                            </tr>
+                            </thead>
+                            <tbody>
+                                  <?php if(is_array($images)): $i = 0; $__LIST__ = $images;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                                <td><img height="100px" src="/wechat(g)/Public/uploads/<?php echo ($vo['filepath']); ?>"></td>
+                                <td><?php echo ($vo['mediaid']); ?></td>
+                                <td><?php echo ($vo['picurl']); ?></td>
+                                <td><a href="/wechat(g)/index.php/Home/Admin/deletePicture/id/<?php echo ($vo["id"]); ?>" class="delete"><i class="icon-font"></i></a></td>
+                            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                            </tbody>
+                        </table>
+                        <!-- /.table-responsive -->
+
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- /.col-lg-6 -->
     </div>
+    <!-- /#wrapper -->
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="__PUBLIC__/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="/wechat(g)/Public/admin/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="__PUBLIC__/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/wechat(g)/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="__PUBLIC__/admin/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="__PUBLIC__/admin/dist/js/sb-admin-2.js"></script>
+    <script src="/wechat(g)/Public/admin/dist/js/sb-admin-2.js"></script>
 
 </body>
 

@@ -59,7 +59,7 @@
                 <!-- /.dropdown-messages -->
             </li>
             <!-- /.dropdown -->
-            <li class="dropdown">
+             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
@@ -67,7 +67,7 @@
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i>设置</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>退出</a>
+                    <li><a href="{:U('home/admin/login')}"><i class="fa fa-sign-out fa-fw"></i>退出</a>
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
@@ -94,10 +94,10 @@
                         <a href="#"><i class="fa fa-table fa-fw"></i> 管理员<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="adminInfo.html">查看管理员信息</a>
+                                <a href="{:U('home/admin/adminInfo')}">查看管理员信息</a>
                             </li>
                             <li>
-                                <a href="register.html">添加管理员</a>
+                                <a href="{:U('home/admin/register')}">添加管理员</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -106,22 +106,43 @@
                         <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="menu.html">查看菜单</a>
+                                <a href="{:U('home/menu/view')}">查看菜单</a>
                             </li>
                             <li>
-                                <a href="manageMenu.html">管理菜单</a>
+                                <a href="{:U('home/menu/manage')}">管理菜单</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>店铺活动<span class="fa arrow"></span></a>
+                    
+                        <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="addPictureText.html">上传活动图文</a>
+                                <a href="{:U('home/media/addPicture')}">上传图片素材</a>
                             </li>
                             <li>
-                                <a href="managePictureText.html">管理活动图文</a>
+                                <a href="{:U('home/media/managePicture')}">管理图片素材</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                            <li>
+                                <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{:U('home/media/addPictureText')}">上传图文素材</a>
+                            </li>
+                            <li>
+                                <a href="{:U('home/media/managePictureText')}">管理图文素材</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -130,13 +151,13 @@
                         <a href="#"><i class="fa fa-files-o fa-fw"></i>图书管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="manageBooks.html">管理图书</a>
+                                <a href="{:U('home/admin/manageBooks')}">管理图书</a>
                             </li>
                             <li>
-                                <a href="manageBookType.html">管理图书分类</a>
+                                <a href="{:U('home/admin/manageBookType')}">管理图书分类</a>
                             </li>
                             <li>
-                                <a href="addBook.html">添加图书</a>
+                                <a href="{:U('home/admin/addBook')}">添加图书</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -145,10 +166,10 @@
                         <a href="#"><i class="fa fa-dashboard fa-fw"></i>订单管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="order1.html">查看订单信息</a>
+                                <a href="{:U('home/admin/order1')}">查看订单信息</a>
                             </li>
                             <li>
-                                <a href="order2.html">管理订单</a>
+                                <a href="{:U('home/admin/order2')}">管理订单</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -163,7 +184,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;管理图书分类</h5>
+                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;管理图文素材</h5>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -172,7 +193,7 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        管理图书信息
+                        管理图文素材
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
@@ -205,7 +226,7 @@
                                 <td>url:</td>
                                 <td></td>
                                 <td>
-                                    <a class="link-update" href="designPictureText.html">修改</a>
+                                    
                                     <a class="delete" href="#">删除</a>
                                 </td>
 
@@ -224,7 +245,7 @@
                                 <td>url:</td>
                                 <td></td>
                                 <td>
-                                    <a class="link-update" href="designPictureText.html">修改</a>
+                                    
                                     <a class="delete" href="#">删除</a>
                                 </td>
 
@@ -243,7 +264,7 @@
                                 <td>url:</td>
                                 <td></td>
                                 <td>
-                                    <a class="link-update" href="designPictureText.html">修改</a>
+                                   
                                     <a class="delete" href="#">删除</a>
                                 </td>
 
@@ -262,7 +283,7 @@
                                 <td>url:</td>
                                 <td></td>
                                 <td>
-                                    <a class="link-update" href="designPictureText.html">修改</a>
+                                    
                                     <a class="delete" href="#">删除</a>
                                 </td>
 
@@ -281,7 +302,7 @@
                                 <td>url:</td>
                                 <td></td>
                                 <td>
-                                    <a class="link-update" href="designPictureText.html">修改</a>
+                                    
                                     <a class="delete" href="#">删除</a>
                                 </td>
 
@@ -300,7 +321,7 @@
                                 <td>url:</td>
                                 <td></td>
                                 <td>
-                                    <a class="link-update" href="designPictureText.html">修改</a>
+                                    
                                     <a class="delete" href="#">删除</a>
                                 </td>
 
@@ -314,10 +335,6 @@
                 </div>
                 <!-- /.panel -->
             </div>
-            <!-- /.col-lg-12 -->
-        </div>
-        <!-- /.row -->
-
         <!-- /.col-lg-6 -->
     </div>
     <!-- /#wrapper -->
