@@ -197,18 +197,18 @@
                         <div class="panel-body">
                             <div class="row" style="margin: auto" />
                                 <div class="col-lg-6">
-                                    <form role="form">
+                                   <form action="{:U('home/media/addPictureText')}" method="post" enctype= "multipart/form-data">
                                     <div class="form-group">
                                             <label>标题</label>
-                                            <input class="form-control">
+                                            <input class="form-control" name="title" type="text">
                                         </div>
                                         <div class="form-group">
                                             <label>缩略图media_id</label>
-                                            <input class="form-control">
+                                            <input class="form-control" name="thumb_media_id" type="text">
                                         </div>
                                         <div class="form-group">
                                             <label>作者</label>
-                                            <input class="form-control">
+                                            <input class="form-control" name="author" type="text">
                                         </div>
                                         <div class="from-group">
                                             <tr>
@@ -217,33 +217,30 @@
                                 <input name="show_cover_pic"  type="radio" value="1" checked="checked" />是&nbsp; &nbsp;&nbsp;&nbsp;
                                 <input name="show_cover_pic"  type="radio" value="0" >否
                             </td>
-
                         </tr>
                                         </div>
                                         <div class="form-group">
                                             <label>摘要</label>
-                                            <td><textarea name="digest" class="common-textarea"  cols="30" style="width: 98%;" rows="3"></textarea></td>
+                                            <td><textarea name="digest" class="common-textarea"  cols="30" style="width: 98%;" rows="3" ></textarea></td>
                                             
                                         </div>
                                          <div class="form-group">
                                             <label>内容</label>
-                                            <td><textarea name="content" class="common-textarea"  cols="30" style="width: 98%;" rows=""></textarea></td>
-                                            
-                                        </div>
+                                            <td><textarea name="content" class="common-textarea"  cols="30" style="width: 98%;" rows=""></textarea></td>                                                                             </div>
                                         <div class="form-group">
                                         <label>原文地址</label>
-                                        <input class="form-control">
+                                        <input class="form-control" name="content_source_url" type="text">
                                         </div>
-                                       <div>
-                <form action="{:U('home/Admin/addPicture')}" method="post" enctype= "multipart/form-data">
-                   <button type="submit" class="btn btn-info">添加</button>
-                   <button type="submit" class="btn btn-default">返回</butto> 
-                </form>
-            </div>
+                                       <div>               
+                   <button type="submit" class="btn btn-info" name="submit">添加</button>
+                   <button  class="btn btn-default">返回</button> 
+                                      </div>
+               
                                 <!-- /.col-lg-6 (nested) -->
 
                                 <!-- /.col-lg-6 (nested) -->
                             </div>
+                             </form>
                             <!-- /.row (nested) -->
                         </div>
                         <!-- /.panel-body -->
