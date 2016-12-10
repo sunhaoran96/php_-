@@ -173,16 +173,11 @@ setTotal();
             var total =  parseFloat($("#total").html());
             if ($(this).is(':checked')) {
               $(this).parent().find("span.price").each(function(){
-                
-                // $(this).parent().nextSibling().find('.number');
                 total += parseFloat($(this).text()) * $(this).parent().next().find(".number").text();
-                //console.log($(this).parent().next().find(".number").text());
-                //console.log(total);
               })
             }else{
               $(this).parent().find("span.price").each(function(){
               total -= parseFloat($(this).text()) * $(this).parent().next().find(".number").text();
-              //console.log(total);
               })
             }
             $("#total").html(total.toFixed(2));
@@ -192,7 +187,6 @@ setTotal();
         $("#selAll").click(function(){
           var total =  parseFloat($("#total").html());
           if ($(this).is(':checked')) {
-            //console.log($("#total").html());
             $(":checkbox").parent().find("span.price").each(function(){
                 total += parseFloat($(this).text()) * $(this).parent().next().find(".number").text();
                 console.log(total);
