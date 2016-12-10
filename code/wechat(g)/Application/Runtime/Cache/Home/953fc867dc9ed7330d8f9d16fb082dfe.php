@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,16 +12,16 @@
     <title>新旧书店后台</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="__PUBLIC__/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/wechat(g)/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="__PUBLIC__/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="__PUBLIC__/admin/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="/wechat(g)/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="__PUBLIC__/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/wechat(g)/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -31,6 +31,10 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 
     <![endif]-->
+    <style type="text/css">
+    #div{margin-bottom: 10px;}
+
+    </style>
 
 </head>
 
@@ -90,7 +94,7 @@
                         </div>
                         <!-- /input-group -->
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="#"><i class="fa fa-table fa-fw"></i> 管理员<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
@@ -114,17 +118,17 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                              <li class="active">
+                    <li class="active">
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li class="active">
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/media/addPicture')}">上传图片素材</a>
+                                <a href="addPicture.html">上传图片素材</a>
                             </li>
                             <li>
-                                <a href="{:U('home/media/managePicture')}">管理图片素材</a>
+                                <a href="managePicture.html">管理图片素材</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -134,10 +138,10 @@
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/media/addPictureText')}">上传图文素材</a>
+                                <a href="addPictureText.html">上传图文素材</a>
                             </li>
                             <li>
-                                <a href="{:U('home/media/managePictureText')}">管理图文素材</a>
+                                <a href="managePictureText.html">管理图文素材</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -180,93 +184,70 @@
         <!-- /.navbar-static-side -->
     </nav>
 
-        <!-- Page Content -->
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;管理管理员信息</h5>
+                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;上传图片素材</h5>
             </div>
             <!-- /.col-lg-12 -->
         </div>
-        <!-- /.row -->
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        查看管理员信息
-                    </div>
-                    <!-- /.panel-heading -->
-                    <div class="panel-body">
-                        <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
-                            <thead>
-                            <tr>
-                                <th>id</th> 
-                                <th>管理员名称</th>
-                                <th>密码</th>
-                                <th>权限</th>
-                                <th>操作</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                        
-                           <volist name="manager" id="vo">
-                            <tr> 
-                                <td>{$vo['id']}</td>
-                                <td>{$vo['adminname']}</td>
-                                <td>{$vo['adminpwd']}</td>
-                                <td>{$vo['adminflag']}</td>
-                                 <td><a href="{:U("admin/del?id=$vo[id]")}" class="delete"><i class="icon-font">删除</i></a></td>
-      </tr>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                           上传图片素材
+                        </div>
+                        <div class="panel-body">
+                            <div class="row" style="margin: auto" />
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                    
+                                       
+            <div class="result-content" id="div" >
+               <form action="<?php echo U('home/Admin/addPicture');?>" method="post" enctype= "multipart/form-data">
+                <input type="file" name="picture" />
+                
+               </form>
+            </div> 
+            <div>
+                <form action="<?php echo U('home/Admin/addPicture');?>" method="post" enctype= "multipart/form-data">
+                   <button type="submit" class="btn btn-info">添加</button>
+                   <button type="submit" class="btn btn-default">返回</butto> 
+                </form>
+            </div>
 
-                            </tr>
-                        </volist>
-                            </tbody>
-                        </table>
-                        <!-- /.table-responsive -->
+                                <!-- /.col-lg-6 (nested) -->
 
+                                <!-- /.col-lg-6 (nested) -->
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
                     </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
         <!-- /#page-wrapper -->
 
     </div>
     <!-- /#wrapper -->
+    <!-- /#wrapper -->
 
     <!-- jQuery -->
-                <script src="__PUBLIC__/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="/wechat(g)/Public/admin/vendor/jquery/jquery.min.js"></script>
 
-                <!-- Bootstrap Core JavaScript -->
-                <script src="__PUBLIC__/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/wechat(g)/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-                <!-- Metis Menu Plugin JavaScript -->
-                <script src="__PUBLIC__/admin/vendor/metisMenu/metisMenu.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
 
-                <!-- DataTables JavaScript -->
-                <script src="__PUBLIC__/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
-                <script src="__PUBLIC__/admin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
-                <script src="__PUBLIC__/admin/vendor/datatables-responsive/dataTables.responsive.js"></script>
-
-                <!-- Custom Theme JavaScript -->
-                <script src="__PUBLIC__/admin/dist/js/sb-admin-2.js"></script>
-
-                <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-                <script>
-                    $(document).ready(function() {
-                        $('#dataTables-example').DataTable({
-                            responsive: true
-                        });
-                    });
-                </script>
-
-                <script type="text/javascript">
-    $(document).ready(function () {
-        console.log('！');
-        $(".delete").click(function () {
-            var tag = confirm('真的要删除吗？');
-            if(!tag){
-                return false;
-            }
-        })
-    })
-</script>
+    <!-- Custom Theme JavaScript -->
+    <script src="/wechat(g)/Public/admin/dist/js/sb-admin-2.js"></script>
 
 </body>
 

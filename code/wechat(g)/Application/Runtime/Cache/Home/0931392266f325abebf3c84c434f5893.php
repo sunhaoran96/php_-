@@ -12,16 +12,16 @@
     <title>新旧书店后台</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/wechat(g)/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="/wechat(g)/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/wechat(g)/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -115,13 +115,33 @@
                         <!-- /.nav-second-level -->
                     </li>
                     <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>店铺活动<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="addPictureText.html">上传活动图文</a>
+                                <a href="addPicture.html">上传图片素材</a>
                             </li>
                             <li>
-                                <a href="managePictureText.html">管理活动图文</a>
+                                <a href="managePicture.html">管理图片素材</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                            <li>
+                                <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="addPictureText.html">上传图文素材</a>
+                            </li>
+                            <li>
+                                <a href="managePictureText.html">管理图文素材</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -163,7 +183,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;上传活动图文</h5>
+                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;上传图文素材</h5>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -172,7 +192,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                           添加图文消息
+                           添加图文素材
                         </div>
                         <div class="panel-body">
                             <div class="row" style="margin: auto" />
@@ -187,23 +207,39 @@
                                             <input class="form-control">
                                         </div>
                                         <div class="form-group">
-                                            <label>创建时间</label>
+                                            <label>作者</label>
                                             <input class="form-control">
                                         </div>
+                                        <div class="from-group">
+                                            <tr>
+                             <label>是否显示封面</label>
+                            <td>
+                                <input name="show_cover_pic"  type="radio" value="1" checked="checked" />是&nbsp; &nbsp;&nbsp;&nbsp;
+                                <input name="show_cover_pic"  type="radio" value="0" >否
+                            </td>
+
+                        </tr>
+                                        </div>
                                         <div class="form-group">
-                                            <label>描述</label>
+                                            <label>摘要</label>
                                             <td><textarea name="digest" class="common-textarea"  cols="30" style="width: 98%;" rows="3"></textarea></td>
+                                            
+                                        </div>
+                                         <div class="form-group">
+                                            <label>内容</label>
+                                            <td><textarea name="content" class="common-textarea"  cols="30" style="width: 98%;" rows=""></textarea></td>
                                             
                                         </div>
                                         <div class="form-group">
                                         <label>原文地址</label>
                                         <input class="form-control">
                                         </div>
-                                        
-                                        <button type="submit" class="btn btn-info">添加</button>
-                                        <button type="submit" class="btn btn-default">返回</button>
-                                    </form>
-                                </div>
+                                       <div>
+                <form action="<?php echo U('home/Admin/addPicture');?>" method="post" enctype= "multipart/form-data">
+                   <button type="submit" class="btn btn-info">添加</button>
+                   <button type="submit" class="btn btn-default">返回</butto> 
+                </form>
+            </div>
                                 <!-- /.col-lg-6 (nested) -->
 
                                 <!-- /.col-lg-6 (nested) -->
@@ -222,18 +258,19 @@
 
     </div>
     <!-- /#wrapper -->
+    <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="/Public/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="/wechat(g)/Public/admin/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/wechat(g)/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="/Public/admin/dist/js/sb-admin-2.js"></script>
+    <script src="/wechat(g)/Public/admin/dist/js/sb-admin-2.js"></script>
 
 </body>
 
