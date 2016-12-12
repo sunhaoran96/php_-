@@ -12,16 +12,16 @@
     <title>新旧书店后台</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/wechat(g)/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/wechat(g)/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/wechat(g)/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -114,34 +114,14 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                                <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>店铺活动<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="addPicture.html">上传图片素材</a>
+                                <a href="addPictureText.html">上传活动图文</a>
                             </li>
                             <li>
-                                <a href="managePicture.html">管理图片素材</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                            <li>
-                                <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="addPictureText.html">上传图文素材</a>
-                            </li>
-                            <li>
-                                <a href="managePictureText.html">管理图文素材</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
+                                <a href="managePictureText.html">管理活动图文</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -173,6 +153,7 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
+                        <!-- /.nav-second-level -->
                 </ul>
             </div>
             <!-- /.sidebar-collapse -->
@@ -192,7 +173,7 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        管理订单
+                        查看订单信息
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
@@ -204,15 +185,23 @@
                                 <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
                                         "Browser: activate to sort column ascending" style="width: 201px;">订单号</th>
                                 <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
-                                        "Platform(s): activate to sort column ascending" style="width: 183px;">图书编号</th>
+                                        "Platform(s): activate to sort column ascending" style="width: 183px;">订购时间</th>
                                 <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
                                         "Engine version: activate to sort column ascending" style="width: 151px;">订购产品</th>
                                 <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
                                         "Engine version: activate to sort column ascending" style="width: 151px;">订购数量</th>
                                 <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
-                                        "Engine version: activate to sort column ascending" style="width: 151px;">订单状态</th>
+                                        "Engine version: activate to sort column ascending" style="width: 151px;">留言</th>
                                 <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
-                                        "Engine version: activate to sort column ascending" style="width: 151px;">收货状态</th>
+                                        "Engine version: activate to sort column ascending" style="width: 151px;">送货方式</th>
+                                <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
+                                        "Engine version: activate to sort column ascending" style="width: 151px;">支付方式</th>
+                                <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
+                                        "Engine version: activate to sort column ascending" style="width: 151px;">姓名</th>
+                                <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
+                                        "Engine version: activate to sort column ascending" style="width: 151px;">收货地址</th>
+                                <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
+                                        "Engine version: activate to sort column ascending" style="width: 151px;">联系方式</th>
                                 <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
                                         "Engine version: activate to sort column ascending" style="width: 151px;">总价</th>
                                 <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
@@ -224,39 +213,15 @@
                             <tr class="gradeA">
                                 <td class="sorting_1">01</td>
                                 <td>20161130001</td>
-                                <td>123456789</td>
+                                <td>2016-11-30 9:14:50</td>
                                 <td>小王子（精装）</td>
                                 <td>1</td>
-                                <td>
-                                    <form action="?action=edit&amp;edit=status&amp;id=10" method="post" name="wfform10">
-                                        <select name="wfstatus" onchange="document.wfform10.submit()">
-                                            <option value="">--请选择--</option>
-                                            <option value="未处理">未处理</option>
-                                            <option value="未发货">未发货</option>
-                                            <option value="已发货">已发货</option>
-                                            <option value="已签收">已签收</option>
-                                            <option value="已确认">已确认</option>
-                                            <option value="拒收">拒收</option>
-                                            <option value="短信确认">短信确认</option>
-                                            <option value="短信撤单">短信撤单</option>
-                                            <option value="电话不通">电话不通</option>
-                                            <option value="联系不上">联系不上</option>
-                                            <option value="不要了">不要了</option>
-                                            <option value="考虑中">考虑中</option>
-                                            </select>
-                                    </form>
-                                </td>
-                                <td>
-                                    <form action="?action=edit&amp;edit=status&amp;id=10" method="post" name="wfform10">
-                                        <select name="wfstatus" onchange="document.wfform10.submit()">
-                                            <option value="">--请选择--</option>
-                                            <option value="未收货">未收货</option>
-                                            <option value="已签收">已签收</option>
-                                            <option value="已确认">已确认</option>
-                                            <option value="拒收">拒收</option>
-                                            </select>
-                                    </form>
-                                </td>
+                                <td>空</td>
+                                <td>自提</td>
+                                <td>weixin</td>
+                                <td>Billy</td>
+                                <td>无</td>
+                                <td>18713076123</td>
                                 <td>￥18.99</td>
                                 <td><a href="?set=ddinfo&amp;action=edit&amp;id=10" class="g">【查看详情】</a>
                                     <br><a href="?action=del&amp;delok=0&amp;id=10" class="r" onclick=
@@ -268,39 +233,15 @@
                             <tr class="gradeA">
                                 <td class="sorting_1">01</td>
                                 <td>20161130001</td>
-                                <td>123456789</td>
+                                <td>2016-11-30 9:14:50</td>
                                 <td>小王子（精装）</td>
                                 <td>1</td>
-                                <td>
-                                    <form action="?action=edit&amp;edit=status&amp;id=10" method="post" name="wfform10">
-                                        <select name="wfstatus" onchange="document.wfform10.submit()">
-                                            <option value="">--请选择--</option>
-                                            <option value="未处理">未处理</option>
-                                            <option value="未发货">未发货</option>
-                                            <option value="已发货">已发货</option>
-                                            <option value="已签收">已签收</option>
-                                            <option value="已确认">已确认</option>
-                                            <option value="拒收">拒收</option>
-                                            <option value="短信确认">短信确认</option>
-                                            <option value="短信撤单">短信撤单</option>
-                                            <option value="电话不通">电话不通</option>
-                                            <option value="联系不上">联系不上</option>
-                                            <option value="不要了">不要了</option>
-                                            <option value="考虑中">考虑中</option>
-                                            </select>
-                                    </form>
-                                </td>
-                                <td>
-                                    <form action="?action=edit&amp;edit=status&amp;id=10" method="post" name="wfform10">
-                                        <select name="wfstatus" onchange="document.wfform10.submit()">
-                                            <option value="">--请选择--</option>
-                                            <option value="未收货">未收货</option>
-                                            <option value="已签收">已签收</option>
-                                            <option value="已确认">已确认</option>
-                                            <option value="拒收">拒收</option>
-                                            </select>
-                                    </form>
-                                </td>
+                                <td>空</td>
+                                <td>自提</td>
+                                <td>weixin</td>
+                                <td>Billy</td>
+                                <td>无</td>
+                                <td>18713076123</td>
                                 <td>￥18.99</td>
                                 <td><a href="?set=ddinfo&amp;action=edit&amp;id=10" class="g">【查看详情】</a>
                                     <br><a href="?action=del&amp;delok=0&amp;id=10" class="r" onclick=
@@ -311,39 +252,35 @@
                             <tr class="gradeA">
                                 <td class="sorting_1">01</td>
                                 <td>20161130001</td>
-                                <td>123456789</td>
+                                <td>2016-11-30 9:14:50</td>
                                 <td>小王子（精装）</td>
                                 <td>1</td>
-                                <td>
-                                    <form action="?action=edit&amp;edit=status&amp;id=10" method="post" name="wfform10">
-                                        <select name="wfstatus" onchange="document.wfform10.submit()">
-                                            <option value="">--请选择--</option>
-                                            <option value="未处理">未处理</option>
-                                            <option value="未发货">未发货</option>
-                                            <option value="已发货">已发货</option>
-                                            <option value="已签收">已签收</option>
-                                            <option value="已确认">已确认</option>
-                                            <option value="拒收">拒收</option>
-                                            <option value="短信确认">短信确认</option>
-                                            <option value="短信撤单">短信撤单</option>
-                                            <option value="电话不通">电话不通</option>
-                                            <option value="联系不上">联系不上</option>
-                                            <option value="不要了">不要了</option>
-                                            <option value="考虑中">考虑中</option>
-                                            </select>
-                                    </form>
+                                <td>空</td>
+                                <td>自提</td>
+                                <td>weixin</td>
+                                <td>Billy</td>
+                                <td>无</td>
+                                <td>18713076123</td>
+                                <td>￥18.99</td>
+                                <td><a href="?set=ddinfo&amp;action=edit&amp;id=10" class="g">【查看详情】</a>
+                                    <br><a href="?action=del&amp;delok=0&amp;id=10" class="r" onclick=
+                                            "return confirm('确认要删除订单吗？请慎重哦！')">【× 删除】</a>
                                 </td>
-                                <td>
-                                    <form action="?action=edit&amp;edit=status&amp;id=10" method="post" name="wfform10">
-                                        <select name="wfstatus" onchange="document.wfform10.submit()">
-                                            <option value="">--请选择--</option>
-                                            <option value="未收货">未收货</option>
-                                            <option value="已签收">已签收</option>
-                                            <option value="已确认">已确认</option>
-                                            <option value="拒收">拒收</option>
-                                            </select>
-                                    </form>
-                                </td>
+
+
+                            </tr>
+                            <tr class="gradeA">
+                                <td class="sorting_1">01</td>
+                                <td>20161130001</td>
+                                <td>2016-11-30 9:14:50</td>
+                                <td>小王子（精装）</td>
+                                <td>1</td>
+                                <td>空</td>
+                                <td>自提</td>
+                                <td>weixin</td>
+                                <td>Billy</td>
+                                <td>无</td>
+                                <td>18713076123</td>
                                 <td>￥18.99</td>
                                 <td><a href="?set=ddinfo&amp;action=edit&amp;id=10" class="g">【查看详情】</a>
                                     <br><a href="?action=del&amp;delok=0&amp;id=10" class="r" onclick=
@@ -354,39 +291,15 @@
                             <tr class="gradeA">
                                 <td class="sorting_1">01</td>
                                 <td>20161130001</td>
-                                <td>123456789</td>
+                                <td>2016-11-30 9:14:50</td>
                                 <td>小王子（精装）</td>
                                 <td>1</td>
-                                <td>
-                                    <form action="?action=edit&amp;edit=status&amp;id=10" method="post" name="wfform10">
-                                        <select name="wfstatus" onchange="document.wfform10.submit()">
-                                            <option value="">--请选择--</option>
-                                            <option value="未处理">未处理</option>
-                                            <option value="未发货">未发货</option>
-                                            <option value="已发货">已发货</option>
-                                            <option value="已签收">已签收</option>
-                                            <option value="已确认">已确认</option>
-                                            <option value="拒收">拒收</option>
-                                            <option value="短信确认">短信确认</option>
-                                            <option value="短信撤单">短信撤单</option>
-                                            <option value="电话不通">电话不通</option>
-                                            <option value="联系不上">联系不上</option>
-                                            <option value="不要了">不要了</option>
-                                            <option value="考虑中">考虑中</option>
-                                            </select>
-                                    </form>
-                                </td>
-                                <td>
-                                    <form action="?action=edit&amp;edit=status&amp;id=10" method="post" name="wfform10">
-                                        <select name="wfstatus" onchange="document.wfform10.submit()">
-                                            <option value="">--请选择--</option>
-                                            <option value="未收货">未收货</option>
-                                            <option value="已签收">已签收</option>
-                                            <option value="已确认">已确认</option>
-                                            <option value="拒收">拒收</option>
-                                            </select>
-                                    </form>
-                                </td>
+                                <td>空</td>
+                                <td>自提</td>
+                                <td>weixin</td>
+                                <td>Billy</td>
+                                <td>无</td>
+                                <td>18713076123</td>
                                 <td>￥18.99</td>
                                 <td><a href="?set=ddinfo&amp;action=edit&amp;id=10" class="g">【查看详情】</a>
                                     <br><a href="?action=del&amp;delok=0&amp;id=10" class="r" onclick=
@@ -397,82 +310,15 @@
                             <tr class="gradeA">
                                 <td class="sorting_1">01</td>
                                 <td>20161130001</td>
-                                <td>123456789</td>
+                                <td>2016-11-30 9:14:50</td>
                                 <td>小王子（精装）</td>
                                 <td>1</td>
-                                <td>
-                                    <form action="?action=edit&amp;edit=status&amp;id=10" method="post" name="wfform10">
-                                        <select name="wfstatus" onchange="document.wfform10.submit()">
-                                            <option value="">--请选择--</option>
-                                            <option value="未处理">未处理</option>
-                                            <option value="未发货">未发货</option>
-                                            <option value="已发货">已发货</option>
-                                            <option value="已签收">已签收</option>
-                                            <option value="已确认">已确认</option>
-                                            <option value="拒收">拒收</option>
-                                            <option value="短信确认">短信确认</option>
-                                            <option value="短信撤单">短信撤单</option>
-                                            <option value="电话不通">电话不通</option>
-                                            <option value="联系不上">联系不上</option>
-                                            <option value="不要了">不要了</option>
-                                            <option value="考虑中">考虑中</option>
-                                            </select>
-                                    </form>
-                                </td>
-                                <td>
-                                    <form action="?action=edit&amp;edit=status&amp;id=10" method="post" name="wfform10">
-                                        <select name="wfstatus" onchange="document.wfform10.submit()">
-                                            <option value="">--请选择--</option>
-                                            <option value="未收货">未收货</option>
-                                            <option value="已签收">已签收</option>
-                                            <option value="已确认">已确认</option>
-                                            <option value="拒收">拒收</option>
-                                            </select>
-                                    </form>
-                                </td>
-                                <td>￥18.99</td>
-                                <td><a href="?set=ddinfo&amp;action=edit&amp;id=10" class="g">【查看详情】</a>
-                                    <br><a href="?action=del&amp;delok=0&amp;id=10" class="r" onclick=
-                                            "return confirm('确认要删除订单吗？请慎重哦！')">【× 删除】</a>
-                                </td>
-
-                            </tr>
-                            <tr class="gradeA">
-                                <td class="sorting_1">01</td>
-                                <td>20161130001</td>
-                                <td>123456789</td>
-                                <td>小王子（精装）</td>
-                                <td>1</td>
-                                <td>
-                                    <form action="?action=edit&amp;edit=status&amp;id=10" method="post" name="wfform10">
-                                        <select name="wfstatus" onchange="document.wfform10.submit()">
-                                            <option value="">--请选择--</option>
-                                            <option value="未处理">未处理</option>
-                                            <option value="未发货">未发货</option>
-                                            <option value="已发货">已发货</option>
-                                            <option value="已签收">已签收</option>
-                                            <option value="已确认">已确认</option>
-                                            <option value="拒收">拒收</option>
-                                            <option value="短信确认">短信确认</option>
-                                            <option value="短信撤单">短信撤单</option>
-                                            <option value="电话不通">电话不通</option>
-                                            <option value="联系不上">联系不上</option>
-                                            <option value="不要了">不要了</option>
-                                            <option value="考虑中">考虑中</option>
-                                            </select>
-                                    </form>
-                                </td>
-                                <td>
-                                    <form action="?action=edit&amp;edit=status&amp;id=10" method="post" name="wfform10">
-                                        <select name="wfstatus" onchange="document.wfform10.submit()">
-                                            <option value="">--请选择--</option>
-                                            <option value="未收货">未收货</option>
-                                            <option value="已签收">已签收</option>
-                                            <option value="已确认">已确认</option>
-                                            <option value="拒收">拒收</option>
-                                            </select>
-                                    </form>
-                                </td>
+                                <td>空</td>
+                                <td>自提</td>
+                                <td>weixin</td>
+                                <td>Billy</td>
+                                <td>无</td>
+                                <td>18713076123</td>
                                 <td>￥18.99</td>
                                 <td><a href="?set=ddinfo&amp;action=edit&amp;id=10" class="g">【查看详情】</a>
                                     <br><a href="?action=del&amp;delok=0&amp;id=10" class="r" onclick=
@@ -499,21 +345,21 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="/wechat(g)/Public/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="/Public/admin/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/wechat(g)/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- DataTables JavaScript -->
-    <script src="/wechat(g)/Public/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="/wechat(g)/Public/admin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
-    <script src="/wechat(g)/Public/admin/vendor/datatables-responsive/dataTables.responsive.js"></script>
+    <script src="/Public/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="/Public/admin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="/Public/admin/vendor/datatables-responsive/dataTables.responsive.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="/wechat(g)/Public/admin/dist/js/sb-admin-2.js"></script>
+    <script src="/Public/admin/dist/js/sb-admin-2.js"></script>
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>

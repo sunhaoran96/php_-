@@ -103,33 +103,25 @@
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="<?php echo U('home/media/addPicture');?>">上传图片素材</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo U('home/media/managePicture');?>">管理图片素材</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-second-level -->
+                                <a href="<?php echo U('home/menu/menu');?>">查看菜单</a>
                             </li>
                             <li>
-                            <li>
-                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="<?php echo U('home/media/addPictureText');?>">上传图文素材</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo U('home/media/managePictureText');?>">管理图文素材</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-second-level -->
+                                <a href="<?php echo U('home/menu/manageMenu');?>">管理菜单</a>
                             </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>店铺活动<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="<?php echo U('home/menu/addPictureText');?>">上传活动图文</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo U('home/menu/addPictureText');?>">管理活动图文</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -168,82 +160,68 @@
         <!-- /.navbar-static-side -->
     </nav>
 
-        <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;管理图书分类</h5>
-                </div>
-                <!-- /.col-lg-12 -->
+    <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;&nbsp;&nbsp;添加图书</h5>
             </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            管理图书信息
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-
-                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
-                                <thead>
-                                    <tr>
-                                        <th>排序ID</th>
-                                        <th>分类编号</th>
-                                        <th>分类名称</th>
-                                        <th>操作</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                <?php if(is_array($types)): $i = 0; $__LIST__ = $types;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr class="gradeA">
-                                        <td><?php echo ($vo['id']); ?></td>
-                                        <td><?php echo ($vo['booktypeid']); ?></td>
-                                        <td><?php echo ($vo['booktypename']); ?></td>
-                                        <td><a href="/index.php/Home/Admin/deletetype/id/<?php echo ($vo["id"]); ?>"  class="r" onclick=
-                                                "return confirm('确认要删除该图书分类吗？请慎重哦！')">删除</a>&nbsp;&nbsp;<a href="/index.php/Home/Admin/revampType/id/<?php echo ($vo["id"]); ?>">修改</a></td></td>
-                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </tbody>
-                            </table>
-                            <!-- /.table-responsive -->
-
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-
-                <!-- /.col-lg-6 -->
+            <!-- /.col-lg-12 -->
         </div>
-    <!-- /#wrapper -->
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        添加书籍
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" style="margin: auto" />
+                        <div class="col-lg-6">
+                            <form action="/home/admin/store1" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label>图书分类编号</label>
+                                    <input type="text" class="form-control" name="booktypeid">
+                                </div>
+                                <div class="form-group">
+                                    <label>图书类型名称</label>
+                                    <input type="text" class="form-control" name="booktypename">
+                                </div>
 
-    <!-- jQuery -->
-    <script src="/Public/admin/vendor/jquery/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+                                <button type="submit" class="btn btn-info">添加</button>
+                                <button type="submit" class="btn btn-default">返回</button>
+                            </form>
+                        </div>
+                        <!-- /.col-lg-6 (nested) -->
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
+                        <!-- /.col-lg-6 (nested) -->
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /#page-wrapper -->
 
-    <!-- DataTables JavaScript -->
-    <script src="/Public/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="/Public/admin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
-    <script src="/Public/admin/vendor/datatables-responsive/dataTables.responsive.js"></script>
+</div>
+<!-- /#wrapper -->
 
-    <!-- Custom Theme JavaScript -->
-    <script src="/Public/admin/dist/js/sb-admin-2.js"></script>
+<!-- jQuery -->
+<script src="/Public/admin/vendor/jquery/jquery.min.js"></script>
 
-    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-    <script>
-    $(document).ready(function() {
-        $('#dataTables-example').DataTable({
-            responsive: true
-        });
-    });
-    </script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/Public/admin/dist/js/sb-admin-2.js"></script>
 
 </body>
 

@@ -12,16 +12,16 @@
     <title>新旧书店后台</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/wechat(g)/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/wechat(g)/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/wechat(g)/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -90,58 +90,46 @@
                         </div>
                         <!-- /input-group -->
                     </li>
-                    <li class="active">
+                    <li  class="active">
                         <a href="#"><i class="fa fa-table fa-fw"></i> 管理员<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="adminInfo.html">查看管理员信息</a>
+                                <a href="<?php echo U('home/admin/adminInfo');?>">查看管理员信息</a>
                             </li>
                             <li>
-                                <a href="register.html">添加管理员</a>
+                                <a href="<?php echo U('home/admin/register');?>">添加管理员</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="menu.html">查看菜单</a>
-                            </li>
-                            <li>
-                                <a href="manageMenu.html">管理菜单</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                              <li class="active">
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('home/media/addPicture');?>">上传图片素材</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="<?php echo U('home/media/addPicture');?>">上传图片素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo U('home/media/managePicture');?>">管理图片素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
                             <li>
-                                <a href="<?php echo U('home/media/managePicture');?>">管理图片素材</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
                             <li>
-                                <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="<?php echo U('home/media/addPictureText');?>">上传图文素材</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="<?php echo U('home/media/addPictureText');?>">上传图文素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo U('home/media/managePictureText');?>">管理图文素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
-                            <li>
-                                <a href="<?php echo U('home/media/managePictureText');?>">管理图文素材</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -150,13 +138,16 @@
                         <a href="#"><i class="fa fa-files-o fa-fw"></i>图书管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="manageBooks.html">管理图书</a>
+                                <a href="<?php echo U('home/admin/manageBooks');?>">管理图书</a>
                             </li>
                             <li>
-                                <a href="manageBookType.html">管理图书分类</a>
+                                <a href="<?php echo U('home/admin/addBook');?>">添加图书</a>
                             </li>
                             <li>
-                                <a href="addBook.html">添加图书</a>
+                                <a href="<?php echo U('home/admin/manageBookType');?>">管理图书分类</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo U('home/admin/addBookType');?>">添加图书分类</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -165,10 +156,7 @@
                         <a href="#"><i class="fa fa-dashboard fa-fw"></i>订单管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="order1.html">查看订单信息</a>
-                            </li>
-                            <li>
-                                <a href="order2.html">管理订单</a>
+                                <a href="<?php echo U('home/admin/order1');?>">查看订单信息</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -200,8 +188,7 @@
                         <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                             <thead>
                             <tr>
-                                <th>id</th>
-                                <th>编号</th>
+                                <th>id</th> 
                                 <th>管理员名称</th>
                                 <th>密码</th>
                                 <th>权限</th>
@@ -209,30 +196,17 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="gradeA">
-                                <td>1</td>
-                                <td>0001</td>
-                                <td>liucong</td>
-                                <td>12345555</td>
-                                <td><a href="">删除</a></td>
-                                <td><a>删除</a>&nbsp;&nbsp;<a>修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>1</td>
-                                <td>0001</td>
-                                <td>liucong</td>
-                                <td>12345555</td>
-                                <td><a href="">删除</a></td>
-                                <td><a>删除</a>&nbsp;&nbsp;<a>修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>1</td>
-                                <td>0001</td>
-                                <td>liucong</td>
-                                <td>12345555</td>
-                                <td><a href="">删除</a></td>
-                                <td><a>删除</a>&nbsp;&nbsp;<a>修改</a></td>
-                            </tr>
+                        
+                           <?php if(is_array($manager)): $i = 0; $__LIST__ = $manager;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr> 
+                                <td><?php echo ($vo['id']); ?></td>
+                                <td><?php echo ($vo['adminname']); ?></td>
+                                <td><?php echo ($vo['adminpwd']); ?></td>
+                                <td><?php echo ($vo['adminflag']); ?></td>
+                                <td><a href="/index.php/Home/Admin/deletemanager/id/<?php echo ($vo["id"]); ?>"  class="r" onclick=
+                                        "return confirm('确认要删除管理员吗？请慎重哦！')">删除</a>
+      </tr>
+
+                            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                             </tbody>
                         </table>
                         <!-- /.table-responsive -->
@@ -244,21 +218,21 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-                <script src="/wechat(g)/Public/admin/vendor/jquery/jquery.min.js"></script>
+                <script src="/Public/admin/vendor/jquery/jquery.min.js"></script>
 
                 <!-- Bootstrap Core JavaScript -->
-                <script src="/wechat(g)/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+                <script src="/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
                 <!-- Metis Menu Plugin JavaScript -->
-                <script src="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
+                <script src="/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
 
                 <!-- DataTables JavaScript -->
-                <script src="/wechat(g)/Public/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
-                <script src="/wechat(g)/Public/admin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
-                <script src="/wechat(g)/Public/admin/vendor/datatables-responsive/dataTables.responsive.js"></script>
+                <script src="/Public/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
+                <script src="/Public/admin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+                <script src="/Public/admin/vendor/datatables-responsive/dataTables.responsive.js"></script>
 
                 <!-- Custom Theme JavaScript -->
-                <script src="/wechat(g)/Public/admin/dist/js/sb-admin-2.js"></script>
+                <script src="/Public/admin/dist/js/sb-admin-2.js"></script>
 
                 <!-- Page-Level Demo Scripts - Tables - Use for reference -->
                 <script>
@@ -268,6 +242,18 @@
                         });
                     });
                 </script>
+
+                <script type="text/javascript">
+    $(document).ready(function () {
+        console.log('！');
+        $(".delete").click(function () {
+            var tag = confirm('真的要删除吗？');
+            if(!tag){
+                return false;
+            }
+        })
+    })
+</script>
 
 </body>
 

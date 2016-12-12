@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link href="/wechat(g)/Public/bookstore/lib/weui.min.css" type="text/css" rel="stylesheet">
-	<link href="/wechat(g)/Public/bookstore/css/jquery-weui.min.css" type="text/css" rel="stylesheet">
+	<link href="/Public/bookstore/lib/weui.min.css" type="text/css" rel="stylesheet">
+	<link href="/Public/bookstore/css/jquery-weui.min.css" type="text/css" rel="stylesheet">
 	<style>
 		html,body{
 			height:100%;
@@ -28,10 +28,10 @@
 		<!--顶部幻灯片开始-->
 		<div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide"><a href="buy.html"><img src="/wechat(g)/Public/bookstore/images/a3.jpg" alt="" ></a></div>
-				<div class="swiper-slide"><a href="buy.html"><img src="/wechat(g)/Public/bookstore/images/b1.jpg" alt=""></a></div>
-				<div class="swiper-slide"><a href="buy.html"><img src="/wechat(g)/Public/bookstore/images/a9.jpeg" alt=""></a></div>
-				<div class="swiper-slide"><a href="buy.html"><img src="/wechat(g)/Public/bookstore/images/b2.jpg" alt=""></a></div>
+				<div class="swiper-slide"><a href="buy.html"><img src="/Public/bookstore/images/a3.jpg" alt="" ></a></div>
+				<div class="swiper-slide"><a href="buy.html"><img src="/Public/bookstore/images/b1.jpg" alt=""></a></div>
+				<div class="swiper-slide"><a href="buy.html"><img src="/Public/bookstore/images/a9.jpeg" alt=""></a></div>
+				<div class="swiper-slide"><a href="buy.html"><img src="/Public/bookstore/images/b2.jpg" alt=""></a></div>
 			</div>
 			<!-- If we need pagination -->
 			<div class="swiper-pagination"></div>
@@ -55,16 +55,16 @@
 		<!--soso结束-->
 		<!--shangpin开始-->
 		<div class="weui-row">
-			<div class="weui-col-50"><a href="buy.html"><img src="/wechat(g)/Public/bookstore/images/a4.jpg" width="140" height="110"></a></div>
-			<div class="weui-col-50"><a href="buy.html"><img src="/wechat(g)/Public/bookstore/images/a7.jpg" width="140" height="110"></a></div>
+			<div class="weui-col-50"><a href="buy.html"><img src="/Public/bookstore/images/a4.jpg" width="140" height="110"></a></div>
+			<div class="weui-col-50"><a href="buy.html"><img src="/Public/bookstore/images/a7.jpg" width="140" height="110"></a></div>
 		</div>
 		<div class="weui-row">
 			<div class="weui-col-50"><a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default">￥19.9</a></div>
 			<div class="weui-col-50"><a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default">￥19.9</a></div>
 		</div>
 		<div class="weui-row">
-			<div class="weui-col-50"><a href="buy.html"><img src="/wechat(g)/Public/bookstore/images/a2.jpg" width="140" height="110"></a></div>
-			<div class="weui-col-50"><a href="buy.html"><img src="/wechat(g)/Public/bookstore/images/a8.jpg" width="140" height="110"></a></div>
+			<div class="weui-col-50"><a href="buy.html"><img src="/Public/bookstore/images/a2.jpg" width="140" height="110"></a></div>
+			<div class="weui-col-50"><a href="buy.html"><img src="/Public/bookstore/images/a8.jpg" width="140" height="110"></a></div>
 		</div>
 		<div class="weui-row">
 			<div class="weui-col-50"><a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default">￥19.9</a></div>
@@ -77,34 +77,34 @@
 	<div class="weui_tabbar" height="100">
 		<a href="index.html" class="weui_tabbar_item">
 			<div class="weui_tabbar_icon">
-				<img src="/wechat(g)/Public/bookstore/images/f5.jpg" alt="">
+				<img src="/Public/bookstore/images/f5.jpg" alt="">
 			</div>
 			<p class="weui_tabbar_label">全部商品</p>
 		</a>
 		<a href="xjfl.html" class="weui_tabbar_item">
 			<div class="weui_tabbar_icon">
-				<img src="/wechat(g)/Public/bookstore/images/f8.jpg" alt="">
+				<img src="/Public/bookstore/images/f8.jpg" alt="">
 			</div>
 			<p class="weui_tabbar_label">分类精选</p>
 		</a>
 		<a href="list.html" class="weui_tabbar_item">
 			<div class="weui_tabbar_icon">
-				<img src="/wechat(g)/Public/bookstore/images/f7.jpg" alt="" >
+				<img src="/Public/bookstore/images/f7.jpg" alt="" >
 			</div>
 			<p class="weui_tabbar_label">我的订单</p>
 		</a>
 		<a href="cart.html" class="weui_tabbar_item">
 			<div class="weui_tabbar_icon">
-				<img src="/wechat(g)/Public/bookstore/images/f6.jpg" alt="">
+				<img src="/Public/bookstore/images/f6.jpg" alt="">
 			</div>
 			<p class="weui_tabbar_label">购物车</p>
 		</a>
 	</div>
 </div>
 </body>
-<script type="text/javascript" src="/wechat(g)/Public/bookstore/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="/wechat(g)/Public/bookstore/js/jquery-weui.min.js"></script>
-<script type='text/javascript' src='/wechat(g)/Public/bookstore/js/swiper.js' charset='utf-8'></script>
+<script type="text/javascript" src="/Public/bookstore/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/Public/bookstore/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='/Public/bookstore/js/swiper.js' charset='utf-8'></script>
 <script>
 	$(".swiper-container").swiper({
 		loop: true,

@@ -94,54 +94,42 @@
                         <a href="#"><i class="fa fa-table fa-fw"></i> 管理员<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="adminInfo.html">查看管理员信息</a>
+                                <a href="{:U('home/admin/adminInfo')}">查看管理员信息</a>
                             </li>
                             <li>
-                                <a href="register.html">添加管理员</a>
+                                <a href="{:U('home/admin/register')}">添加管理员</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="menu.html">查看菜单</a>
-                            </li>
-                            <li>
-                                <a href="manageMenu.html">管理菜单</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                               <li class="active">
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/media/addPicture')}">上传图片素材</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="{:U('home/media/addPicture')}">上传图片素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="{:U('home/media/managePicture')}">管理图片素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
                             <li>
-                                <a href="{:U('home/media/managePicture')}">管理图片素材</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
                             <li>
-                                <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="{:U('home/media/addPictureText')}">上传图文素材</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="{:U('home/media/addPictureText')}">上传图文素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="{:U('home/media/managePictureText')}">管理图文素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
-                            <li>
-                                <a href="{:U('home/media/managePictureText')}">管理图文素材</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -150,13 +138,16 @@
                         <a href="#"><i class="fa fa-files-o fa-fw"></i>图书管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="manageBooks.html">管理图书</a>
+                                <a href="{:U('home/admin/manageBooks')}">管理图书</a>
                             </li>
                             <li>
-                                <a href="manageBookType.html">管理图书分类</a>
+                                <a href="{:U('home/admin/addBook')}">添加图书</a>
                             </li>
                             <li>
-                                <a href="addBook.html">添加图书</a>
+                                <a href="{:U('home/admin/manageBookType')}">管理图书分类</a>
+                            </li>
+                            <li>
+                                <a href="{:U('home/admin/addBookType')}">添加图书分类</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -165,10 +156,7 @@
                         <a href="#"><i class="fa fa-dashboard fa-fw"></i>订单管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="order1.html">查看订单信息</a>
-                            </li>
-                            <li>
-                                <a href="order2.html">管理订单</a>
+                                <a href="{:U('home/admin/order1')}">查看订单信息</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -196,63 +184,26 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
+
                             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
                                     <tr>
-                                        <th>id</th>
+                                        <th>排序ID</th>
                                         <th>分类编号</th>
                                         <th>分类名称</th>
-                                        <th>picUrl</th>
                                         <th>操作</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                <volist name="types" id="vo">
                                     <tr class="gradeA">
-                                        <td>1</td>
-                                        <td>0001</td>
-                                        <td>四六级考试</td>
-                                        <td>url:http</td>
-                                        <td><a>删除</a>&nbsp;&nbsp;<a>修改</a></td>
-
+                                        <td>{$vo['id']}</td>
+                                        <td>{$vo['booktypeid']}</td>
+                                        <td>{$vo['booktypename']}</td>
+                                        <td><a href="__URL__/deletetype/id/{$vo.id}"  class="r" onclick=
+                                                "return confirm('确认要删除该图书分类吗？请慎重哦！')">删除</a>&nbsp;&nbsp;<a href="__URL__/revampType/id/{$vo.id}">修改</a></td></td>
                                     </tr>
-                                    <tr class="gradeA">
-                                        <td>2</td>
-                                        <td>0002</td>
-                                        <td>考研必备</td>
-                                        <td>url:http</td>
-                                        <td><a>删除</a>&nbsp;&nbsp;<a>修改</a></td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>3</td>
-                                        <td>0003</td>
-                                        <td>杂志周刊</td>
-                                        <td>url:http</td>
-                                        <td><a>删除</a>&nbsp;&nbsp;<a>修改</a></td>
-
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>4</td>
-                                        <td>0004</td>
-                                        <td>小说天地</td>
-                                        <td>url:http</td>
-                                        <td><a>删除</a>&nbsp;&nbsp;<a>修改</a></td>
-
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>5</td>
-                                        <td>0005</td>
-                                        <td>期末复习</td>
-                                        <td>url:http</td>
-                                        <td><a>删除</a>&nbsp;&nbsp;<a>修改</a></td>
-                                    </tr>
-                                    <tr class="gradeA">
-                                        <td>6</td>
-                                        <td>0006</td>
-                                        <td>其他</td>
-                                        <td>url:http</td>
-                                        <td><a>删除</a>&nbsp;&nbsp;<a>修改</a></td>
-                                    </tr>
-
+                                </volist>
                                 </tbody>
                             </table>
                             <!-- /.table-responsive -->

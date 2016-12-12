@@ -12,16 +12,16 @@
     <title>新旧书店后台</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/wechat(g)/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/wechat(g)/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/wechat(g)/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -33,7 +33,8 @@
     <![endif]-->
     <style type="text/css">
     #div{margin-right: 10px;}
-    </style>>
+    #div1{width: 50px;}
+    </style>
     
 
 </head>
@@ -106,47 +107,34 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                    <li>
-                        <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="<?php echo U('home/menu/view');?>">查看菜单</a>
-                            </li>
-                            <li>
-                                <a href="<?php echo U('home/menu/manage');?>">管理菜单</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    
-                        <li class="active">
+                    <li  class="active">
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('home/media/addPicture');?>">上传图片素材</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="<?php echo U('home/media/addPicture');?>">上传图片素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo U('home/media/managePicture');?>">管理图片素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
                             <li>
-                                <a href="<?php echo U('home/media/managePicture');?>">管理图片素材</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
                             <li>
-                                <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="<?php echo U('home/media/addPictureText');?>">上传图文素材</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="<?php echo U('home/media/addPictureText');?>">上传图文素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo U('home/media/managePictureText');?>">管理图文素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
-                            <li>
-                                <a href="<?php echo U('home/media/managePictureText');?>">管理图文素材</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -158,10 +146,13 @@
                                 <a href="<?php echo U('home/admin/manageBooks');?>">管理图书</a>
                             </li>
                             <li>
+                                <a href="<?php echo U('home/admin/addBook');?>">添加图书</a>
+                            </li>
+                            <li>
                                 <a href="<?php echo U('home/admin/manageBookType');?>">管理图书分类</a>
                             </li>
                             <li>
-                                <a href="<?php echo U('home/admin/addBook');?>">添加图书</a>
+                                <a href="<?php echo U('home/admin/addBookType');?>">添加图书分类</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -171,9 +162,6 @@
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="<?php echo U('home/admin/order1');?>">查看订单信息</a>
-                            </li>
-                            <li>
-                                <a href="<?php echo U('home/admin/order2');?>">管理订单</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -200,28 +188,21 @@
                         管理图片素材
                     </div>
                     <!-- /.panel-heading -->
-                    <div class="panel-body" id="div">
-                        <table  class="table table-striped table-bordered table-hover" id="dataTables-example">
-                           
-                            <tr>
-                                
-                                <th >缩略图</th>
-                                <th >media_id</th>
-                                <th width="50px">url</th>
-                                <th>操作</th>
-
-                            </tr>
-                          
-                            
-                                  <?php if(is_array($images)): $i = 0; $__LIST__ = $images;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                            
-                                <td><img height="100px" src="/wechat(g)/Public/uploads/<?php echo ($vo['filepath']); ?>"></td>
-                                <td><?php echo ($vo['mediaid']); ?></td>
-                                <td width="50px"><?php echo ($vo['picurl']); ?></td>
-                                <td><a href="/wechat(g)/index.php/Home/Media/deletePicture/id/<?php echo ($vo["id"]); ?>" class="delete"><i class="icon-font"></i></a></td>
+                    <div class="panel-body" id="div" >
+                       <table class="table table-striped table-bordered table-hover" id="dataTables-example" style="width: 1390px;">
+                        <tr style="width: auto">
+                            <th>缩略图</th>
+                            <th style="width:200px;">media_id</th>
+                            <th style="width: 200px">url</th>
+                            <th style="width: 50px;">操作</th>
+                        </tr>
+                        <?php if(is_array($images)): $i = 0; $__LIST__ = $images;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                                <td><img height="100px" src="/Public/uploads/<?php echo ($vo['filepath']); ?>"></td>
+                                <td style="width: 200px;"><?php echo ($vo['mediaid']); ?></td>
+                                <td style="width: 200px;"><?php echo ($vo['picurl']); ?></td>
+                                <td style="width: 50px;"><a href="/index.php/Home/Media/deletePicture/id/<?php echo ($vo["id"]); ?>" class="delete"><i class="icon-font">删除</i></a></td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                          
-                        </table>
+                    </table>
                         <!-- /.table-responsive -->
 
                     </div>
@@ -239,16 +220,28 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="/wechat(g)/Public/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="/Public/admin/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/wechat(g)/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="/wechat(g)/Public/admin/dist/js/sb-admin-2.js"></script>
+    <script src="/Public/admin/dist/js/sb-admin-2.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        console.log('！');
+        $(".delete").click(function () {
+            var tag = confirm('真的要删除吗？');
+            if(!tag){
+                return false;
+            }
+        })
+    })
+</script>
 
 </body>
 

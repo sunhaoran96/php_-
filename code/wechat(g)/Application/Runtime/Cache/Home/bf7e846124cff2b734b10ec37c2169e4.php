@@ -41,12 +41,6 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
             <h2 style="color: indigo">&nbsp;&nbsp;新旧书店后台管理系统</h2>
         </div>
         <!-- /.navbar-header -->
@@ -86,7 +80,7 @@
                                     <button class="btn btn-default" type="button">
                                         <i class="fa fa-search"></i>
                                     </button>
-                            </span>
+                                </span>
                         </div>
                         <!-- /input-group -->
                     </li>
@@ -126,7 +120,7 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="#"><i class="fa fa-files-o fa-fw"></i>图书管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
@@ -144,7 +138,7 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="#"><i class="fa fa-dashboard fa-fw"></i>订单管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
@@ -163,7 +157,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;管理图书</h5>
+                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;&nbsp;&nbsp;订单详情</h5>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -172,87 +166,113 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        管理图书信息
+                        订单详情
                     </div>
-
-                    <!-- /.panel-heading -->
                     <div class="panel-body">
-                        <form action="/home/admin/store" method="post" id="myform" name="myform">
-                            <div class="form-group">
-                                <label style="margin-left: 10px;">选择图书类别</label>
-                                <select class="form-control" name="booktypename" style="width: 200px;">
-                                    <option>四六级考试</option>
-                                    <option>考研必备</option>
-                                    <option>期末复习</option>
-                                    <option>杂志周刊</option>
-                                    <option>小说天地</option>
-                                    <option>其他</option>
-                                </select>
-                            </div>
-                        </form>
-                        <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
-                            <thead>
-                            <tr>
-                                <th>图书编号</th>
-                                <th>图书名称</th>
-                                <th>所属分类</th>
-                                <th>图书价格</th>
-                                <th>图书剩余量</th>
-                                <th>操作</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <?php if(is_array($books)): $i = 0; $__LIST__ = $books;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr class="gradeA">
-                                <td><?php echo ($vo['bookid']); ?></td>
-                                <td><?php echo ($vo['bookname']); ?></td>
-                                <td><?php echo ($vo['booktypename']); ?></td>
-                                <td><?php echo ($vo['bookprice']); ?></td>
-                                <td><?php echo ($vo['bookstoremount']); ?></td>
-                                <td><a href="/index.php/Home/Admin/deletebook/bookid/<?php echo ($vo["bookid"]); ?>"  class="r" onclick=
-                                        "return confirm('确认要删除图书吗？请慎重哦！')">删除</a>&nbsp;&nbsp;<a href="/index.php/Home/Admin/revamp/bookid/<?php echo ($vo["bookid"]); ?>">修改</a></td>
-                            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                            </tbody>
-                        </table>
-                        <!-- /.table-responsive -->
+                        <div class="row" style="margin: auto" />
+                        <div class="col-lg-6">
+                            <form action="/home/admin/update1/id/<?php echo ($orders["id"]); ?>" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label>订单编号</label>
+                                    <input type="text" class="form-control" name="orderid" value="<?php echo ($orders["orderid"]); ?>">
+                                </div>
+                                <div class="form-group">
+                                    <label>商品名称</label>
+                                    <input type="text" class="form-control" name="goodsname" value="<?php echo ($orders["goodsname"]); ?>">
+                                </div>
+                                <div class="form-group">
+                                    <label>订单数量</label>
+                                    <input type="text" class="form-control" name="ordermount" value="<?php echo ($orders["ordermount"]); ?>">
+                                </div>
+                                <div class="form-group">
+                                    <label>订单状态</label>
+                                    <select class="form-control" name="poststatus" value="<?php echo ($orders["poststatus"]); ?>">
+                                        <option value="未处理">未处理</option>
+                                        <option value="未发货">未发货</option>
+                                        <option value="已发货">已发货</option>
+                                        <option value="已签收">已签收</option>
+                                        <option value="已确认">已确认</option>
+                                        <option value="拒收">拒收</option>
+                                        <option value="短信确认">短信确认</option>
+                                        <option value="短信撤单">短信撤单</option>
+                                        <option value="电话不通">电话不通</option>
+                                        <option value="联系不上">联系不上</option>
+                                        <option value="不要了">不要了</option>
+                                        <option value="考虑中">考虑中</option>
+                                    </select>
 
+                                </div>
+                                <div class="form-group">
+                                    <label>收货状态</label>
+                                    <select class="form-control" name="recevstatus">
+                                        <option name="recevstatus">未收货</option>
+                                        <option name="recevstatus">已签收</option>
+                                        <option name="recevstatus">已确认</option>
+                                        <option name="recevstatus">拒收</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-info">修改</button>
+                                <button type="submit" class="btn btn-default">返回</button>
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <form action="/home/admin/update/id/<?php echo ($books["bookid"]); ?>" method="post" name="myform" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label>收货人姓名</label>
+                                    <input type="text" class="form-control" name="receivername" value="<?php echo ($orders["receivername"]); ?>">
+                                </div>
+                                <div class="form-group">
+                                    <label>收货地址</label>
+                                    <input type="text" class="form-control" name="receiveaddress" value="<?php echo ($orders["receiveaddress"]); ?>">
+                                </div>
+                                <div class="form-group">
+                                    <label>收货人联系方式</label>
+                                    <input type="text" class="form-control" name="receivertel" value="<?php echo ($orders["receivertel"]); ?>">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>总价</label>
+                                    <input type="text" class="form-control" name="price" value="<?php echo ($orders["price"]); ?>">
+                                </div>
+                                <div class="form-group">
+                                    <label>配送方式</label>
+                                    <select class="form-control" name="booktypename" value="<?php echo ($books["booktypename"]); ?>">
+                                        <option>书店送货</option>
+                                        <option>到店自提</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.col-lg-6 (nested) -->
+
+                        <!-- /.col-lg-6 (nested) -->
                     </div>
-                    <!-- /.panel-body -->
+                    <!-- /.row (nested) -->
                 </div>
-                <!-- /.panel -->
+                <!-- /.panel-body -->
             </div>
-            <!-- /.col-lg-12 -->
+            <!-- /.panel -->
         </div>
-        <!-- /.row -->
-
-        <!-- /.col-lg-6 -->
+        <!-- /.col-lg-12 -->
     </div>
-    <!-- /#wrapper -->
+    <!-- /.row -->
+</div>
+<!-- /#page-wrapper -->
 
-    <!-- jQuery -->
-    <script src="/Public/admin/vendor/jquery/jquery.min.js"></script>
+</div>
+<!-- /#wrapper -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- jQuery -->
+<script src="/Public/admin/vendor/jquery/jquery.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- DataTables JavaScript -->
-    <script src="/Public/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="/Public/admin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
-    <script src="/Public/admin/vendor/datatables-responsive/dataTables.responsive.js"></script>
+<!-- Metis Menu Plugin JavaScript -->
+<script src="/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="/Public/admin/dist/js/sb-admin-2.js"></script>
-
-    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-    <script>
-        $(document).ready(function() {
-            $('#dataTables-example').DataTable({
-                responsive: true
-            });
-        });
-    </script>
+<!-- Custom Theme JavaScript -->
+<script src="/Public/admin/dist/js/sb-admin-2.js"></script>
 
 </body>
 
