@@ -41,57 +41,20 @@
             </div>
 
             <div class="weui_cells weui_cells_access">
+                <volist name="books" id="vo" i="1">
+                    <a class="weui_cell" href="order.html">
+                        <div class="weui_cell_hd">
+                            <img src="__PUBLIC__/bookstore/images/a5.jpg" alt="icon" style="width:80px;height:40px;margin-right:5px;display:block">
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>{$vo['bookname']}</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                        </div>
+                    </a>
 
-                <a class="weui_cell" href="tsxq.html">
-                    <div class="weui_cell_hd">
-                        <img src="__PUBLIC__/bookstore/images/a5.jpg" alt="icon" style="width:80px;height:40px;margin-right:5px;display:block">
-                    </div>
-                    <div class="weui_cell_bd weui_cell_primary">
-                        <p>四六级复习资料</p>
-                    </div>
-                    <div class="weui_cell_ft">
-                    </div>
-                </a>
-                <a class="weui_cell" href="tsxq.html">
-                    <div class="weui_cell_hd">
-                        <img src="__PUBLIC__/bookstore/images/a2.jpg" alt="icon" style="width:80px;height:40px;margin-right:5px;display:block">
-                    </div>
-                    <div class="weui_cell_bd weui_cell_primary">
-                        <p>四六级真题试卷</p>
-                    </div>
-                    <div class="weui_cell_ft">
-                    </div>
-                </a>
-                <a class="weui_cell" href="tsxq.html">
-                    <div class="weui_cell_hd">
-                        <img src="__PUBLIC__/bookstore/images/a6.jpg" alt="icon" style="width:80px;height:40px;margin-right:5px;display:block">
-                    </div>
-                    <div class="weui_cell_bd weui_cell_primary">
-                        <p>四六级单词句子</p>
-                    </div>
-                    <div class="weui_cell_ft">
-                    </div>
-                </a>
-                <a class="weui_cell" href="tsxq.html">
-                    <div class="weui_cell_hd">
-                        <img src="__PUBLIC__/bookstore/images/a4.jpg" alt="icon" style="width:80px;height:40px;margin-right:5px;display:block">
-                    </div>
-                    <div class="weui_cell_bd weui_cell_primary">
-                        <p>四六级复习资料</p>
-                    </div>
-                    <div class="weui_cell_ft">
-                    </div>
-                </a>
-                <a class="weui_cell" href="tsxq.html">
-                    <div class="weui_cell_hd">
-                        <img src="__PUBLIC__/bookstore/images/a9.jpeg" alt="icon" style="width:80px;height:40px;margin-right:5px;display:block">
-                    </div>
-                    <div class="weui_cell_bd weui_cell_primary">
-                        <p>四六级复习资料</p>
-                    </div>
-                    <div class="weui_cell_ft">
-                    </div>
-                </a>
+                </volist>
+
             </div>
 
         </div>

@@ -54,22 +54,32 @@
 		</div>
 		<!--soso结束-->
 		<!--shangpin开始-->
-		<div class="weui-row">
-			<div class="weui-col-50"><a href="buy.html"><img src="__PUBLIC__/bookstore/images/a4.jpg" width="140" height="110"></a></div>
-			<div class="weui-col-50"><a href="buy.html"><img src="__PUBLIC__/bookstore/images/a7.jpg" width="140" height="110"></a></div>
-		</div>
+		
+
+			<div class="weui-row">
+				<volist name="books" id="vo" i="1">
+					<div class="weui-col-50">
+						<a href="buy.html"><img src="{$vo['bookimg']}" width="140" height="110"></a>
+						<a href="" style="color:black;">{$vo['bookname']}</a><!-- <h5 style="float:left;">{$vo['bookname']}</h5> -->
+						<p class="weui_btn weui_btn_mini weui_btn_default" style="float:right;">￥{$vo['bookprice']}</p>
+					</div>
+				</volist>
+				<!-- <div class="weui-col-50"><a href="buy.html"><img src="__PUBLIC__/bookstore/images/a7.jpg" width="140" height="110"></a></div> -->
+			</div>
+<!-- 			<div class="weui-row">
+				<div class="weui-col-50"><a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default">￥{$vo['bookprice']}</a></div>
+				<div class="weui-col-50"><a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default">￥{$vo['bookprice']}</a></div>
+			</div> -->
+
+		
+			<!-- <div class="weui-row">
+				<div class="weui-col-50"><a href="buy.html"><img src="__PUBLIC__/bookstore/images/a2.jpg" width="140" height="110"></a></div>
+				<div class="weui-col-50"><a href="buy.html"><img src="__PUBLIC__/bookstore/images/a8.jpg" width="140" height="110"></a></div>
+			</div>
 		<div class="weui-row">
 			<div class="weui-col-50"><a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default">￥19.9</a></div>
 			<div class="weui-col-50"><a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default">￥19.9</a></div>
-		</div>
-		<div class="weui-row">
-			<div class="weui-col-50"><a href="buy.html"><img src="__PUBLIC__/bookstore/images/a2.jpg" width="140" height="110"></a></div>
-			<div class="weui-col-50"><a href="buy.html"><img src="__PUBLIC__/bookstore/images/a8.jpg" width="140" height="110"></a></div>
-		</div>
-		<div class="weui-row">
-			<div class="weui-col-50"><a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default">￥19.9</a></div>
-			<div class="weui-col-50"><a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default">￥19.9</a></div>
-		</div>
+		</div> -->
 		<!--shangpin结束-->
 
 	</div>
