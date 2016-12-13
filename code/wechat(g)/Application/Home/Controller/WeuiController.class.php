@@ -35,4 +35,17 @@ class WeuiController extends Controller
         $this->display('flxq');
     }
 
+    //buy.html获取数据
+    public function buy(){
+        $bookid =I('get.bookid');
+        $books=M('tb_bookinfo');
+        $dd['bookid']=$bookid;
+        //dump($dd);
+        $books=$books->where($dd)->select();
+        $books=$books[0];
+        //dump($books);
+        $this->assign('books',$books);
+        $this->display('buy');
+    }
+
 }
