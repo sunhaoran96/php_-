@@ -201,7 +201,8 @@
                                 <td>{$vo['title']}</td>
                                 <td>{$vo['thumb']}</td>
                                 <td>{$vo['url']}</td>
-                                <td><a href="__URL__/deletePictureText/id/{$vo.id}" class="delete"><i class="icon-font">删除</i></a></td>
+                                <td><a href="__URL__/deletePictureText/id/{$vo.id}"  class="r" onclick=
+                                        "return confirm('确认要删除图文吗？请慎重哦！')">删除</a></td>
                             </tr>
                         </volist>
                     </table>

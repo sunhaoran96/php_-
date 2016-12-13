@@ -97,25 +97,33 @@
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('home/menu/menu');?>">查看菜单</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="<?php echo U('home/media/addPicture');?>">上传图片素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo U('home/media/managePicture');?>">管理图片素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
                             <li>
-                                <a href="<?php echo U('home/menu/manageMenu');?>">管理菜单</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>店铺活动<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('home/menu/addPictureText');?>">上传活动图文</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="<?php echo U('home/media/addPictureText');?>">上传图文素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo U('home/media/managePictureText');?>">管理图文素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
-                            <li>
-                                <a href="<?php echo U('home/menu/addPictureText');?>">管理活动图文</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -157,7 +165,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;&nbsp;&nbsp;订单详情</h5>
+                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;&nbsp;<a href="<?php echo U('home/admin/order1');?>">管理订单</a>&nbsp;&nbsp;>>订单详情</h5>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -186,37 +194,16 @@
                                 </div>
                                 <div class="form-group">
                                     <label>订单状态</label>
-                                    <select class="form-control" name="poststatus" value="<?php echo ($orders["poststatus"]); ?>">
-                                        <option value="未处理">未处理</option>
-                                        <option value="未发货">未发货</option>
-                                        <option value="已发货">已发货</option>
-                                        <option value="已签收">已签收</option>
-                                        <option value="已确认">已确认</option>
-                                        <option value="拒收">拒收</option>
-                                        <option value="短信确认">短信确认</option>
-                                        <option value="短信撤单">短信撤单</option>
-                                        <option value="电话不通">电话不通</option>
-                                        <option value="联系不上">联系不上</option>
-                                        <option value="不要了">不要了</option>
-                                        <option value="考虑中">考虑中</option>
-                                    </select>
-
+                                    <input type="text" class="form-control" name="poststatus" value="<?php echo ($orders["poststatus"]); ?>">
                                 </div>
                                 <div class="form-group">
                                     <label>收货状态</label>
-                                    <select class="form-control" name="recevstatus">
-                                        <option name="recevstatus">未收货</option>
-                                        <option name="recevstatus">已签收</option>
-                                        <option name="recevstatus">已确认</option>
-                                        <option name="recevstatus">拒收</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="recevstatus" value="<?php echo ($orders["recevstatus"]); ?>">
                                 </div>
-                                <button type="submit" class="btn btn-info">修改</button>
-                                <button type="submit" class="btn btn-default">返回</button>
                             </form>
                         </div>
                         <div class="col-lg-6">
-                            <form action="/home/admin/update/id/<?php echo ($books["bookid"]); ?>" method="post" name="myform" enctype="multipart/form-data">
+                            <form action="" method="post" name="myform" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label>收货人姓名</label>
                                     <input type="text" class="form-control" name="receivername" value="<?php echo ($orders["receivername"]); ?>">
@@ -236,10 +223,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>配送方式</label>
-                                    <select class="form-control" name="booktypename" value="<?php echo ($books["booktypename"]); ?>">
-                                        <option>书店送货</option>
-                                        <option>到店自提</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="mode" value="<?php echo ($orders["mode"]); ?>">
                                 </div>
                             </form>
                         </div>

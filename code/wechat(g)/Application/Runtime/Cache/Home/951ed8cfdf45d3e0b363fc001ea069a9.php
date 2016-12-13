@@ -103,25 +103,33 @@
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('home/menu/menu');?>">查看菜单</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="<?php echo U('home/media/addPicture');?>">上传图片素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo U('home/media/managePicture');?>">管理图片素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
                             <li>
-                                <a href="<?php echo U('home/menu/manageMenu');?>">管理菜单</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>店铺活动<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('home/menu/addPictureText');?>">上传活动图文</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="<?php echo U('home/media/addPictureText');?>">上传图文素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo U('home/media/managePictureText');?>">管理图文素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
-                            <li>
-                                <a href="<?php echo U('home/menu/addPictureText');?>">管理活动图文</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -181,11 +189,11 @@
                             <tr>
                                 <th class="sorting_asc" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
                                         "Rendering engine: activate to sort column descending" style="width: 80px;" aria-sort="ascending">ID</th>
-                                <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
-                                        "Engine version: activate to sort column ascending" style="width: 200px;">订购产品</th>
+
                                 <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
                                         "Browser: activate to sort column ascending" style="width: 150px;">订单号</th>
-
+                                <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
+                                        "Engine version: activate to sort column ascending" style="width: 200px;">订购产品</th>
                                 <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
                                         "Engine version: activate to sort column ascending" style="width: 100px;">订购数量</th>
                                 <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
@@ -202,15 +210,17 @@
                             <tbody>
                             <?php if(is_array($orders)): $i = 0; $__LIST__ = $orders;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr class="gradeA">
                                 <td><?php echo ($vo['id']); ?></td>
-                                <td><?php echo ($vo['goodsname']); ?></td>
                                 <td><?php echo ($vo['orderid']); ?></td>
+                                <td><?php echo ($vo['goodsname']); ?></td>
                                 <td><?php echo ($vo['ordermount']); ?></td>
                                 <td><?php echo ($vo['poststatus']); ?></td>
                                 <td><?php echo ($vo['recevstatus']); ?></td>
                                 <td><?php echo ($vo['price']); ?></td>
                                 <td><a href="/index.php/Home/Admin/deleteorder/orderid/<?php echo ($vo["orderid"]); ?>" class="r" onclick=
                                         "return confirm('确认要删除订单吗？请慎重哦！')">删除</a>&nbsp;&nbsp;
-                                    <a href="/index.php/Home/Admin/details/id/<?php echo ($vo["id"]); ?>">详情</a></td>
+                                    <a href="/index.php/Home/Admin/rewampOrder/id/<?php echo ($vo["id"]); ?>">修改</a>&nbsp;&nbsp;
+                                    <a href="/index.php/Home/Admin/details/id/<?php echo ($vo["id"]); ?>">详情</a>
+                                    </td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                             </tbody>
                         </table>

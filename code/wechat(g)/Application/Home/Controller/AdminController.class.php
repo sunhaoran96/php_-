@@ -217,6 +217,25 @@ class AdminController extends Controller
         $this->assign('orders',$orders);
         $this->display();
     }
+    public function rewampOrder(){
+//        $btype=M('tb_bookinfo');
+//        $condition=array();
+//        $condition['bookid']=1;  //外键中分类id为1
+//        $btype=$btype->where($condition)->select();
+//        $this->assign('btype',$btype);
+
+
+        $id =I('get.id');
+        $orders=M('tb_order');
+//        $dd['id']=$id;
+//        dump($dd);
+        $orders=$orders->where("id=$id")->select();
+        //dump($orders);
+        $orders=$orders[0];
+        //dump($bgoods);
+        $this->assign('orders',$orders);
+        $this->display();
+    }
     //修改订单详情
     public function update1(){
         //获取post数据

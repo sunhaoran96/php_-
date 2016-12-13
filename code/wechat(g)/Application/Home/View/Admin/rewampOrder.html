@@ -41,12 +41,6 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
             <h2 style="color: indigo">&nbsp;&nbsp;新旧书店后台管理系统</h2>
         </div>
         <!-- /.navbar-header -->
@@ -171,7 +165,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;订单管理</h5>
+                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;&nbsp;&nbsp;订单详情</h5>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -180,92 +174,89 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        管理订单
+                        订单修改
                     </div>
-                    <!-- /.panel-heading -->
                     <div class="panel-body">
-                        <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
-                            <thead>
-                            <tr>
-                                <th class="sorting_asc" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
-                                        "Rendering engine: activate to sort column descending" style="width: 80px;" aria-sort="ascending">ID</th>
+                        <div class="row" style="margin: auto" />
+                        <div class="col-lg-6">
+                            <form action="/home/admin/update1/id/{$orders.id}" method="post" id="myform" name="myform" enctype="multipart/form-data">
 
-                                <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
-                                        "Browser: activate to sort column ascending" style="width: 150px;">订单号</th>
-                                <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
-                                        "Engine version: activate to sort column ascending" style="width: 200px;">订购产品</th>
-                                <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
-                                        "Engine version: activate to sort column ascending" style="width: 100px;">订购数量</th>
-                                <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
-                                        "Engine version: activate to sort column ascending" style="width: 151px;">订单状态</th>
-                                <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
-                                        "Engine version: activate to sort column ascending" style="width: 151px;">收货状态</th>
-                                <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
-                                        "Engine version: activate to sort column ascending" style="width: 80px;">总价</th>
-                                <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label=
-                                        "Engine version: activate to sort column ascending" style="width: 151px;">操作</th>
+                                <div class="form-group">
+                                    <label>订单状态</label>
+                                    <select class="form-control" name="poststatus" value="{$orders.poststatus}">
+                                        <option value="未处理">未处理</option>
+                                        <option value="未发货">未发货</option>
+                                        <option value="已发货">已发货</option>
+                                        <option value="已签收">已签收</option>
+                                        <option value="已确认">已确认</option>
+                                        <option value="拒收">拒收</option>
+                                        <option value="短信确认">短信确认</option>
+                                        <option value="短信撤单">短信撤单</option>
+                                        <option value="电话不通">电话不通</option>
+                                        <option value="联系不上">联系不上</option>
+                                        <option value="不要了">不要了</option>
+                                        <option value="考虑中">考虑中</option>
+                                    </select>
 
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <volist name="orders" id="vo" >
-                            <tr class="gradeA">
-                                <td>{$vo['id']}</td>
-                                <td>{$vo['orderid']}</td>
-                                <td>{$vo['goodsname']}</td>
-                                <td>{$vo['ordermount']}</td>
-                                <td>{$vo['poststatus']}</td>
-                                <td>{$vo['recevstatus']}</td>
-                                <td>{$vo['price']}</td>
-                                <td><a href="__URL__/deleteorder/orderid/{$vo.orderid}" class="r" onclick=
-                                        "return confirm('确认要删除订单吗？请慎重哦！')">删除</a>&nbsp;&nbsp;
-                                    <a href="__URL__/rewampOrder/id/{$vo.id}">修改</a>&nbsp;&nbsp;
-                                    <a href="__URL__/details/id/{$vo.id}">详情</a>
-                                    </td>
-                            </tr>
-                            </volist>
-                            </tbody>
-                        </table>
-                        <!-- /.table-responsive -->
+                                </div>
+                                <div class="form-group">
+                                    <label>收货状态</label>
+                                    <select class="form-control" name="recevstatus">
+                                        <option value="未收货">未收货</option>
+                                        <option value="已签收">已签收</option>
+                                        <option value="已确认">已确认</option>
+                                        <option value="拒收">拒收</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>配送方式</label>
+                                    <select class="form-control" name="mode" value="{$books.mode}">
+                                        <option>书店送货</option>
+                                        <option>到店自提</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>收货地址</label>
+                                    <input type="text" class="form-control" name="receiveaddress" value="{$orders.receiveaddress}">
+                                </div>
+                                <div class="form-group">
+                                    <label>收货人联系方式</label>
+                                    <input type="text" class="form-control" name="receivertel" value="{$orders.receivertel}">
+                                </div>
+                                <button type="submit" class="btn btn-info">修改</button>
+                                <button type="submit" class="btn btn-default">返回</button>
+                            </form>
+                        </div>
+                        <!-- /.col-lg-6 (nested) -->
 
+                        <!-- /.col-lg-6 (nested) -->
                     </div>
-                    <!-- /.panel-body -->
+                    <!-- /.row (nested) -->
                 </div>
-                <!-- /.panel -->
+                <!-- /.panel-body -->
             </div>
-            <!-- /.col-lg-12 -->
+            <!-- /.panel -->
         </div>
-        <!-- /.row -->
-
-        <!-- /.col-lg-6 -->
+        <!-- /.col-lg-12 -->
     </div>
-    <!-- /#wrapper -->
+    <!-- /.row -->
+</div>
+<!-- /#page-wrapper -->
 
-    <!-- jQuery -->
-    <script src="__PUBLIC__/admin/vendor/jquery/jquery.min.js"></script>
+</div>
+<!-- /#wrapper -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="__PUBLIC__/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- jQuery -->
+<script src="__PUBLIC__/admin/vendor/jquery/jquery.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="__PUBLIC__/admin/vendor/metisMenu/metisMenu.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="__PUBLIC__/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- DataTables JavaScript -->
-    <script src="__PUBLIC__/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="__PUBLIC__/admin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
-    <script src="__PUBLIC__/admin/vendor/datatables-responsive/dataTables.responsive.js"></script>
+<!-- Metis Menu Plugin JavaScript -->
+<script src="__PUBLIC__/admin/vendor/metisMenu/metisMenu.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="__PUBLIC__/admin/dist/js/sb-admin-2.js"></script>
-
-    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-    <script>
-        $(document).ready(function() {
-            $('#dataTables-example').DataTable({
-                responsive: true
-            });
-        });
-    </script>
+<!-- Custom Theme JavaScript -->
+<script src="__PUBLIC__/admin/dist/js/sb-admin-2.js"></script>
 
 </body>
 

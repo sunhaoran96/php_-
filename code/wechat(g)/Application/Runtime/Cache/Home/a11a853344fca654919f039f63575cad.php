@@ -31,11 +31,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 
     <![endif]-->
-    <style type="text/css">
-    #div{margin-right: 10px;}
-    #div1{width: 50px;}
-    </style>
-    
 
 </head>
 
@@ -46,12 +41,6 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
             <h2 style="color: indigo">&nbsp;&nbsp;新旧书店后台管理系统</h2>
         </div>
         <!-- /.navbar-header -->
@@ -72,7 +61,7 @@
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i>设置</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="<?php echo U('home/admin/login');?>"><i class="fa fa-sign-out fa-fw"></i>退出</a>
+                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>退出</a>
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
@@ -107,7 +96,7 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                    <li  class="active">
+                    <li>
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
@@ -157,7 +146,7 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="#"><i class="fa fa-dashboard fa-fw"></i>订单管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
@@ -176,7 +165,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;管理图片素材</h5>
+                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;&nbsp;&nbsp;订单详情</h5>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -185,68 +174,89 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        管理图片素材
+                        订单修改
                     </div>
-                    <!-- /.panel-heading -->
                     <div class="panel-body">
-                        <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
-                            <thead>
-                            <tr>
-                                <th>缩略图</th>
-                                <th>media_id</th>
-                                <th>url</th>
-                                <th>操作</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <?php if(is_array($images)): $i = 0; $__LIST__ = $images;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr class="gradeA">
-                                    <td><img height="100px" src="/Public/uploads/<?php echo ($vo['filepath']); ?>"></td>
-                                    <td><?php echo ($vo['mediaid']); ?></td>
-                                    <td><?php echo ($vo['picurl']); ?></td>
-                                    <td><a href="/index.php/Home/Media/deletePicture/id/<?php echo ($vo["id"]); ?>"  class="r" onclick=
-                                            "return confirm('确认要删除图片吗？请慎重哦！')">删除</a></td>
-                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                            </tbody>
-                        </table>
-                        <!-- /.table-responsive -->
+                        <div class="row" style="margin: auto" />
+                        <div class="col-lg-6">
+                            <form action="/home/admin/update1/id/<?php echo ($orders["id"]); ?>" method="post" id="myform" name="myform" enctype="multipart/form-data">
 
+                                <div class="form-group">
+                                    <label>订单状态</label>
+                                    <select class="form-control" name="poststatus" value="<?php echo ($orders["poststatus"]); ?>">
+                                        <option value="未处理">未处理</option>
+                                        <option value="未发货">未发货</option>
+                                        <option value="已发货">已发货</option>
+                                        <option value="已签收">已签收</option>
+                                        <option value="已确认">已确认</option>
+                                        <option value="拒收">拒收</option>
+                                        <option value="短信确认">短信确认</option>
+                                        <option value="短信撤单">短信撤单</option>
+                                        <option value="电话不通">电话不通</option>
+                                        <option value="联系不上">联系不上</option>
+                                        <option value="不要了">不要了</option>
+                                        <option value="考虑中">考虑中</option>
+                                    </select>
+
+                                </div>
+                                <div class="form-group">
+                                    <label>收货状态</label>
+                                    <select class="form-control" name="recevstatus">
+                                        <option value="未收货">未收货</option>
+                                        <option value="已签收">已签收</option>
+                                        <option value="已确认">已确认</option>
+                                        <option value="拒收">拒收</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>配送方式</label>
+                                    <select class="form-control" name="mode" value="<?php echo ($books["mode"]); ?>">
+                                        <option>书店送货</option>
+                                        <option>到店自提</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>收货地址</label>
+                                    <input type="text" class="form-control" name="receiveaddress" value="<?php echo ($orders["receiveaddress"]); ?>">
+                                </div>
+                                <div class="form-group">
+                                    <label>收货人联系方式</label>
+                                    <input type="text" class="form-control" name="receivertel" value="<?php echo ($orders["receivertel"]); ?>">
+                                </div>
+                                <button type="submit" class="btn btn-info">修改</button>
+                                <button type="submit" class="btn btn-default">返回</button>
+                            </form>
+                        </div>
+                        <!-- /.col-lg-6 (nested) -->
+
+                        <!-- /.col-lg-6 (nested) -->
                     </div>
-                    <!-- /.panel-body -->
+                    <!-- /.row (nested) -->
                 </div>
-                <!-- /.panel -->
+                <!-- /.panel-body -->
             </div>
-            <!-- /.col-lg-12 -->
+            <!-- /.panel -->
         </div>
-        <!-- /.row -->
-
-        <!-- /.col-lg-6 -->
+        <!-- /.col-lg-12 -->
     </div>
-    <!-- /#wrapper -->
-    <!-- /#wrapper -->
+    <!-- /.row -->
+</div>
+<!-- /#page-wrapper -->
 
-    <!-- jQuery -->
-    <script src="/Public/admin/vendor/jquery/jquery.min.js"></script>
+</div>
+<!-- /#wrapper -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- jQuery -->
+<script src="/Public/admin/vendor/jquery/jquery.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="/Public/admin/dist/js/sb-admin-2.js"></script>
+<!-- Metis Menu Plugin JavaScript -->
+<script src="/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
 
-    <script type="text/javascript">
-    $(document).ready(function () {
-        console.log('！');
-        $(".delete").click(function () {
-            var tag = confirm('真的要删除吗？');
-            if(!tag){
-                return false;
-            }
-        })
-    })
-</script>
+<!-- Custom Theme JavaScript -->
+<script src="/Public/admin/dist/js/sb-admin-2.js"></script>
 
 </body>
 

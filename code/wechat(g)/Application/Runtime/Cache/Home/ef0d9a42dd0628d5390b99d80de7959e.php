@@ -103,25 +103,33 @@
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('home/menu/menu');?>">查看菜单</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="<?php echo U('home/media/addPicture');?>">上传图片素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo U('home/media/managePicture');?>">管理图片素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
                             <li>
-                                <a href="<?php echo U('home/menu/manageMenu');?>">管理菜单</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>店铺活动<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('home/menu/addPictureText');?>">上传活动图文</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="<?php echo U('home/media/addPictureText');?>">上传图文素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo U('home/media/managePictureText');?>">管理图文素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
-                            <li>
-                                <a href="<?php echo U('home/menu/addPictureText');?>">管理活动图文</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
