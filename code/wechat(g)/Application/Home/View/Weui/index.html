@@ -59,7 +59,7 @@
 			<div class="weui-row">
 				<volist name="books" id="vo" i="1">
 					<div class="weui-col-50">
-						<a href="buy.html"><img src="{$vo['bookimg']}" width="140" height="110"></a>
+						<a href="__URL__/buy/bookid/{$vo.bookid}"><img src="{$vo['bookimg']}" width="140" height="110"></a>
 						<a href="" style="color:black;">{$vo['bookname']}</a><!-- <h5 style="float:left;">{$vo['bookname']}</h5> -->
 						<p class="weui_btn weui_btn_mini weui_btn_default" style="float:right;">￥{$vo['bookprice']}</p>
 					</div>
