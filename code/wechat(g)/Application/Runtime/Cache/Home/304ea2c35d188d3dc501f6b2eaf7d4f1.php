@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link href="/wechat(g)/Public/bookstore/lib/weui.min.css" type="text/css" rel="stylesheet">
-    <link href="/wechat(g)/Public/bookstore/css/jquery-weui.min.css" type="text/css" rel="stylesheet">
+    <link href="/Public/bookstore/lib/weui.min.css" type="text/css" rel="stylesheet">
+    <link href="/Public/bookstore/css/jquery-weui.min.css" type="text/css" rel="stylesheet">
     <style>
         html,body{
             height:100%;
@@ -44,7 +44,7 @@
                     <div style="height: 20px">
                         <a class="weui_cell" href="index.html">
                             <div class="weui_cell_hd">
-                                <img src="/wechat(g)/Public/bookstore/images/c1.jpg" alt="icon" style="width:15px;height:15px;margin-right:5px;display:block">
+                                <img src="/Public/bookstore/images/c1.jpg" alt="icon" style="width:15px;height:15px;margin-right:5px;display:block">
                             </div>
                             <div class="weui_cell_ft">
                                 新旧分类
@@ -54,7 +54,7 @@
                     <div class="weui_cells weui_cells_access">
                         <a class="weui_cell" href="flxq.html">
                             <div class="weui_cell_hd">
-                                <img src="/wechat(g)/Public/bookstore/images/a5.jpg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
+                                <img src="/Public/bookstore/images/a5.jpg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
                             </div>
                             <div class="weui_cell_bd weui_cell_primary">
                                 <p>分类1：四六级考试</p>
@@ -64,7 +64,7 @@
                         </a>
                         <a class="weui_cell" href="flxq.html">
                             <div class="weui_cell_hd">
-                                <img src="/wechat(g)/Public/bookstore/images/a2.jpg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
+                                <img src="/Public/bookstore/images/a2.jpg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
                             </div>
                             <div class="weui_cell_bd weui_cell_primary">
                                 <p>分类2：考研必备</p>
@@ -74,7 +74,7 @@
                         </a>
                         <a class="weui_cell" href="flxq.html">
                             <div class="weui_cell_hd">
-                                <img src="/wechat(g)/Public/bookstore/images/a6.jpg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
+                                <img src="/Public/bookstore/images/a6.jpg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
                             </div>
                             <div class="weui_cell_bd weui_cell_primary">
                                 <p>分类3：杂志周刊</p>
@@ -84,7 +84,7 @@
                         </a>
                         <a class="weui_cell" href="flxq.html">
                             <div class="weui_cell_hd">
-                                <img src="/wechat(g)/Public/bookstore/images/a4.jpg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
+                                <img src="/Public/bookstore/images/a4.jpg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
                             </div>
                             <div class="weui_cell_bd weui_cell_primary">
                                 <p>分类4：小说地带</p>
@@ -94,7 +94,7 @@
                         </a>
                         <a class="weui_cell" href="flxq.html">
                             <div class="weui_cell_hd">
-                                <img src="/wechat(g)/Public/bookstore/images/a9.jpeg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
+                                <img src="/Public/bookstore/images/a9.jpeg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
                             </div>
                             <div class="weui_cell_bd weui_cell_primary">
                                 <p>分类5：其他商品</p>
@@ -134,25 +134,25 @@
 
         <a href="index.html" class="weui_tabbar_item">
             <div class="weui_tabbar_icon">
-                <img src="/wechat(g)/Public/bookstore/images/f5.jpg" alt="">
+                <img src="/Public/bookstore/images/f5.jpg" alt="">
             </div>
             <p class="weui_tabbar_label">全部商品</p>
         </a>
         <a href="xjfl.html" class="weui_tabbar_item">
             <div class="weui_tabbar_icon">
-                <img src="/wechat(g)/Public/bookstore/images/f8.jpg" alt="">
+                <img src="/Public/bookstore/images/f8.jpg" alt="">
             </div>
             <p class="weui_tabbar_label">分类精选</p>
         </a>
         <a href="list.html" class="weui_tabbar_item">
             <div class="weui_tabbar_icon">
-                <img src="/wechat(g)/Public/bookstore/images/f7.jpg" alt="" >
+                <img src="/Public/bookstore/images/f7.jpg" alt="" >
             </div>
             <p class="weui_tabbar_label">我的订单</p>
         </a>
-        <a href="list_fengcai.html" class="weui_tabbar_item">
+        <a href=cart.html class="weui_tabbar_item">
             <div class="weui_tabbar_icon">
-                <img src="/wechat(g)/Public/bookstore/images/f6.jpg" alt="">
+                <img src="/Public/bookstore/images/f6.jpg" alt="">
             </div>
             <p class="weui_tabbar_label">购物车</p>
         </a>
@@ -160,9 +160,9 @@
     </div>
 </div>
 </body>
-<script type="text/javascript" src="/wechat(g)/Public/bookstore/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="/wechat(g)/Public/bookstore/js/jquery-weui.min.js"></script>
-<script type='text/javascript' src='/wechat(g)/Public/bookstore/js/swiper.js' charset='utf-8'></script>
+<script type="text/javascript" src="/Public/bookstore/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/Public/bookstore/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='/Public/bookstore/js/swiper.js' charset='utf-8'></script>
 <script>
     $(".swiper-container").swiper({
         loop: true,

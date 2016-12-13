@@ -145,19 +145,24 @@ class MediaController extends Controller{
 			$accessToken = $wechatObj->getAccessToken();
 			$url = "https://api.weixin.qq.com/cgi-bin/material/add_news?access_token=$accessToken";
 			$data = json_encode($obj,JSON_UNESCAPED_UNICODE);
-			$result=$wechatObj->addNews($url,$data);;
+			$result=$wechatObj->addNews($url,$data);
+			//dump($result);
 			$resultObj = json_decode($result);
-			$imagetextModel=M('news');
+            //dump($resultObj);
+			$imagetextModel=M('news');		
 			$data=array();
 			$data['mediaid']=$resultObj->media_id;
+			//dump($data);
 			if($imagetextModel->add($data)){
 				$medias = $imagetextModel->select();
+				//dump($medias);
 				$this->assign('medias',$medias);
 				$this->display('managePictureText');
 			}
 
 		}else{
 			$this->display();
+
 		}
 		
 	}

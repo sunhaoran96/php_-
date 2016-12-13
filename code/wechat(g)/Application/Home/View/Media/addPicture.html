@@ -106,47 +106,34 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                    <li>
-                        <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="{:U('home/menu/view')}">查看菜单</a>
-                            </li>
-                            <li>
-                                <a href="{:U('home/menu/manage')}">管理菜单</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    
-                        <li class="active">
+                    <li  class="active">
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/media/addPicture')}">上传图片素材</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="{:U('home/media/addPicture')}">上传图片素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="{:U('home/media/managePicture')}">管理图片素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
                             <li>
-                                <a href="{:U('home/media/managePicture')}">管理图片素材</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
                             <li>
-                                <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="{:U('home/media/addPictureText')}">上传图文素材</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="{:U('home/media/addPictureText')}">上传图文素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="{:U('home/media/managePictureText')}">管理图文素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
-                            <li>
-                                <a href="{:U('home/media/managePictureText')}">管理图文素材</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -158,10 +145,13 @@
                                 <a href="{:U('home/admin/manageBooks')}">管理图书</a>
                             </li>
                             <li>
+                                <a href="{:U('home/admin/addBook')}">添加图书</a>
+                            </li>
+                            <li>
                                 <a href="{:U('home/admin/manageBookType')}">管理图书分类</a>
                             </li>
                             <li>
-                                <a href="{:U('home/admin/addBook')}">添加图书</a>
+                                <a href="{:U('home/admin/addBookType')}">添加图书分类</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -171,9 +161,6 @@
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="{:U('home/admin/order1')}">查看订单信息</a>
-                            </li>
-                            <li>
-                                <a href="{:U('home/admin/order2')}">管理订单</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -208,6 +195,7 @@
             <div class="result-content" id="div" >
                <form action="{:U('home/media/addPicture')}" method="post" enctype= "multipart/form-data">
                 <input type="file" name="picture" />
+                   <div style="height: 20px;"></div>
                 <button type="submit" class="btn btn-info">添加</button>
                 <button type="submit" class="btn btn-default">返回</button>
                </form>

@@ -12,16 +12,16 @@
     <title>新旧书店后台</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/wechat(g)/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/wechat(g)/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/wechat(g)/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -33,8 +33,7 @@
     <![endif]-->
     <style type="text/css">
     #div{margin-bottom: 10px;}
-
-    </style>
+    </style>>
 
 </head>
 
@@ -205,18 +204,21 @@
                                     
                                        
             <div class="result-content" id="div" >
-               <form action="<?php echo U('home/Admin/addPicture');?>" method="post" enctype= "multipart/form-data">
+               <form action="<?php echo U('home/media/addPicture');?>" method="post" enctype= "multipart/form-data">
                 <input type="file" name="picture" />
                 
                </form>
             </div> 
-            <div>
-                <form action="<?php echo U('home/Admin/addPicture');?>" method="post" enctype= "multipart/form-data">
-                   <button type="submit" class="btn btn-info">添加</button>
-                   <button type="submit" class="btn btn-default">返回</butto> 
-                </form>
-            </div>
-
+                                        
+                                        
+                                        
+                                         
+                                        
+                                        
+                                        <button type="submit" class="btn btn-info">添加</button>
+                                        <button type="submit" class="btn btn-default">返回</button>
+                                    </form>
+                                </div>
                                 <!-- /.col-lg-6 (nested) -->
 
                                 <!-- /.col-lg-6 (nested) -->
@@ -235,19 +237,18 @@
 
     </div>
     <!-- /#wrapper -->
-    <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="/wechat(g)/Public/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/wechat(g)/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="/wechat(g)/Public/admin/dist/js/sb-admin-2.js"></script>
+    <script src="../dist/js/sb-admin-2.js"></script>
 
 </body>
 

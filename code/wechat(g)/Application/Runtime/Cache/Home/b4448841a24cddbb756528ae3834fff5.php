@@ -12,16 +12,16 @@
     <title>新旧书店后台</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/wechat(g)/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/wechat(g)/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/wechat(g)/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -59,7 +59,7 @@
                 <!-- /.dropdown-messages -->
             </li>
             <!-- /.dropdown -->
-             <li class="dropdown">
+            <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
@@ -67,7 +67,7 @@
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i>设置</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="<?php echo U('home/admin/login');?>"><i class="fa fa-sign-out fa-fw"></i>退出</a>
+                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>退出</a>
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
@@ -94,10 +94,10 @@
                         <a href="#"><i class="fa fa-table fa-fw"></i> 管理员<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('home/admin/adminInfo');?>">查看管理员信息</a>
+                                <a href="adminInfo.html">查看管理员信息</a>
                             </li>
                             <li>
-                                <a href="<?php echo U('home/admin/register');?>">添加管理员</a>
+                                <a href="register.html">添加管理员</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -106,43 +106,22 @@
                         <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('home/menu/view');?>">查看菜单</a>
+                                <a href="menu.html">查看菜单</a>
                             </li>
                             <li>
-                                <a href="<?php echo U('home/menu/manage');?>">管理菜单</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    
-                        <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="<?php echo U('home/media/addPicture');?>">上传图片素材</a>
-                            </li>
-                            <li>
-                                <a href="<?php echo U('home/media/managePicture');?>">管理图片素材</a>
+                                <a href="manageMenu.html">管理菜单</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                            <li>
-                                <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>店铺活动<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('home/media/addPictureText');?>">上传图文素材</a>
+                                <a href="addPictureText.html">上传活动图文</a>
                             </li>
                             <li>
-                                <a href="<?php echo U('home/media/managePictureText');?>">管理图文素材</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
+                                <a href="managePictureText.html">管理活动图文</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -151,13 +130,13 @@
                         <a href="#"><i class="fa fa-files-o fa-fw"></i>图书管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('home/admin/manageBooks');?>">管理图书</a>
+                                <a href="manageBooks.html">管理图书</a>
                             </li>
                             <li>
-                                <a href="<?php echo U('home/admin/manageBookType');?>">管理图书分类</a>
+                                <a href="manageBookType.html">管理图书分类</a>
                             </li>
                             <li>
-                                <a href="<?php echo U('home/admin/addBook');?>">添加图书</a>
+                                <a href="addBook.html">添加图书</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -166,10 +145,10 @@
                         <a href="#"><i class="fa fa-dashboard fa-fw"></i>订单管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('home/admin/order1');?>">查看订单信息</a>
+                                <a href="order1.html">查看订单信息</a>
                             </li>
                             <li>
-                                <a href="<?php echo U('home/admin/order2');?>">管理订单</a>
+                                <a href="order2.html">管理订单</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -184,7 +163,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;管理图文素材</h5>
+                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;管理图书分类</h5>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -193,7 +172,7 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        管理图文素材
+                        管理图书信息
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
@@ -226,7 +205,7 @@
                                 <td>url:</td>
                                 <td></td>
                                 <td>
-                                    
+                                    <a class="link-update" href="designPictureText.html">修改</a>
                                     <a class="delete" href="#">删除</a>
                                 </td>
 
@@ -245,7 +224,7 @@
                                 <td>url:</td>
                                 <td></td>
                                 <td>
-                                    
+                                    <a class="link-update" href="designPictureText.html">修改</a>
                                     <a class="delete" href="#">删除</a>
                                 </td>
 
@@ -264,7 +243,7 @@
                                 <td>url:</td>
                                 <td></td>
                                 <td>
-                                   
+                                    <a class="link-update" href="designPictureText.html">修改</a>
                                     <a class="delete" href="#">删除</a>
                                 </td>
 
@@ -283,7 +262,7 @@
                                 <td>url:</td>
                                 <td></td>
                                 <td>
-                                    
+                                    <a class="link-update" href="designPictureText.html">修改</a>
                                     <a class="delete" href="#">删除</a>
                                 </td>
 
@@ -302,7 +281,7 @@
                                 <td>url:</td>
                                 <td></td>
                                 <td>
-                                    
+                                    <a class="link-update" href="designPictureText.html">修改</a>
                                     <a class="delete" href="#">删除</a>
                                 </td>
 
@@ -321,7 +300,7 @@
                                 <td>url:</td>
                                 <td></td>
                                 <td>
-                                    
+                                    <a class="link-update" href="designPictureText.html">修改</a>
                                     <a class="delete" href="#">删除</a>
                                 </td>
 
@@ -335,26 +314,30 @@
                 </div>
                 <!-- /.panel -->
             </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+
         <!-- /.col-lg-6 -->
     </div>
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="/wechat(g)/Public/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="/Public/admin/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/wechat(g)/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- DataTables JavaScript -->
-    <script src="/wechat(g)/Public/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="/wechat(g)/Public/admin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
-    <script src="/wechat(g)/Public/admin/vendor/datatables-responsive/dataTables.responsive.js"></script>
+    <script src="/Public/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="/Public/admin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="/Public/admin/vendor/datatables-responsive/dataTables.responsive.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="/wechat(g)/Public/admin/dist/js/sb-admin-2.js"></script>
+    <script src="/Public/admin/dist/js/sb-admin-2.js"></script>
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>

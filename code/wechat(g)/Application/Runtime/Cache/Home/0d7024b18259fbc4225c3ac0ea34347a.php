@@ -12,16 +12,16 @@
     <title>新旧书店后台</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/wechat(g)/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="/Public/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/wechat(g)/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="/Public/admin/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/wechat(g)/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/Public/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -86,7 +86,7 @@
                                     <button class="btn btn-default" type="button">
                                         <i class="fa fa-search"></i>
                                     </button>
-                                </span>
+                            </span>
                         </div>
                         <!-- /input-group -->
                     </li>
@@ -94,10 +94,10 @@
                         <a href="#"><i class="fa fa-table fa-fw"></i> 管理员<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="adminInfo.html">查看管理员信息</a>
+                                <a href="<?php echo U('home/admin/adminInfo');?>">查看管理员信息</a>
                             </li>
                             <li>
-                                <a href="register.html">添加管理员</a>
+                                <a href="<?php echo U('home/admin/register');?>">添加管理员</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -106,41 +106,22 @@
                         <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="menu.html">查看菜单</a>
+                                <a href="<?php echo U('home/menu/menu');?>">查看菜单</a>
                             </li>
                             <li>
-                                <a href="manageMenu.html">管理菜单</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li><li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="<?php echo U('home/media/addPicture');?>">上传图片素材</a>
-                            </li>
-                            <li>
-                                <a href="<?php echo U('home/media/managePicture');?>">管理图片素材</a>
+                                <a href="<?php echo U('home/menu/manageMenu');?>">管理菜单</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                            <li>
-                                <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>店铺活动<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="<?php echo U('home/media/addPictureText');?>">上传图文素材</a>
+                                <a href="<?php echo U('home/menu/addPictureText');?>">上传活动图文</a>
                             </li>
                             <li>
-                                <a href="<?php echo U('home/media/managePictureText');?>">管理图文素材</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
+                                <a href="<?php echo U('home/menu/addPictureText');?>">管理活动图文</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -149,13 +130,16 @@
                         <a href="#"><i class="fa fa-files-o fa-fw"></i>图书管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="manageBooks.html">管理图书</a>
+                                <a href="<?php echo U('home/admin/manageBooks');?>">管理图书</a>
                             </li>
                             <li>
-                                <a href="manageBookType.html">管理图书分类</a>
+                                <a href="<?php echo U('home/admin/addBook');?>">添加图书</a>
                             </li>
                             <li>
-                                <a href="addBook.html">添加图书</a>
+                                <a href="<?php echo U('home/admin/manageBookType');?>">管理图书分类</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo U('home/admin/addBookType');?>">添加图书分类</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -164,10 +148,7 @@
                         <a href="#"><i class="fa fa-dashboard fa-fw"></i>订单管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="order1.html">查看订单信息</a>
-                            </li>
-                            <li>
-                                <a href="order2.html">管理订单</a>
+                                <a href="<?php echo U('home/admin/order1');?>">查看订单信息</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -193,176 +174,43 @@
                     <div class="panel-heading">
                         管理图书信息
                     </div>
+
                     <!-- /.panel-heading -->
                     <div class="panel-body">
+                        <form action="/home/admin/store" method="post" id="myform" name="myform">
+                            <div class="form-group">
+                                <label style="margin-left: 10px;">选择图书类别</label>
+                                <select class="form-control" name="booktypename" style="width: 200px;">
+                                    <option>四六级考试</option>
+                                    <option>考研必备</option>
+                                    <option>期末复习</option>
+                                    <option>杂志周刊</option>
+                                    <option>小说天地</option>
+                                    <option>其他</option>
+                                </select>
+                            </div>
+                        </form>
                         <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                             <thead>
                             <tr>
-                                <th>id</th>
                                 <th>图书编号</th>
                                 <th>图书名称</th>
                                 <th>所属分类</th>
+                                <th>图书价格</th>
                                 <th>图书剩余量</th>
-                                <th>picUrl</th>
                                 <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="gradeA">
-                                <td>2</td>
-                                <td>0002</td>
-                                <td>从你的全世界路过</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>3</td>
-                                <td>0003</td>
-                                <td>匆匆那年</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>4</td>
-                                <td>0004</td>
-                                <td>解说天地</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>5</td>
-                                <td>0005</td>
-                                <td>小王子</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>2</td>
-                                <td>0002</td>
-                                <td>从你的全世界路过</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>3</td>
-                                <td>0003</td>
-                                <td>匆匆那年</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>4</td>
-                                <td>0004</td>
-                                <td>解说天地</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>5</td>
-                                <td>0005</td>
-                                <td>小王子</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>2</td>
-                                <td>0002</td>
-                                <td>从你的全世界路过</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>3</td>
-                                <td>0003</td>
-                                <td>匆匆那年</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>4</td>
-                                <td>0004</td>
-                                <td>解说天地</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-
-                            </tr>
-                            <tr class="gradeA">
-                                <td>5</td>
-                                <td>0005</td>
-                                <td>小王子</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>1</td>
-                                <td>0001</td>
-                                <td>小王子</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>2</td>
-                                <td>0002</td>
-                                <td>从你的全世界路过</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>3</td>
-                                <td>0003</td>
-                                <td>匆匆那年</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>4</td>
-                                <td>0004</td>
-                                <td>解说天地</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-                            <tr class="gradeA">
-                                <td>5</td>
-                                <td>0005</td>
-                                <td>小王子</td>
-                                <td>小说天地</td>
-                                <td>199</td>
-                                <td>url:http</td>
-                                <td><a href="#">删除</a>&nbsp;&nbsp;<a href="revamp.html">修改</a></td>
-                            </tr>
-
+                            <?php if(is_array($books)): $i = 0; $__LIST__ = $books;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr class="gradeA">
+                                <td><?php echo ($vo['bookid']); ?></td>
+                                <td><?php echo ($vo['bookname']); ?></td>
+                                <td><?php echo ($vo['booktypename']); ?></td>
+                                <td><?php echo ($vo['bookprice']); ?></td>
+                                <td><?php echo ($vo['bookstoremount']); ?></td>
+                                <td><a href="/index.php/Home/Admin/deletebook/bookid/<?php echo ($vo["bookid"]); ?>"  class="r" onclick=
+                                        "return confirm('确认要删除图书吗？请慎重哦！')">删除</a>&nbsp;&nbsp;<a href="/index.php/Home/Admin/revamp/bookid/<?php echo ($vo["bookid"]); ?>">修改</a></td>
+                            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                             </tbody>
                         </table>
                         <!-- /.table-responsive -->
@@ -381,21 +229,21 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="/wechat(g)/Public/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="/Public/admin/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/wechat(g)/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Public/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="/wechat(g)/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="/Public/admin/vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- DataTables JavaScript -->
-    <script src="/wechat(g)/Public/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="/wechat(g)/Public/admin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
-    <script src="/wechat(g)/Public/admin/vendor/datatables-responsive/dataTables.responsive.js"></script>
+    <script src="/Public/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="/Public/admin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="/Public/admin/vendor/datatables-responsive/dataTables.responsive.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="/wechat(g)/Public/admin/dist/js/sb-admin-2.js"></script>
+    <script src="/Public/admin/dist/js/sb-admin-2.js"></script>
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link href="/wechat(g)/Public/bookstore/lib/weui.min.css" type="text/css" rel="stylesheet"/>
-    <link href="/wechat(g)/Public/bookstore/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
-    <script type="text/javascript" src="/wechat(g)/Public/bookstore/js/jquery.1.4.2-min.js"></script>
-    <script type="text/javascript" src="/wechat(g)/Public/bookstore/js/payfor.js"></script>
+    <link href="/Public/bookstore/lib/weui.min.css" type="text/css" rel="stylesheet"/>
+    <link href="/Public/bookstore/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="/Public/bookstore/js/jquery.1.4.2-min.js"></script>
+    <script type="text/javascript" src="/Public/bookstore/js/payfor.js"></script>
     <style>
         .weui_media_title1{
             font-size: 30px;
@@ -51,9 +51,9 @@
 <!--顶部幻灯片开始-->
 <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="/wechat(g)/Public/bookstore/images/001.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="/wechat(g)/Public/bookstore/images/002.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="/wechat(g)/Public/bookstore/images/004.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/Public/bookstore/images/001.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/Public/bookstore/images/002.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/Public/bookstore/images/004.jpg" alt=""></div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -75,7 +75,7 @@
 <div class="weui_cells weui_cells_access">
     <a class="weui_cell" href="index.html">
         <div class="weui_cell_hd">
-            <img src="/wechat(g)/Public/bookstore/images/e1.jpg" alt="icon" style="width:20px;margin-right:5px;display:block">
+            <img src="/Public/bookstore/images/e1.jpg" alt="icon" style="width:20px;margin-right:5px;display:block">
         </div>
         <div class="weui_cell_bd weui_cell_primary">
             <p>河北师大新旧书店</p>
@@ -86,7 +86,7 @@
     </a>
     <span class="weui_cell" href="index.html">
         <div class="weui_cell_hd">
-            <img src="/wechat(g)/Public/bookstore/images/f4.jpg" alt="icon" style="width:20px;margin-right:5px;display:block">
+            <img src="/Public/bookstore/images/f4.jpg" alt="icon" style="width:20px;margin-right:5px;display:block">
         </div>
         <div class="weui_cell_bd weui_cell_primary">
             <p>选择图书数量</p>
@@ -117,14 +117,14 @@
     <div class="weui_tabbar">
 <a href="javascript:;" class="weui_tabbar_item weui_bar_item_on">
             <div class="weui_tabbar_icon">
-                <img src="/wechat(g)/Public/bookstore/images/icon_nav_button.png" alt="">
+                <img src="/Public/bookstore/images/icon_nav_button.png" alt="">
             </div>
 
         </a>
 
         <a href="javascript:;" class="weui_tabbar_item">
             <div class="weui_tabbar_icon">
-                <img src="/wechat(g)/Public/bookstore/images/icon_nav_msg.png" alt="">
+                <img src="/Public/bookstore/images/icon_nav_msg.png" alt="">
             </div>
 
         </a>
@@ -136,9 +136,9 @@
 </div>
 <!--tabbar结束-->
 </body>
-<script type="text/javascript" src="/wechat(g)/Public/bookstore/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="/wechat(g)/Public/bookstore/lib/jquery-weui.min.js"></script>
-<script type='text/javascript' src='/wechat(g)/Public/bookstore/js/swiper.js'></script>
+<script type="text/javascript" src="/Public/bookstore/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/Public/bookstore/lib/jquery-weui.min.js"></script>
+<script type='text/javascript' src='/Public/bookstore/js/swiper.js'></script>
 <script>
     $(".swiper-container").swiper({
         loop: true,

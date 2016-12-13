@@ -94,81 +94,69 @@
                         <a href="#"><i class="fa fa-table fa-fw"></i> 管理员<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="adminInfo.html">查看管理员信息</a>
+                                <a href="{:U('home/admin/adminInfo')}">查看管理员信息</a>
                             </li>
                             <li>
-                                <a href="register.html">添加管理员</a>
+                                <a href="{:U('home/admin/register')}">添加管理员</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="menu.html">查看菜单</a>
-                            </li>
-                            <li>
-                                <a href="manageMenu.html">管理菜单</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                                <li class="active">
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/media/addPicture')}">上传图片素材</a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="{:U('home/media/addPicture')}">上传图片素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="{:U('home/media/managePicture')}">管理图片素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
                             </li>
                             <li>
-                                <a href="{:U('home/media/managePicture')}">管理图片素材</a>
+                            <li>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="{:U('home/media/addPictureText')}">上传图文素材</a>
+                                    </li>
+                                    <li>
+                                        <a href="{:U('home/media/managePictureText')}">管理图文素材</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                            <li>
-                                <li class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                    <li>
+                        <a href="#"><i class="fa fa-files-o fa-fw"></i>图书管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/media/addPictureText')}">上传图文素材</a>
+                                <a href="{:U('home/admin/manageBooks')}">管理图书</a>
                             </li>
                             <li>
-                                <a href="{:U('home/media/managePictureText')}">管理图文素材</a>
+                                <a href="{:U('home/admin/addBook')}">添加图书</a>
                             </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
+                            <li>
+                                <a href="{:U('home/admin/manageBookType')}">管理图书分类</a>
+                            </li>
+                            <li>
+                                <a href="{:U('home/admin/addBookType')}">添加图书分类</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
                     <li class="active">
-                        <a href="#"><i class="fa fa-files-o fa-fw"></i>图书管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="manageBooks.html">管理图书</a>
-                            </li>
-                            <li>
-                                <a href="manageBookType.html">管理图书分类</a>
-                            </li>
-                            <li>
-                                <a href="addBook.html">添加图书</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    <li>
                         <a href="#"><i class="fa fa-dashboard fa-fw"></i>订单管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="order1.html">查看订单信息</a>
-                            </li>
-                            <li>
-                                <a href="order2.html">管理订单</a>
+                                <a href="{:U('home/admin/order1')}">查看订单信息</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -183,7 +171,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;&nbsp;<a href="manageBooks.html">管理图书</a>&nbsp;&nbsp;>>&nbsp;&nbsp;修改图书</h5>
+                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;&nbsp;&nbsp;修改图书</h5>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -192,38 +180,38 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        添加书籍
+                        修改书籍
                     </div>
                     <div class="panel-body">
                         <div class="row" style="margin: auto" />
                         <div class="col-lg-6">
-                            <form role="form">
+                            <form action="/home/admin/update/id/{$books.bookid}" method="post" id="myform" name="myform" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label>图书编号</label>
-                                    <input class="form-control">
+                                    <input type="text" class="form-control" name="bookid" value="{$books.bookid}">
                                 </div>
                                 <div class="form-group">
                                     <label>图书名称</label>
-                                    <input class="form-control">
+                                    <input type="text" class="form-control" name="bookname" value="{$books.bookname}">
                                 </div>
+
                                 <div class="form-group">
                                     <label>图书分类</label>
-                                    <select class="form-control">
-                                        <option>四六级考试</option>
-                                        <option>考研必备</option>
-                                        <option>期末复习</option>
-                                        <option>杂志周刊</option>
-                                        <option>小说天地</option>
-                                        <option>其他</option>
+
+                                    <select class="form-control" name="booktypename">
+                                        <volist name="btype" id="vo" >
+                                        <option name="booktypename" value="{$vo['booktypename']}">{$vo['booktypename']}</option>
+                                        </volist>
                                     </select>
+
+                                </div>
+                                <div class="form-group">
+                                    <label>图书价格</label>
+                                    <input type="text" class="form-control" name="bookprice" value="{$books.bookprice}">
                                 </div>
                                 <div class="form-group">
                                     <label>图书剩余量</label>
-                                    <input class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>缩略图</label>
-                                    <input name="smallimg" id="" type="file">
+                                    <input type="text" class="form-control" name="bookstoremount" value="{$books.bookstoremount}">
                                 </div>
                                 <button type="submit" class="btn btn-info">修改</button>
                                 <button type="submit" class="btn btn-default">返回</button>
@@ -248,7 +236,9 @@
 </div>
 <!-- /#wrapper -->
 
-<!-- jQuery -->
+<script>
+$("select").val({$vo:booktypename});
+</script>
 <script src="__PUBLIC__/admin/vendor/jquery/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->

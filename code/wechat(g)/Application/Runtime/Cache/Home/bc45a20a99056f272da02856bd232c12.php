@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link href="/wechat(g)/Public/bookstore/lib/weui.min.css" type="text/css" rel="stylesheet"/>
-    <link href="/wechat(g)/Public/bookstore/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
+    <link href="/Public/bookstore/lib/weui.min.css" type="text/css" rel="stylesheet"/>
+    <link href="/Public/bookstore/css/jquery-weui.min.css" type="text/css" rel="stylesheet"/>
     <style>
         html,body{
             height:100%;
@@ -55,7 +55,7 @@
                     <div style="height: 20px">
                         <a class="weui_cell" href="xjfl.html">
                             <div class="weui_cell_hd">
-                                <img src="/wechat(g)/Public/bookstore/images/c1.jpg" alt="icon" style="width:15px;height:15px;margin-right:5px;display:block">
+                                <img src="/Public/bookstore/images/c1.jpg" alt="icon" style="width:15px;height:15px;margin-right:5px;display:block">
                             </div>
                             <div class="weui_cell_ft">
                                 图书详情
@@ -71,8 +71,8 @@
                                     如果你无法简洁的表达你的想法，那只能说明你还不够了解它。<br/> - 阿尔伯特.爱因斯坦
                                 </p>
                                     <p>图书所在位置</p>
-                                <img src="/wechat(g)/Public/bookstore/images/w1.jpg" style="height: 200px;width: 150px; margin: auto">
-                                <img src="/wechat(g)/Public/bookstore/images/w2.png" style="height: 200px;width: 150px; margin: auto">
+                                <img src="/Public/bookstore/images/w1.jpg" style="height: 200px;width: 150px; margin: auto">
+                                <img src="/Public/bookstore/images/w2.png" style="height: 200px;width: 150px; margin: auto">
 
 
                              </div>
@@ -95,9 +95,9 @@
   
 </div>
 </body>
-<script type="text/javascript" src="/wechat(g)/Public/bookstore/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="/wechat(g)/Public/bookstore/js/jquery-weui.min.js"></script>
-<script type='text/javascript' src='/wechat(g)/Public/bookstore/js/swiper.js'></script>
+<script type="text/javascript" src="/Public/bookstore/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/Public/bookstore/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='/Public/bookstore/js/swiper.js'></script>
 <script>
     $(".swiper-container").swiper({
         loop: true,

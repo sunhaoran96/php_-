@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="/wechat(g)/Public/bookstore/lib/weui.min.css" type="text/css">
-    <link rel="stylesheet" href="/wechat(g)/Public/bookstore/css/jquery-weui.min.css" type="text/css">
+    <link rel="stylesheet" href="/Public/bookstore/lib/weui.min.css" type="text/css">
+    <link rel="stylesheet" href="/Public/bookstore/css/jquery-weui.min.css" type="text/css">
 
     <style>
         html,body{
@@ -19,90 +19,98 @@
     </style>
 </head>
 <body>
-<div class="weui_tab">
-    <!--导航栏开始-->
     <div class="weui_tab">
-        <div class="weui_navbar">
-            <a class="weui_navbar_item weui_bar_item_on">
-                购物车
-            </a>
-
-        </div>
-        <div class="weui_tab_bd">
-            <div class="content">
-                <!--第一个选项卡-->
+        <div class="weui_tab">
+            <div class="weui_navbar">
+                <span class="weui_navbar_item weui_bar_item_on">
+                     购物车
+                </span>
+            </div>
+            <div class="weui_tab_bd">
+            <!--商品开始-->
+                <div class="content">
                     <div class="weui_panel">
-<div class="weui_panel weui_panel_access">
-  <div class="weui_panel_hd">
-              <a class="weui_cell" href="index.html">
-                    <div class="weui_cell_hd">
-                        <img src="/wechat(g)/Public/bookstore/images/c1.jpg" alt="icon" style="width:15px;height:15px;margin-right:5px;display:block">
+                         <div class="weui_panel weui_panel_access">
+                              <div style="height: 30px">
+
+                                   <a  href="xjfl.html" class="weui_cell">
+                                       <div class="weui_cell_hd">
+                                            <img src="/Public/bookstore/images/c1.jpg" alt="icon" style="width:15px;height:15px;margin-right:5px;display:block">
+                                        </div>
+                                       <div class="weui_cell_ft">
+                                         我的购物车
+                                       </div>
+                                   </a>
+                              </div>
+                         <div class="weui_panel_bd">
+                             <!--第一个商品开始-->
+                             <span href="buy.html" class="weui_media_box weui_media_appmsg">
+                              <input type="checkbox" name="checkAll" id="checkAll" onclick="setSelectAll();" />&nbsp;&nbsp;&nbsp;
+                                  <div class="weui_media_hd">
+                                      <a href="buy.html"><img class="weui_media_appmsg_thumb" src="/Public/bookstore/images/jieda.jpg" alt=""></a>
+                                  </div>
+                                  <div class="weui_media_bd">
+                                      <div style="width: 100px">
+                                          <h4 class="weui_media_title">解答之书</h4>
+                                      </div>
+
+                                  </div>
+                                 <div>
+                                     <div style="width: 30px; margin-bottom: 10px; margin-left: 70px">
+                                          <i class="weui_icon_cancel" name="delete"></i>
+                                      </div>
+                                      <div class="weui_cell_ft">
+                                          <p class="weui_media_desc">￥10.00</p>
+                                          <p class="weui_media_desc">×1</p>
+                                      </div>
+                                 </div>
+
+                               </span>
+                             <!--第二个商品开始-->
+                             <span href="buy.html" class="weui_media_box weui_media_appmsg">
+                              <input type="checkbox" name="checkAll" id="checkAll" onclick="setSelectAll();" />&nbsp;&nbsp;&nbsp;
+                                  <div class="weui_media_hd">
+                                      <a href="buy.html"><img class="weui_media_appmsg_thumb" src="/Public/bookstore/images/jieda.jpg" alt=""></a>
+                                  </div>
+                                  <div class="weui_media_bd">
+                                      <div style="width: 100px">
+                                          <h4 class="weui_media_title">黄铜笔夹</h4>
+                                      </div>
+
+                                  </div>
+                                 <div>
+                                     <div style="width: 30px; margin-bottom: 10px; margin-left: 70px">
+                                          <i class="weui_icon_cancel" name="delete"></i>
+                                      </div>
+                                      <div class="weui_cell_ft">
+                                          <p class="weui_media_desc">￥21.00</p>
+                                          <p class="weui_media_desc">×1</p>
+                                      </div>
+                                 </div>
+
+                               </span>
+                         </div>
+                         </div>
                     </div>
-                    <div class="weui_cell_ft">
-                        新旧书店
-                    </div>
-                </a>
                 </div>
-  <div class="weui_panel_bd">
-    <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
-    <input type="checkbox" name="checkAll" id="checkAll" onclick="setSelectAll();" />&nbsp;&nbsp;&nbsp;
-
-      <div class="weui_media_hd">
-
-        <img class="weui_media_appmsg_thumb" src="/wechat(g)/Public/bookstore/images/jieda.jpg" alt="">
-
-      </div>
-      <div class="weui_media_bd">
-        <h4 class="weui_media_title">解答之书</h4>
-        <i class="weui_icon_cancel" name="delete"></i>
-        <div class="weui_cell_ft">
-          <p class="weui_media_desc">￥59.00</p>
-          <p class="weui_media_desc">×1</p>
-          <!-- <i class="weui_icon_cancel"></i> -->
-        </div>
-      </div>
-    </a>
-
-<a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
-<input type="checkbox" name="checkAll" id="checkAll" onclick="setSelectAll();" />&nbsp;&nbsp;&nbsp;
-      <div class="weui_media_hd">
-        <img class="weui_media_appmsg_thumb" src="/wechat(g)/Public/bookstore/images/shujia.jpg" alt="">
-      </div>
-      <div class="weui_media_bd">
-        <h4 class="weui_media_title">黄铜笔夹</h4>
-        <i class="weui_icon_cancel" name="delete"></i>
-        <div class="weui_cell_ft">
-          <p class="weui_media_desc">￥21.00</p>
-          <p class="weui_media_desc">×1</p>
-        </div>
-      </div>
-    </a>
-  </div>
-
-
-                <!--第一个选项卡结束-->
             </div>
-            <div class="content" style="display: none">主题内容2</div>
-            <div class="content" style="display: none">
-                <!--第三个选项卡开始-->
-                
-                <!--第三个选项卡结束-->
-            </div>
-        </div>
-    </div>
-    <!--导航栏结束-->
-    <div class="weui_tabbar">
+    <!--商品结束-->
+            <div class="weui_tabbar">
 <!--         <a href="index.html" class="weui_tabbar_item weui_bar_item_on" > -->
-        <div class="weui_tabbar_item weui_bar_item_on" >
-        <input type="checkbox" id="selAll" onclick="selectAll();" />全选 
-        <div class="weui_cell_ft" name="">合计：￥0.00</div>
-            <a href="javascript:;" class="weui_btn weui_btn_warn">结算</a>
+                <div class="weui_tabbar_item weui_bar_item_on">
+                    <div style="margin-left: 10px"><input type="checkbox" id="selAll" onclick="selectAll();" />全选</div>
+                    <div class="weui_cell_ft" name=""><h3 style="color: #9B410E">合计：￥0.00</h3></div>
+                    <a href="javascript:;" class="weui_btn weui_btn_warn">结算</a>
+                </div>
+            </div>
+            </div>
         </div>
-    </div>
 </body>
-<script type="text/javascript" src="/wechat(g)/Public/bookstore/lib/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="/wechat(g)/Public/bookstore/js/jquery-weui.min.js"></script>
-<script type='text/javascript' src='/wechat(g)/Public/bookstore/js/swiper.js' charset='utf-8'></script>
+<script type="text/javascript" src="/Public/bookstore/lib/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/Public/bookstore/js/jquery-weui.min.js"></script>
+<script type='text/javascript' src='/Public/bookstore/js/swiper.js' charset='utf-8'></script>
+
+
 <script>
     $(".swiper-container").swiper({
         loop: true,
@@ -120,15 +128,15 @@
         $(".weui_tab_bd .content:eq("+which+")").show();
     })
 
-    // $(document).ready(function () {
-    //     console.log('！');
-    //     $(".weui_icon_cancel").click(function () {
-    //         var tag = confirm('真的要删除吗？');
-    //         if(!tag){
-    //             return false;
-    //         }
-    //     })
-    // })
+    $(document).ready(function () {
+        console.log('！');
+        $(".weui_icon_cancel").click(function () {
+            var tag = confirm('真的要删除吗？');
+            if(!tag){
+                return false;
+            }
+        })
+    })
 </script>
 
 <script language="javascript"> 
@@ -178,15 +186,7 @@ document.all.selAll.checked = false;
 } 
 } 
 
-//反选按钮 
-function inverse() { 
-var checkboxs=document.getElementsByName("checkAll"); 
-for (var i=0;i<checkboxs.length;i++) { 
-  var e=checkboxs[i]; 
-  e.checked=!e.checked; 
-  setSelectAll(); 
-} 
-} 
+
 
 </script> 
 
@@ -209,7 +209,7 @@ for (var i=0;i<checkboxs.length;i++) {
             }
         }
 
-        var table = document.getElementById('cartTable'); // 购物车表格
+        //var table = document.getElementById('cartTable'); // 购物车表格
         var selectInputs = document.getElementsByClassName('check'); // 所有勾选框
         var checkAllInputs = document.getElementsByClassName('check-all') // 全选框
         var tr = table.children[1].rows; //行
