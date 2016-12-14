@@ -31,11 +31,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 
     <![endif]-->
-    <style type="text/css">
-    #div{margin-right: 10px;}
-    #div1{width: 50px;}
-    </style>
-    
 
 </head>
 
@@ -72,7 +67,7 @@
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i>设置</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="{:U('home/admin/login')}"><i class="fa fa-sign-out fa-fw"></i>退出</a>
+                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>退出</a>
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
@@ -95,46 +90,58 @@
                         </div>
                         <!-- /input-group -->
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="#"><i class="fa fa-table fa-fw"></i> 管理员<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/admin/adminInfo')}">查看管理员信息</a>
+                                <a href="adminInfo.html">查看管理员信息</a>
                             </li>
                             <li>
-                                <a href="{:U('home/admin/register')}">添加管理员</a>
+                                <a href="register.html">添加管理员</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                    <li  class="active">
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
+                    <li>
+                        <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="{:U('home/media/addPicture')}">上传图片素材</a>
-                                    </li>
-                                    <li>
-                                        <a href="{:U('home/media/managePicture')}">管理图片素材</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-second-level -->
+                                <a href="menu.html">查看菜单</a>
                             </li>
                             <li>
-                            <li>
-                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="{:U('home/media/addPictureText')}">上传图文素材</a>
-                                    </li>
-                                    <li>
-                                        <a href="{:U('home/media/managePictureText')}">管理图文素材</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-second-level -->
+                                <a href="manageMenu.html">管理菜单</a>
                             </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                              <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{:U('home/media/addPicture')}">上传图片素材</a>
+                            </li>
+                            <li>
+                                <a href="{:U('home/media/managePicture')}">管理图片素材</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                            <li>
+                                <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{:U('home/media/addPictureText')}">上传图文素材</a>
+                            </li>
+                            <li>
+                                <a href="{:U('home/media/managePictureText')}">管理图文素材</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -143,16 +150,13 @@
                         <a href="#"><i class="fa fa-files-o fa-fw"></i>图书管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/admin/manageBooks')}">管理图书</a>
+                                <a href="manageBooks.html">管理图书</a>
                             </li>
                             <li>
-                                <a href="{:U('home/admin/addBook')}">添加图书</a>
+                                <a href="manageBookType.html">管理图书分类</a>
                             </li>
                             <li>
-                                <a href="{:U('home/admin/manageBookType')}">管理图书分类</a>
-                            </li>
-                            <li>
-                                <a href="{:U('home/admin/addBookType')}">添加图书分类</a>
+                                <a href="addBook.html">添加图书</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -161,7 +165,10 @@
                         <a href="#"><i class="fa fa-dashboard fa-fw"></i>订单管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/admin/order1')}">查看订单信息</a>
+                                <a href="order1.html">查看订单信息</a>
+                            </li>
+                            <li>
+                                <a href="order2.html">管理订单</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -173,10 +180,11 @@
         <!-- /.navbar-static-side -->
     </nav>
 
+        <!-- Page Content -->
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;管理图片素材</h5>
+                <h5><a href="#">首页</a>&nbsp;&nbsp;>>&nbsp;图片素材管理</h5>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -185,10 +193,11 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        管理图片素材
+                        图片素材管理
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
+<<<<<<< HEAD
                         <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                             <thead>
                             <tr>
@@ -208,37 +217,67 @@
                                             "return confirm('确认要删除图片吗？请慎重哦！')">删除</a></td>
                                 </tr>
                             </volist>
+=======
+                        <table  class="table table-striped table-bordered table-hover" id="dataTables-example">
+                            <thead>
+                            <tr>
+                                <th width="100px">缩略图</th>
+                                <th width="300px">media_id</th>
+                                
+                                <th width="50px">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                        
+                           <volist name="images" id="vo">
+                            <tr> 
+                             <td width="100px"><img height="100px" src="__PUBLIC__/uploads/{$vo['filepath']}"></td>
+                                <td width="300px">{$vo['mediaid']}</td>
+                                
+                                <td width="50px"><a href="__URL__/deletePicture/id/{$vo.id}" class="delete"><i class="icon-font">删除</i></a></td>
+                               
+      </tr>
+
+                            </tr>
+                        </volist>
+>>>>>>> b298a44e209b1b36bbbd378252ca1fab7446688f
                             </tbody>
                         </table>
                         <!-- /.table-responsive -->
 
                     </div>
-                    <!-- /.panel-body -->
-                </div>
-                <!-- /.panel -->
-            </div>
-            <!-- /.col-lg-12 -->
-        </div>
-        <!-- /.row -->
+        <!-- /#page-wrapper -->
 
-        <!-- /.col-lg-6 -->
     </div>
-    <!-- /#wrapper -->
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="__PUBLIC__/admin/vendor/jquery/jquery.min.js"></script>
+                <script src="__PUBLIC__/admin/vendor/jquery/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="__PUBLIC__/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+                <!-- Bootstrap Core JavaScript -->
+                <script src="__PUBLIC__/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="__PUBLIC__/admin/vendor/metisMenu/metisMenu.min.js"></script>
+                <!-- Metis Menu Plugin JavaScript -->
+                <script src="__PUBLIC__/admin/vendor/metisMenu/metisMenu.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="__PUBLIC__/admin/dist/js/sb-admin-2.js"></script>
+                <!-- DataTables JavaScript -->
+                <script src="__PUBLIC__/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
+                <script src="__PUBLIC__/admin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+                <script src="__PUBLIC__/admin/vendor/datatables-responsive/dataTables.responsive.js"></script>
 
-    <script type="text/javascript">
+                <!-- Custom Theme JavaScript -->
+                <script src="__PUBLIC__/admin/dist/js/sb-admin-2.js"></script>
+
+                <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+                <script>
+                    $(document).ready(function() {
+                        $('#dataTables-example').DataTable({
+                            responsive: true
+                        });
+                    });
+                </script>
+
+                <script type="text/javascript">
     $(document).ready(function () {
         console.log('！');
         $(".delete").click(function () {
