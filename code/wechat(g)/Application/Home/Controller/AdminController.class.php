@@ -316,4 +316,47 @@ class AdminController extends Controller
         /**
          * 管理员--结束
          */
+
+
+    /**
+    *登陆验证
+    */
+
+    //验证是否账号密码
+    function checklogin()
+    {
+        //此处多余可自行改为Model自动验证
+        if (empty($_POST['username'])) {
+            $this->error('帐号不能为空！');
+        } elseif (empty($_POST['password'])) {
+            $this->error('密码不能为空！');
+        }
+        $adminTable = M('tb_manager');
+        $map = array();
+        $map['AdminName'] = $_POST['username'];
+        $map['AdminPwd'] = $_POST['password'];
+        $user = $adminTable->where($map)->select();
+        //dump($user);
+        if(empty($user)){
+            $this->error('账号密码错误！');
+        }else{
+            $this->success('欢迎您'.$map['AdminName'],"/home/admin/manageBooks");
+    }
+
+
+    }
+
+    //退出登录操作
+    function logout()
+    {
+        if (!empty($_SESSION[C('USER_AUTH_KEY')])) {
+            unset($_SESSION[C('USER_AUTH_KEY')]);
+            $_SESSION = array();
+            //session_destroy();
+            $this->assign('jumpUrl', '/home/admin/login');
+            $this->success('登出成功');
+        } else {
+            $this->error('已经登出了');
+        }
+    }
 }

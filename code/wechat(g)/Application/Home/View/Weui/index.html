@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link href="__PUBLIC__/bookstore/lib/weui.min.css" type="text/css" rel="stylesheet">
 	<link href="__PUBLIC__/bookstore/css/jquery-weui.min.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="__PUBLIC__/bookstore/css/autocomplete.css">
+	<link rel="stylesheet" href="__PUBLIC__/bookstore/css/style.css">
 	<style>
 		html,body{
 			height:100%;
@@ -21,6 +23,40 @@
 		}
 
 	</style>
+	<style type="text/css"> 
+body{ 
+font: normal 100% 'Arial','Helvetica','Verdana',sans-serif; 
+color: #333; 
+} 
+p { 
+padding: 12px 0; 
+margin: 0; 
+font-size: .8em; 
+line-height: 1.5; 
+} 
+form { 
+margin: 0; 
+} 
+#search_box { 
+width: 290px; 
+height: 31px; 
+background: url(__PUBLIC__/bookstore/images/bg_search_box.gif); 
+} 
+#search_box #s { 
+float: left; 
+padding: 0; 
+margin: 6px 0 0 6px; 
+border: 0; 
+width: 159px; 
+background: none; 
+font-size: .8em; 
+} 
+#search_box #go { 
+float: right; 
+margin: 3px 4px 0 0; 
+} 
+</style> 
+
 </head>
 <body>
 <div class="weui_tab">
@@ -38,21 +74,35 @@
 		</div>
 		<!--顶部幻灯片结束-->
 		<!--soso开始-->
-		<div class="weui_search_bar" id="search_bar">
-			<form class="weui_search_outer">
-				<div class="weui_search_inner">
-					<i class="weui_icon_search"></i>
-					<input type="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
-					<a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
-				</div>
-				<label for="search_input" class="weui_search_text" id="search_text">
-					<i class="weui_icon_search"></i>
-					<span>搜索</span>
-				</label>
-			</form>
-			<a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
-		</div>
+		 <!-- <div class="weui_search_bar" id="search_bar">
+                        <form class="weui_search_outer">
+                            <div class="weui_search_inner">
+                                <i class="weui_icon_search"></i>
+                                <input type="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
+                                <a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
+                            </div>
+                            <label for="search_input" class="weui_search_text" id="search_text">
+                                <i class="weui_icon_search"></i>
+                                <span>搜索</span>
+                            </label>
+                        </form>
+                        <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
+                        <form action="{:U('home/weui/search')}" method="get">
+                        <input type="text" name="keywords" id="text">
+                        <input id="button" type="button" name="keywords" value="提交"/>
+                        </form>
+                    </div> -->
+                    <div id="search_box"> 
+<form id="search_form" method="get" action="{:U('home/weui/search')}"> 
+<input type="text" id="s" placeholder="图书搜索" required class="swap_value"  name="keywords" /> 
+<input type="image" src="__PUBLIC__/bookstore/images/btn_search_box.gif" width="27" height="24" id="go" alt="Search" title="Search"  name="keywords" /> 
+</form> 
+</div> 
+
 		<!--soso结束-->
+		
+
+
 		<!--shangpin开始-->
 		<div class="weui-row">
 			<div class="weui-col-50"><a href="buy.html"><img src="__PUBLIC__/bookstore/images/a4.jpg" width="140" height="110"></a></div>
@@ -87,7 +137,7 @@
 			</div>
 			<p class="weui_tabbar_label">分类精选</p>
 		</a>
-		<a href="list.html" class="weui_tabbar_item">
+		<a href="allOrder.html" class="weui_tabbar_item">
 			<div class="weui_tabbar_icon">
 				<img src="__PUBLIC__/bookstore/images/f7.jpg" alt="" >
 			</div>
@@ -105,6 +155,8 @@
 <script type="text/javascript" src="__PUBLIC__/bookstore/lib/jquery-2.1.4.js"></script>
 <script type="text/javascript" src="__PUBLIC__/bookstore/js/jquery-weui.min.js"></script>
 <script type='text/javascript' src='__PUBLIC__/bookstore/js/swiper.js' charset='utf-8'></script>
+<script type="text/javascript" src="__PUBLIC__/bookstore/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/bookstore/js/autocomplete.js"></script>
 <script>
 	$(".swiper-container").swiper({
 		loop: true,
@@ -112,4 +164,6 @@
 	});
 
 </script>
+
+
 </html>

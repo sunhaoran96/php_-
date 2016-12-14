@@ -52,56 +52,18 @@
                         </a>
                     </div>
                     <div class="weui_cells weui_cells_access">
+                    <volist name="bookTypes" id="vo" >
                         <a class="weui_cell" href="flxq.html">
                             <div class="weui_cell_hd">
                                 <img src="__PUBLIC__/bookstore/images/a5.jpg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
                             </div>
                             <div class="weui_cell_bd weui_cell_primary">
-                                <p>分类1：四六级考试</p>
+                                <p>{$vo['booktypeid']}.{$vo['booktypename']}</p>
                             </div>
                             <div class="weui_cell_ft">
                             </div>
                         </a>
-                        <a class="weui_cell" href="flxq.html">
-                            <div class="weui_cell_hd">
-                                <img src="__PUBLIC__/bookstore/images/a2.jpg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
-                            </div>
-                            <div class="weui_cell_bd weui_cell_primary">
-                                <p>分类2：考研必备</p>
-                            </div>
-                            <div class="weui_cell_ft">
-                            </div>
-                        </a>
-                        <a class="weui_cell" href="flxq.html">
-                            <div class="weui_cell_hd">
-                                <img src="__PUBLIC__/bookstore/images/a6.jpg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
-                            </div>
-                            <div class="weui_cell_bd weui_cell_primary">
-                                <p>分类3：杂志周刊</p>
-                            </div>
-                            <div class="weui_cell_ft">
-                            </div>
-                        </a>
-                        <a class="weui_cell" href="flxq.html">
-                            <div class="weui_cell_hd">
-                                <img src="__PUBLIC__/bookstore/images/a4.jpg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
-                            </div>
-                            <div class="weui_cell_bd weui_cell_primary">
-                                <p>分类4：小说地带</p>
-                            </div>
-                            <div class="weui_cell_ft">
-                            </div>
-                        </a>
-                        <a class="weui_cell" href="flxq.html">
-                            <div class="weui_cell_hd">
-                                <img src="__PUBLIC__/bookstore/images/a9.jpeg" alt="icon" style="width:80px;height:60px;margin-right:5px;display:block">
-                            </div>
-                            <div class="weui_cell_bd weui_cell_primary">
-                                <p>分类5：其他商品</p>
-                            </div>
-                            <div class="weui_cell_ft">
-                            </div>
-                        </a>
+                    </volist>
                     </div>
 
                 </div>

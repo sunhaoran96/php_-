@@ -50,10 +50,8 @@
 <!--搜索栏结束-->
 <!--顶部幻灯片开始-->
 <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="__PUBLIC__/bookstore/images/001.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="__PUBLIC__/bookstore/images/002.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="__PUBLIC__/bookstore/images/004.jpg" alt=""></div>
+    <div >
+        <div ><img src="{$books.bookimg}" alt=""></div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -61,13 +59,15 @@
 <!--顶部幻灯片结束-->
 <!--图书名称开始-->
 <div class="weui_panel weui_panel_access">
-    <div class="weui_panel_bd">
+    <form action="/home/weui/buy/id/{$books.bookid}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+    <div class="weui_panel_bd" >
         <div class="weui_media_box weui_media_text">
-            <h1 class="weui_media_title1">图书名称</h1>
-            <h2 class="weui_media_title2">价格</h2>
-            <p class="weui_media_desc">免运费 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;剩余：10</p>
+            <h3 class="weui_media_title1">{$books.bookname}</h3>
+            <h4 class="weui_media_title2">{$books.bookprice}</h4>
+            <p class="weui_media_desc">免运费 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;剩余：{$books.bookstoremount}</p>
         </div>
     </div>
+    </form>
 </div>
 <!--图书名称结束-->
 

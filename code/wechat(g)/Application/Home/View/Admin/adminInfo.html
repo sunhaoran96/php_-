@@ -90,46 +90,58 @@
                         </div>
                         <!-- /input-group -->
                     </li>
-                    <li  class="active">
+                    <li class="active">
                         <a href="#"><i class="fa fa-table fa-fw"></i> 管理员<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/admin/adminInfo')}">查看管理员信息</a>
+                                <a href="adminInfo.html">查看管理员信息</a>
                             </li>
                             <li>
-                                <a href="{:U('home/admin/register')}">添加管理员</a>
+                                <a href="register.html">添加管理员</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa fa-edit fa-fw"></i>自定义菜单<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="{:U('home/media/addPicture')}">上传图片素材</a>
-                                    </li>
-                                    <li>
-                                        <a href="{:U('home/media/managePicture')}">管理图片素材</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-second-level -->
+                                <a href="menu.html">查看菜单</a>
                             </li>
                             <li>
-                            <li>
-                                <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="{:U('home/media/addPictureText')}">上传图文素材</a>
-                                    </li>
-                                    <li>
-                                        <a href="{:U('home/media/managePictureText')}">管理图文素材</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-second-level -->
+                                <a href="manageMenu.html">管理菜单</a>
                             </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                              <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>素材管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图片素材管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{:U('home/media/addPicture')}">上传图片素材</a>
+                            </li>
+                            <li>
+                                <a href="{:U('home/media/managePicture')}">管理图片素材</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                            <li>
+                                <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>图文素材管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{:U('home/media/addPictureText')}">上传图文素材</a>
+                            </li>
+                            <li>
+                                <a href="{:U('home/media/managePictureText')}">管理图文素材</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -138,16 +150,13 @@
                         <a href="#"><i class="fa fa-files-o fa-fw"></i>图书管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/admin/manageBooks')}">管理图书</a>
+                                <a href="manageBooks.html">管理图书</a>
                             </li>
                             <li>
-                                <a href="{:U('home/admin/addBook')}">添加图书</a>
+                                <a href="manageBookType.html">管理图书分类</a>
                             </li>
                             <li>
-                                <a href="{:U('home/admin/manageBookType')}">管理图书分类</a>
-                            </li>
-                            <li>
-                                <a href="{:U('home/admin/addBookType')}">添加图书分类</a>
+                                <a href="addBook.html">添加图书</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -156,7 +165,10 @@
                         <a href="#"><i class="fa fa-dashboard fa-fw"></i>订单管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{:U('home/admin/order1')}">查看订单信息</a>
+                                <a href="order1.html">查看订单信息</a>
+                            </li>
+                            <li>
+                                <a href="order2.html">管理订单</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -191,7 +203,7 @@
                                 <th>id</th> 
                                 <th>管理员名称</th>
                                 <th>密码</th>
-                                <th>权限</th>
+                                <th>确认密码</th>
                                 <th>操作</th>
                             </tr>
                             </thead>
@@ -202,9 +214,8 @@
                                 <td>{$vo['id']}</td>
                                 <td>{$vo['adminname']}</td>
                                 <td>{$vo['adminpwd']}</td>
-                                <td>{$vo['adminflag']}</td>
-                                <td><a href="__URL__/deletemanager/id/{$vo.id}"  class="r" onclick=
-                                        "return confirm('确认要删除管理员吗？请慎重哦！')">删除</a>
+                                <td>{$vo['adminpwd2']}</td>
+                                 <td><a href="{:U("admin/del?id=$vo[id]")}" class="delete"><i class="icon-font">删除</i></a></td>
       </tr>
 
                             </tr>
