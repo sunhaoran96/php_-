@@ -54,7 +54,7 @@
         <ul class="nav navbar-top-links navbar-right">
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    欢迎您,**
+                     <?php echo "欢迎您,".$_SESSION['username'];?>
                 </a>
                 <!-- /.dropdown-messages -->
             </li>
@@ -67,7 +67,7 @@
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i>设置</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>退出</a>
+                    <li><a href="{:U('home/admin/login')}"><i class="fa fa-sign-out fa-fw"></i>退出</a>
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
@@ -197,12 +197,13 @@
 
                                 <div class="form-group">
                                     <label>图书分类</label>
-
-                                    <select class="form-control" name="booktypename">
+                                    <select class="form-control" name="booktypename" id="sel">
+                                        <option value="{$books.booktypename}">{$books.booktypename}</option>
                                         <volist name="btype" id="vo" >
-                                        <option name="booktypename" value="{$vo['booktypename']}">{$vo['booktypename']}</option>
+                                            <option name="booktypename" value="{$vo['booktypename']}">{$vo['booktypename']}</option>
                                         </volist>
                                     </select>
+
 
                                 </div>
                                 <div class="form-group">
@@ -234,11 +235,16 @@
 <!-- /#page-wrapper -->
 
 </div>
-<!-- /#wrapper -->
-
-<script>
-$("select").val({$vo:booktypename});
+<!--<script type="text/javascript">-->
+    <!--document.getELementById("sel").value="{$vo['booktypename']}"-->
+<!--</script>-->
+<script type="text/javascript">
+    $(function(){
+        // $("#jumpMenu").val(要选中的option的value值即可);
+        $("#sel").val("booktypename");
+    });
 </script>
+<!-- /#wrapper -->
 <script src="__PUBLIC__/admin/vendor/jquery/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
@@ -249,7 +255,6 @@ $("select").val({$vo:booktypename});
 
 <!-- Custom Theme JavaScript -->
 <script src="__PUBLIC__/admin/dist/js/sb-admin-2.js"></script>
-
 </body>
 
 </html>
