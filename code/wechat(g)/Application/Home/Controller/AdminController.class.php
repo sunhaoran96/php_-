@@ -8,7 +8,7 @@ class AdminController extends Controller
 
     public function index()
     {
-
+$this->display('indexLogin');
     }
 
 
@@ -73,6 +73,8 @@ class AdminController extends Controller
         //dump($books);
         $this->assign('books',$books);
         $this->display();
+
+
     }
     //修改内容
     public function update(){
@@ -199,13 +201,6 @@ class AdminController extends Controller
 
     //获取订单详情的内容
     public function details(){
-//        $btype=M('tb_bookinfo');
-//        $condition=array();
-//        $condition['bookid']=1;  //外键中分类id为1
-//        $btype=$btype->where($condition)->select();
-//        $this->assign('btype',$btype);
-
-
         $id =I('get.id');
         $orders=M('tb_order');
 //        $dd['id']=$id;
@@ -217,14 +212,8 @@ class AdminController extends Controller
         $this->assign('orders',$orders);
         $this->display();
     }
+    //修改订单页获取一行订单
     public function rewampOrder(){
-//        $btype=M('tb_bookinfo');
-//        $condition=array();
-//        $condition['bookid']=1;  //外键中分类id为1
-//        $btype=$btype->where($condition)->select();
-//        $this->assign('btype',$btype);
-
-
         $id =I('get.id');
         $orders=M('tb_order');
 //        $dd['id']=$id;
@@ -316,15 +305,9 @@ class AdminController extends Controller
         /**
          * 管理员--结束
          */
-
-
-    /**
-    *登陆验证
-    */
-
-    //验证是否账号密码
     function checklogin()
     {
+        session_start();
         //此处多余可自行改为Model自动验证
         if (empty($_POST['username'])) {
             $this->error('帐号不能为空！');
@@ -336,27 +319,16 @@ class AdminController extends Controller
         $map['AdminName'] = $_POST['username'];
         $map['AdminPwd'] = $_POST['password'];
         $user = $adminTable->where($map)->select();
+        $_SESSION['username'];
         //dump($user);
-        if(empty($user)){
-            $this->error('账号密码错误！');
-        }else{
-            $this->success('欢迎您'.$map['AdminName'],"/home/admin/manageBooks");
-    }
-
-
-    }
-
-    //退出登录操作
-    function logout()
-    {
-        if (!empty($_SESSION[C('USER_AUTH_KEY')])) {
-            unset($_SESSION[C('USER_AUTH_KEY')]);
-            $_SESSION = array();
-            //session_destroy();
-            $this->assign('jumpUrl', '/home/admin/login');
-            $this->success('登出成功');
+        if (empty($user)) {
+            $this->error('账号或密码错误！');
         } else {
-            $this->error('已经登出了');
+            $this->success('欢迎您'. $map['AdminName'], "/home/admin/manageBooks");
+            //登录信息持久化$_SESSION
+            $_SESSION['username']=$map['AdminName'];
+            //echo $_SESSION['username'];
+
         }
     }
 }
