@@ -2,13 +2,13 @@
 namespace Home\Controller;
 
 use Think\Controller;
-
+use Think\Verify;
 class AdminController extends Controller
 {
 
     public function index()
     {
-$this->display('indexLogin');
+        $this->display('login');
     }
 
 
@@ -305,30 +305,49 @@ $this->display('indexLogin');
         /**
          * 管理员--结束
          */
-    function checklogin()
+
+//验证码
+    public function captcha(){
+        $captcha = new Verify();//创建验证码对象
+        $captcha -> length = 4 ;//验证码长度设置
+        $captcha->fontSize = 30;//验证码字体设置
+        $captcha->codeSet = '0123456789abcdefghigklmnopqrstuvwxyz';//验证码
+        $captcha -> entry('login');//entry：保存验证码到session
+    }
+    public function checklogin()
     {
         session_start();
         //此处多余可自行改为Model自动验证
-        if (empty($_POST['username'])) {
-            $this->error('帐号不能为空！');
-        } elseif (empty($_POST['password'])) {
-            $this->error('密码不能为空！');
-        }
-        $adminTable = M('tb_manager');
-        $map = array();
-        $map['AdminName'] = $_POST['username'];
-        $map['AdminPwd'] = $_POST['password'];
-        $user = $adminTable->where($map)->select();
-        $_SESSION['username'];
-        //dump($user);
-        if (empty($user)) {
-            $this->error('账号或密码错误！');
-        } else {
-            $this->success('欢迎您'. $map['AdminName'], "/home/admin/manageBooks");
-            //登录信息持久化$_SESSION
-            $_SESSION['username']=$map['AdminName'];
+        $captcha = new Verify();
+        if($captcha->check(I('post.captcha'),'login')){
+            $adminTable = M('tb_manager');
+            $map = array();
+            $map['AdminName'] = $_POST['username'];
+            $map['AdminPwd'] = $_POST['password'];
+            $user = $adminTable->where($map)->select();
+            $_SESSION['username'];
+            if (empty($_POST['username'])) {
+                $this->error('帐号不能为空！');
+            } elseif (empty($_POST['password'])) {
+                $this->error('密码不能为空！');
+            }
+
+            //dump($user);
+            if (empty($user)) {
+                $this->error('账号或密码错误！');
+            } else {
+                $this->success('欢迎您' . $map['AdminName'], "/home/admin/manageBooks");
+                //登录信息持久化$_SESSION
+                $_SESSION['username'] = $map['AdminName'];
+            }
             //echo $_SESSION['username'];
+
+        }else{
+            //失败
+            echo "<script> alert('验证码错误，请重新输入');history.go(-1);</script>";
 
         }
     }
+
+
 }
