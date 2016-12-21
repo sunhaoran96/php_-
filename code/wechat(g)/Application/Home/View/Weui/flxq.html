@@ -42,9 +42,9 @@
 
             <div class="weui_cells weui_cells_access">
                 <volist name="books" id="vo" i="1">
-                    <a class="weui_cell" href="order.html">
+                    <a class="weui_cell" href="__URL__/buy/bookid/{$vo.bookid}">
                         <div class="weui_cell_hd">
-                            <img src="__PUBLIC__/bookstore/images/a5.jpg" alt="icon" style="width:80px;height:40px;margin-right:5px;display:block">
+                            <img src="{$vo['bookimg']}" alt="icon" style="width:80px;height:40px;margin-right:5px;display:block">
                         </div>
                         <div class="weui_cell_bd weui_cell_primary">
                             <p>{$vo['bookname']}</p>
@@ -63,6 +63,7 @@
 </div>
 
     <div class="weui_tabbar" height="100">
+
         <a href="index.html" class="weui_tabbar_item">
             <div class="weui_tabbar_icon">
                 <img src="__PUBLIC__/bookstore/images/home_fill.png" alt="">
@@ -75,7 +76,7 @@
             </div>
             <p class="weui_tabbar_label">分类精选</p>
         </a>
-        <a href="list.html" class="weui_tabbar_item">
+        <a href="allOrder.html" class="weui_tabbar_item">
             <div class="weui_tabbar_icon">
                 <img src="__PUBLIC__/bookstore/images/ding.png" alt="" >
             </div>
@@ -87,7 +88,6 @@
             </div>
             <p class="weui_tabbar_label">购物车</p>
         </a>
-    </div>
     </div>
 </div>
 </body>
