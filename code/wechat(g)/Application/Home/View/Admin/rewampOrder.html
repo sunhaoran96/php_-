@@ -48,7 +48,7 @@
         <ul class="nav navbar-top-links navbar-right">
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    欢迎您,**
+                     <?php echo "欢迎您,".$_SESSION['username'];?>
                 </a>
                 <!-- /.dropdown-messages -->
             </li>
@@ -61,7 +61,7 @@
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i>设置</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>退出</a>
+                    <li><a href="{:U('home/admin/login')}"><i class="fa fa-sign-out fa-fw"></i>退出</a>
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
@@ -184,29 +184,13 @@
                                 <div class="form-group">
                                     <label>订单状态</label>
                                     <select class="form-control" name="poststatus" value="{$orders.poststatus}">
+                                        <option value="{$orders.poststatus}">{$orders.poststatus}</option>
                                         <option value="未处理">未处理</option>
                                         <option value="未发货">未发货</option>
                                         <option value="已发货">已发货</option>
                                         <option value="已签收">已签收</option>
-                                        <option value="已确认">已确认</option>
-                                        <option value="拒收">拒收</option>
-                                        <option value="短信确认">短信确认</option>
-                                        <option value="短信撤单">短信撤单</option>
-                                        <option value="电话不通">电话不通</option>
-                                        <option value="联系不上">联系不上</option>
-                                        <option value="不要了">不要了</option>
-                                        <option value="考虑中">考虑中</option>
                                     </select>
 
-                                </div>
-                                <div class="form-group">
-                                    <label>收货状态</label>
-                                    <select class="form-control" name="recevstatus">
-                                        <option value="未收货">未收货</option>
-                                        <option value="已签收">已签收</option>
-                                        <option value="已确认">已确认</option>
-                                        <option value="拒收">拒收</option>
-                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label>配送方式</label>

@@ -2,13 +2,13 @@
 namespace Home\Controller;
 
 use Think\Controller;
-
+use Think\Verify;
 class AdminController extends Controller
 {
 
     public function index()
     {
-
+        $this->display('login');
     }
 
 
@@ -73,6 +73,8 @@ class AdminController extends Controller
         //dump($books);
         $this->assign('books',$books);
         $this->display();
+
+
     }
     //修改内容
     public function update(){
@@ -199,13 +201,6 @@ class AdminController extends Controller
 
     //获取订单详情的内容
     public function details(){
-//        $btype=M('tb_bookinfo');
-//        $condition=array();
-//        $condition['bookid']=1;  //外键中分类id为1
-//        $btype=$btype->where($condition)->select();
-//        $this->assign('btype',$btype);
-
-
         $id =I('get.id');
         $orders=M('tb_order');
 //        $dd['id']=$id;
@@ -217,14 +212,8 @@ class AdminController extends Controller
         $this->assign('orders',$orders);
         $this->display();
     }
+    //修改订单页获取一行订单
     public function rewampOrder(){
-//        $btype=M('tb_bookinfo');
-//        $condition=array();
-//        $condition['bookid']=1;  //外键中分类id为1
-//        $btype=$btype->where($condition)->select();
-//        $this->assign('btype',$btype);
-
-
         $id =I('get.id');
         $orders=M('tb_order');
 //        $dd['id']=$id;
@@ -317,46 +306,48 @@ class AdminController extends Controller
          * 管理员--结束
          */
 
-
-    /**
-    *登陆验证
-    */
-
-    //验证是否账号密码
-    function checklogin()
+//验证码
+    public function captcha(){
+        $captcha = new Verify();//创建验证码对象
+        $captcha -> length = 4 ;//验证码长度设置
+        $captcha->fontSize = 30;//验证码字体设置
+        $captcha->codeSet = '0123456789abcdefghigklmnopqrstuvwxyz';//验证码
+        $captcha -> entry('login');//entry：保存验证码到session
+    }
+    public function checklogin()
     {
+        session_start();
         //此处多余可自行改为Model自动验证
-        if (empty($_POST['username'])) {
-            $this->error('帐号不能为空！');
-        } elseif (empty($_POST['password'])) {
-            $this->error('密码不能为空！');
-        }
-        $adminTable = M('tb_manager');
-        $map = array();
-        $map['AdminName'] = $_POST['username'];
-        $map['AdminPwd'] = $_POST['password'];
-        $user = $adminTable->where($map)->select();
-        //dump($user);
-        if(empty($user)){
-            $this->error('账号密码错误！');
+        $captcha = new Verify();
+        if($captcha->check(I('post.captcha'),'login')){
+            $adminTable = M('tb_manager');
+            $map = array();
+            $map['AdminName'] = $_POST['username'];
+            $map['AdminPwd'] = $_POST['password'];
+            $user = $adminTable->where($map)->select();
+            $_SESSION['username'];
+            if (empty($_POST['username'])) {
+                $this->error('帐号不能为空！');
+            } elseif (empty($_POST['password'])) {
+                $this->error('密码不能为空！');
+            }
+
+            //dump($user);
+            if (empty($user)) {
+                $this->error('账号或密码错误！');
+            } else {
+                $this->success('欢迎您' . $map['AdminName'], "/home/admin/manageBooks");
+                //登录信息持久化$_SESSION
+                $_SESSION['username'] = $map['AdminName'];
+            }
+            //echo $_SESSION['username'];
+
         }else{
-            $this->success('欢迎您'.$map['AdminName'],"/home/admin/manageBooks");
-    }
+            //失败
+            echo "<script> alert('验证码错误，请重新输入');history.go(-1);</script>";
 
-
-    }
-
-    //退出登录操作
-    function logout()
-    {
-        if (!empty($_SESSION[C('USER_AUTH_KEY')])) {
-            unset($_SESSION[C('USER_AUTH_KEY')]);
-            $_SESSION = array();
-            //session_destroy();
-            $this->assign('jumpUrl', '/home/admin/login');
-            $this->success('登出成功');
-        } else {
-            $this->error('已经登出了');
         }
     }
+
+
 }
